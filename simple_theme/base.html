@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
+
+  <!--
+    Support custom favicon support.
+    http://www.mkdocs.org/user-guide/configuration/#site_favicon
+  -->
+  {% if favicon %}
+    <link rel="shortcut icon" href="{{ favicon }}">
+  {% else %}
+    <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">
+  {% endif %}
+
+  <!--
+    You can include external assets of course, but be aware that it means the
+    documentation may not work well offline.
+  -->
+  <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
+
+
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  {% for path in extra_css %}
+    <link href="{{ path }}" rel="stylesheet">
+  {% endfor %}
+
+  <!--
+    To include static assets from our theme, just add
+    {{ base_url }} beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  {% for path in extra_javascript %}
+    <script src="{{ path }}"></script>
+  {% endfor %}
+
+  -->
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+
+  {% block extrahead %}
+  {% endblock %}
+  <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+       <img style="float:left;" src="{{ base_url }}/img/ameba_sm.png" alt="ameba23" /> 
+ 
+  <h5>
+  {% if next_page or previous_page %}
+      {% if previous_page %}
+      <a href="{{ previous_page.url }}" title="{{ previous_page.title }}">&#8592;</a>
+      {% else %}
+        &#8592; 
+      {% endif %}
+  {% endif %}
+   {% for nav_item in nav %}
+    {% include "nav.html" %}
+  {% endfor %}
+
+  {% if next_page or previous_page %}
+      {% if next_page %}
+      <a href="{{ next_page.url }}" title="{{ next_page.title }}"/>&#8594;</a>
+      {% else %}
+        &#8594;
+      {% endif %}
+  {% endif %}
+  </h5>
+       <h1>ameba.ehion.com - low tech network</h1>
+       {% if page_title %}<h2>{{ page_title }}</h2> {% endif %} 
+  
+  <h5>
+  page contents:
+  {% for toc_item in toc %}
+    {% if toc_item.children %}  
+
+        <a href="{{ toc_item.url }}">{{ toc_item.title }}</a> [ 
+      {% for toc_item in toc_item.children %}
+           <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>  
+      {% endfor %}
+      ] <br>
+        
+    {% else %}  
+      
+      <a href="{{ toc_item.url }}">{{ toc_item.title }}</a> 
+    {% endif %}
+  {% endfor %}
+  </h5> 
+
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+
+      
+  <hr/>
+  
+  <h5>Built with <a href="http://www.mkdocs.org">MkDocs</a> on {{ build_date_utc }}i</h5>
+  <!--
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  -->
+</body>
+</html>

@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -av site/ ameba@ehion.com:public_html/site

@@ -1,0 +1,23 @@
+site_name: ameba
+pages:
+- Home: index.md
+- community run communication: community_run_communication.md
+- free networks: free_networks.md
+- mousing about: mousing_about.md
+- alternative energy: alternative_energy.md
+- blockchain: blockchain.md
+- plants health food gardening: plants.md
+- Tech open source: tech_open_source.md
+- water: water.md
+- biscuits imageboard: biscuits.md
+- urban regeneration: urban_regeneration.md 
+- art/wierd/party: art_wierd_party.md
+- 430mhz data transfer: 430mhz_data_transfer.md
+- squatting/travelling/land rights: squatting_travelling_land_rights.md
+- magic: magic.md
+- bad songs: bad_songs.md
+- tims pedal generator: tims_pedal_generator.md
+- other stuff: other_stuff.md
+- unsorted links: links.md
+#theme: bootstrap
+theme_dir: simple_theme

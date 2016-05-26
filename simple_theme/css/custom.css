@@ -1,0 +1,8 @@
+html {
+    background-image: url('../img/background1.png');
+}
+img {
+display: block;
+      margin-left: auto;
+      margin-right: auto;
+} 
