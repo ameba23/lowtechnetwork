@@ -18,4 +18,4 @@
     machines in the spirit of Lewis Carroll.
 -   [Turtles, termites and traffic jams: explorations in massively parallel microworlds -Mitchel Resnick](http://gen.lib.rus.ec/book/index.php?md5=E05CC3D12B1CE80EDC2349FDC316AB78)
 -   time to do the [23 skidoo](http://en.wikipedia.org/wiki/23_skidoo_%28phrase%29)
-
+- find catalytic hypercycle picture

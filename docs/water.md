@@ -35,7 +35,7 @@ gradually move deeper as more sections are added from above.
 Another technique is to dig a bigger hole of then insert concrete or
 plastic tube. Successful wells have been made using 50cm diameter pipe
 found on a building site, with holes drilled in the lowest meter and
-some gravel (smalls stones) added to the bottom.
+some gravel (small stones) added to the bottom.
 
 -   [Plans for a small diameter well](http://www.fdungan.com/well.htm)
 -   [How to Drill Your Own Water Well](http://www.drillyourownwell.com/)
@@ -76,6 +76,8 @@ of water upwards, without the need for electricity.
 -   [Hydraulic ram wikipedia
     article](http://en.wikipedia.org/wiki/Hydraulic_ram)
 -   [ram pump design](http://www.clemson.edu/irrig/equip/ram.htm)
+
+washing machines also contain pumps.  it would be interesting to know about their power requirements, etc.
 
 plumbing
 --------
