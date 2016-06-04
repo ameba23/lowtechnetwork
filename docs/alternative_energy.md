@@ -82,14 +82,16 @@ track their position.
 ### Regulators 
 
 Maximum power point tracking (mppt) regulators are the more efficient
-but expensive. Normal regulators will allow the battery state to
+but expensive. Cheaper 'PWM' regulators will allow the battery state to
 determine voltage which may not be the most efficient for the panel.
 MPPT regulators use a control circuit to 'search' for the voltage
 allowing the highest power output.
 
-Note that with the right regulator it is also possible to charge 12v
-battery from 24v panel (eg: morningstar sunsaver mppt) or a 24v battery
-from 12v panel (eg: emponi sol1).
+Another advantage of MPPT regulators is that it is possible to charge a 12v
+battery from 24v panel or potentially a 24v battery
+from a 12v panel (works with for example 'emponi sol1').
+
+Note that some regulators sold as 'MPPT' are not actually MPPT.  Read reviews of the model you are considering buying, particularly if it seems cheap.  True MPPT controllers can usuallly be identified by a large inductor in the circuit.  
 
 Of course when using solar panels it is better to use electrical
 appliances during the day when more power is available. The cheaper
@@ -135,7 +137,7 @@ Often batteries can be improved simply by adding distilled water.
 Batteries which appear sealed can often be opened by forcing open a
 plastic panel to reveal little lids to the individual cells.
 
-Old batteries which will no longer hold a charge can be often
+Old lead-acid batteries which will no longer hold a charge can be often
 rejuvinated by pulse charging them to de-sulphate the cells, provided
 they have not shorted out as a result of a buildup of lead deposits in
 the bottom of the battery.
@@ -143,8 +145,8 @@ the bottom of the battery.
 As a last resort, it is possible to use old car batteries which no
 longer will charge to 12v (which you often find discarded) as 9v
 batteries, which can power, for example, 3 led bike lights soldered
-together in series (2xAAA batteries=3v) to get the last bit of power
-from them.
+together in series (2xAAA batteries=3v) to get the last bit of use out of
+them.
 
 Large 180ah truck-style batteries can often be found in tempory traffic
 lights used for roadworks. However there are roumours that these
@@ -154,9 +156,9 @@ Electric wheelchairs usually use very good sealed batteries. It could be
 a good idea to try asking at shops and companies who sell or service
 electric wheelchairs for old batteries.
 
-Security and fire alarms also often have batteries as backup power,
+Security and fire alarms also often have good quality sealed batteries as backup power,
 these can often be found in abandoned buildings or try asking
-manufacturers for old ones. They will power LED lighting for a useful
+manufacturers for old ones. The smaller ones will power LED lighting for a useful
 amount of time and are small enough to carry in a rucksack to charge
 elsewhere, so perfect for when you have several people sharing one solar
 panel.
