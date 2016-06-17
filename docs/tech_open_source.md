@@ -8,7 +8,7 @@ listed are fast and light on system resources but can take time to learn how to 
 ## GNU/linux
 
 * [Arch Linux](https://www.archlinux.org/) rolling release, meaning the lastest packages are always available. supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find usefull whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
-* [Debian](https://www.debian.org/index.en.html) many different computer architechtures are supported, a big, supportive user community, a huge pre-compiled software repository, and different builds for stable, unstable and testing.  Debian is purist about free software.  Only completely non-proprietory packages are included in the official repository.  Of course it is very easy to also install non-free packages, and a bundle of non-free extras (such as codecs for mp3) can be downloaded.  Many of the very popular linux distributions (eg. Ubuntu) are based on debian.  The default desktop environment, currently gnome3, is in my opinion annoying, but it is easy to change it. 
+* [Debian](https://www.debian.org/index.en.html) 'the universal operating system'. Many different computer architechtures are supported, a big, supportive user community, a huge pre-compiled software repository, and different builds for stable, unstable and testing.  Debian is purist about free software.  Only completely non-proprietory packages are included in the official repository.  Of course it is very easy to also install non-free packages, and a bundle of non-free extras (such as codecs for mp3, etc) can be downloaded.  Many of the very popular linux distributions (eg. Ubuntu) are based on debian.  The default desktop environment, currently gnome3, is in my opinion annoying, but it is easy to change it. 
 * [DistroWatch.com](http://distrowatch.com/) website with a lot of information about the
     different linux distributions.
 * [UNetbootin](http://unetbootin.sourceforge.net/) Software to create
@@ -17,7 +17,7 @@ listed are fast and light on system resources but can take time to learn how to 
 
 ## window managers
 
-* [i3](http://i3wm.org/) - great tiling window manager.  tiling window managers allow more keyboard rather than mouse control.  once you get used to it is difficult to imagine ever going back to floating windows.  i3 has good support for multi-monitor systems. [Configuring i3](http://blog.tunnelshade.in/2014/05/making-i3-beautiful.html) [i3status: Generates status bar to use with i3bar, dzen2 or xmobar ](https://github.com/Gravemind/i3status) 
+* [i3](http://i3wm.org/) - great tiling window manager.  tiling window managers allow more keyboard rather than mouse control.  If you find yourself rarly using the mouse and using keyboard shortcuts to switch windows (eg: Alt+Tab) its time to switch to a tiliing window manager.  once you get used to it is difficult to imagine ever going back to floating windows.  i3 has good support for multi-monitor systems. [Configuring i3](http://blog.tunnelshade.in/2014/05/making-i3-beautiful.html) [i3status: Generates status bar to use with i3bar, dzen2 or xmobar ](https://github.com/Gravemind/i3status) 
 * [dwm] another great tiling window manager.  very lightweight. 
 * [Openbox](http://openbox.org/) a basic floating window manager - you can
     install additional features yourself, making it very customisable
@@ -41,13 +41,13 @@ listed are fast and light on system resources but can take time to learn how to 
    * [Master Your Z Shell with These Outrageously Useful Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/) 
    * [zsh-lovers man page](http://grml.org/zsh/zsh-lovers.html)
    * [prezto](https://github.com/sorin-ionescu/prezto) a configuration framework for zsh, that is a set of settings that you probably want to use.  otherwise you can get a bit lost in setting up zsh. 
-   * [zmv](http://zshwiki.org/home/builtin/functions/zmv) powerfull file rename tool
-* FASD This makes finding files and directories with the command line so much easier!
+   * [zmv](http://zshwiki.org/home/builtin/functions/zmv) 'zsh move' - powerfull file rename tool.  perfect for bulk renaming files. has a 'dry run' mode too. 
+* FASD - This makes finding files and directories with the command line so much easier!
  It comes with some aliases, for example, instead of `cd` you can use `z` followed part of the name of the path
 you want to move to. FASD will guess what you want, using 'frecency' (combined recency and frequency).  So whereever you are `z D` will take you to the most commonly/recently used directory with `D`, which might be `~/Downloads`.
 `v xxx` will open vim with frequently/recently used file containing xxx.
 `o xxx` will open the default application for the file. 
-* urxvt unicode terminal emulator. 
+* URxvt - unicode terminal emulator.  Highly configurable, well maintained and supported.  
 * [terminator](http://gnometerminator.blogspot.co.uk/) terminal emulator with many features, including tabs and split windows.  Some useful keys in terminator:
     * `Ctrl + Shift + O` Splits terminal hOrizontally.
     * `Ctrl + Shift + E` Splits terminal vErtically.
@@ -55,19 +55,23 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
     * `Alt + Arrows` Move to different terminals.
 
 * GNU Screen - a great program which can be used for window splitting etc. over ssh.  You can also use it to start a process over ssh and then leave it running even after you disconnect from ssh.
-* [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another tool for
-    mouse free control of terminal windows
-* [commandlinefu.com](http://www.commandlinefu.com) a website where people post useful (or simply nerdy) command lines they have used.
+* [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another great tool for
+    mouse free control of terminal windows and much more.
+* [commandlinefu.com](http://www.commandlinefu.com) a website where people post useful (or simply nerdy) command line tricks.
 
 * [30 handy bash aliases](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
 
+* [dotfiles.github.io](dotfiles.github.io) good explanation of several dotfile repos and tools for managing dotfiles.
+* GNU Stow -  Manage installation of multiple softwares in the same directory tree - can be useful for automatically creating symlinks to dotfiles.
+
 ## web
 
-* [vimprobable](http://sourceforge.net/p/vimprobable) lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
+* [vimb] lightweight webkit based browser
+* [vimprobable](http://sourceforge.net/p/vimprobable) another lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
 * [vimperator](http://www.vimperator.org) vi style control of
     firefox/iceweasel web browser. So you can control the web browser
     without using the mouse.
-* [Surfraw](http://surfraw.alioth.debian.org/) Shell Users' Revolutionary Front Rage Against the Web - open websites from the commandline.  a very handy program.  You can `alias sr="surfraw"` and do `sr wikipedia chard` to jump to wikipedia article about chard. See the [list of elvi](http://surfraw.alioth.debian.org/#elvilist) (website search scripts for surfraw).
+* [Surfraw](http://surfraw.alioth.debian.org/) 'Shell Users' Revolutionary Front Rage Against the Web' - open websites from the commandline.  a very handy program.  You can `alias sr="surfraw"` and do `sr wikipedia chard` from the command line to jump to wikipedia article about chard. See the [list of elvi](http://surfraw.alioth.debian.org/#elvilist) (website search scripts for surfraw).
 
 * [GNUzilla and IceCat](https://www.gnu.org/software/gnuzilla/) firefox/iceweasel alternative 100% free software, no proprietory plugins recommmended
 
@@ -97,10 +101,16 @@ is worth learning. The keybindings in vim are used in a lot of other
 programs, and vim is installed on a lot of different systems which makes
 it a very useful thing to know, even if you just know the very basics.  It has really a lot of features and plugins available.
 
+* Vundle - plugin manager for vim - find and install plugins from within vim
+* NERDTree - plugin for file browsing 
+* CtrlP - fuzzy file finder plugin - start typing some part of the path/filename and Ctrlp finds it. 
+* fugitive - git wrapper plugin - use git without leaving vim
 * [vi cheat sheet](http://www.lagmonster.org/docs/vi.html)
 * [vim tips](http://zzapper.co.uk/vimtips.html)
 * [vim mediawiki editing](http://blog.bigsmoke.us/2009/07/10/vim-mediawiki-editing)
 * [vim tricks](https://github.com/rzetterberg/case_studies/blob/master/notes/2_vim_tricks.md)
+
+
 ## file management
 
 * ![ranger screenshot](img/Ranger.png "fig:Ranger.png")[ranger](http://ranger.nongnu.org/)
@@ -125,7 +135,7 @@ it a very useful thing to know, even if you just know the very basics.  It has r
 * [SpaceFM](http://ignorantguru.github.io/spacefm/) multi-panel tabbed
     file and desktop manager
 * ![baobab screenshot](img/Baobab.jpg "fig:Baobab.jpg")[Baobab](https://wiki.gnome.org/Apps/Baobab)
-    gnome disk usage analyser - visual representation of disk usage -
+    gnome disk usage analyser - graphical representation of disk usage -
     great for when you are trying to free up space
 * [ncdu](http://dev.yorhel.nl/ncdu) - NCurses Disk Usage, a simple,
     fast program for analysing disk usage.
@@ -151,15 +161,16 @@ first macro does the search according to user query, second macro jumps to resul
      macro index <F8> "<shell-escape>rm -rf ~/.mu/results; mu-find -o l -l ~/.mu/results " "mu-find"
      macro index <F9> "<change-folder-readonly>~/.mu/results\n" "display mu-find results"
 
-* [notmuch](http://notmuchmail.org) program for searching email
+* [notmuch](http://notmuchmail.org) another great program for searching email
 * [mutt sidebar](http://www.lunar-linux.org/mutt-sidebar/) patch for
-    mutt with folders listed in a sidebar
+    mutt with folders listed in a sidebar - you will need to set up keybindings to go with it
 * [getting up and running with a sane mutt setup](http://blog.developwithpassion.com/2013/05/02/getting-up-and-running-with-a-sane-mutt-setup/)
 * [realprogrammers.com mutt guide](http://realprogrammers.com/jump_start/mutt/)
 * [How I tamed my mutt – cmdln.org (a sysadmin blog)](http://www.cmdln.org/2008/11/07/how-i-tamed-my-mutt/)
 * [fefe.da Mutt FAQ](http://www.fefe.de/muttfaq/faq.html)
 * [Mailman](http://www.gnu.org/software/mailman/index.html) GNU
     Mailing list manager
+* Neomutt
 
 ### non-commercial email providers
 
@@ -174,10 +185,10 @@ privacy seriously. Please add more
 
 ## graphics
 
-* [gimp](http://www.gimp.org/) gui graphics editor (like photoshop)
+* [gimp](http://www.gimp.org/) -the GNU image manipulation program - a gui graphics editor (like adobe photoshop)
 * [inkscape](http://www.inkscape.org) gui vector graphics editor (like
     corel draw)
-* [feh](http://feh.finalrewind.org/) a fast and light image viewer.  you can go to your photos folder and type `feh -Frz` to randomly see photos in all subdirectories.  keybindings: 
+* [feh](http://feh.finalrewind.org/) a fast and light image viewer.  you can go to your photos folder and type `feh -Frz` to randomly see photos in all subdirectories.  can also be used to display wallpaper.  keybindings: 
     left/right - previous/next image
     up/down - zoom
     / - zoom to fit window
@@ -188,11 +199,11 @@ Feh command line switches:
     F - fullscreen and scale large images to fit screen (often what you want)
     r - recursive (enter directories)
     z - randomise file list
-    A - action   feh -A "cp %n ~/pics" press 0 to do the action
+    A - customisable action   eg: feh -A "cp %n ~/pics", then press 0 to do the action.  very useful!
 
-* [imagemagick](http://www.imagemagick.org/) powerfull tools for
+* [imagemagick](http://www.imagemagick.org/) powerfull command line tools for
     converting, editing and composing images. Good for batch
-    image processing.  very useful for web development.
+    image processing.  very useful for web development.  use 'convert' for a many image processing tasks, including resizing and changing format. `mogrify` is the same as convert but modifies the input file directly, rather than producing a new output file.  very useful, but use with caution.  
 * [graphicsmagick](http://www.graphicsmagick.org) a fork of
     imagemagick - apparently more efficient.
 * [G'MIC](http://gmic.eu/) GREYC's Magic for Image Computing - an
@@ -201,8 +212,7 @@ Feh command line switches:
 
 ## document and book viewers
 
-* [MuPDF](http://www.mupdf.com/) - a fast, lightweight pdf viewer with
-    some vi style keybindings.
+* [MuPDF](http://www.mupdf.com/) - a superfast, lightweight pdf viewer with some vi style keybindings. 
     f = toglle fullscreen mode
     W, H - zoom page to exactly fit width or height of window
     <, > - skip back or forwards 10 pages
@@ -355,7 +365,7 @@ This prompts for a password and gives file.gpg.  To decypt:
     control the player by using mpd client software (of which there are
     many to choose from, i use [ncmpcpp](http://ncmpcpp.rybczak.net)).
     Can run on raspberry pi.  The database is very fast to update
-    and search.  I always used to avoid database driven players because of speed, bloated software, and inability to access my catagoried directory structure where I know where to find things.  Most mpd clients allow browsing by directory structure as well as database, and its playlist management system is good.  The really great thing is, you can decide to change client software without setting up the database again.  Also easy to set up status viewing in a system monitor or keybindings in your window manager, so you can control the player whilst using other software.  A must for big music collections.  
+    and search.  I previously always avoided database driven players because of speed, bloated software, and inability to access my catagoried directory structure where I know where to find things.  Most mpd clients allow browsing by directory structure as well as database, and its playlist management system is good.  The really great thing is, you can decide to change client software without setting up the database again.  Also easy to set up status viewing in a system monitor or keybindings in your window manager, so you can control the player whilst using other software.  A must for big music collections.  
 * [cmus](http://cmus.sourceforge.net) curses based music player
     software (linux, console based). with playlists, play queue,
     filtering, vi style search and command mode, dynamic keybindings.
@@ -431,10 +441,7 @@ the wiki
     to recuperate electronic components.
 * [Desoldering
     wikibook](http://en.wikibooks.org/wiki/Practical_Electronics/Desoldering)
-* [circuit circle](http://circuitcircle.de) /
-    [SCHRÄGERUNDE](http://schraegerunde.blogspot.de/) DIY electronics
-    and circuit bending -workshops, concerts, installations,
-    performances
+* [circuit circle](http://circuitcircle.de) / [SCHRÄGERUNDE](http://schraegerunde.blogspot.de/) DIY electronics and circuit bending -workshops, concerts, installations, performances
 * [Toner refill - wikipedia
     article](http://en.wikipedia.org/wiki/Toner_refill) on refilling
     photocopier laser printer toner
@@ -457,8 +464,7 @@ the wiki
     experiments using light for data links, mostly using high power LEDs
     rather than lasers, as they work better over long distances.
 * [ttfa.net/12volt](http://ttfa.net/12volt)
-* [A Tao of regular
-    expressions](http://www.let.uu.nl/~Michael.Moortgat/personal/Courses/TT02/tao_regexps.html)
+* [A Tao of regular expressions](http://www.let.uu.nl/~Michael.Moortgat/personal/Courses/TT02/tao_regexps.html)
     notes on using regular expressions (for vi, grep, etc)
 * [mattmahoney on data compression](http://mattmahoney.net/dc/) much
     info on data compression. PAQ8 text compression, while
@@ -472,7 +478,7 @@ the wiki
 * [nmap](http://nmap.org/) network ping scan tool
 * [wikidata](http://meta.wikimedia.org/wiki/Wikidata) - project to put wikipedia information into a semantic format, linking topics across languages and categories.
 
-Unsorted link:
+Unsorted links:
 
 * [Open source software and nice hardware box.matto.nl ](https://box.matto.nl/index.html) Tags: software linux
 * [The Best MOTD - How to Customize Your MOTD - Linux ](http://www.mewbies.com/how_to_customize_your_console_login_message_tutorial.htm) Tags: motd
