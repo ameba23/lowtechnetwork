@@ -38,6 +38,9 @@ listed are fast and light on system resources but can take time to learn how to 
 * ![zsh wizard](img/Wizard.gif "fig:Wizard.gif")[zsh](http://zsh.sourceforge.net/) the zsh shell. an alternative to bash with a lot of features.  I've been using it for a while and just keep discovering good stuff.  You can get lost in configuring it yourself, so I would recommend using it with a configuration framework such as Prezto (see below).  
    * In zsh, type ls \*\*/\*.txt to find all txt files deeper in the directory structure.
    * [strcat.de/zsh](http://strcat.de/zsh/) many good zsh examples
+   * [zsh.sourceforge.net/Guide/zshguide.html](http://zsh.sourceforge.net/Guide/zshguide.html) A Users guide to the Z Shell - Peter Stephenson
+
+   * [www.rayninfo.co.uk/tips/zshtips.html](http://www.rayninfo.co.uk/tips/zshtips.html) Zsh tips by ZZaper
    * [Master Your Z Shell with These Outrageously Useful Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/) 
    * [zsh-lovers man page](http://grml.org/zsh/zsh-lovers.html)
    * [prezto](https://github.com/sorin-ionescu/prezto) a configuration framework for zsh, that is a set of settings that you probably want to use.  otherwise you can get a bit lost in setting up zsh. 
@@ -58,7 +61,7 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 * [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another great tool for
     mouse free control of terminal windows and much more.
 * [commandlinefu.com](http://www.commandlinefu.com) a website where people post useful (or simply nerdy) command line tricks.
-
+* explain.sh - script to explain a command you dont know what it does (pulls stuff from man pages) eg: 'explain 'ls -l''
 * [30 handy bash aliases](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
 
 * [dotfiles.github.io](dotfiles.github.io) good explanation of several dotfile repos and tools for managing dotfiles.

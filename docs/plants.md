@@ -28,7 +28,7 @@ or on junctions of paths where people naturally meet and make a pause.
 (that grows every year and you dont really need to do anything once they get going)
 
 -   [Jerusalem artichoke/topinambour](http://en.wikipedia.org/wiki/Jerusalem_artichoke)
-    is a super easy to grow tuber. Good as a reserve if other things fail to grow.
+    is a super easy to grow tuber.  Some people dont like to eat it.  Good as a reserve if other things fail to grow.
 -   asparagus/spargel - you can buy 'crowns' one or two years old
 -   rhubarb 
 -   horseradish - the leaves are big and good to eat raw or cooked, the root of course you can make a spicy sauce from.
@@ -54,6 +54,7 @@ or on junctions of paths where people naturally meet and make a pause.
 -   ryegrass
 -   field beans
 -   peas
+-   lupins
 
 ## other gardening ideas:
 
@@ -274,12 +275,13 @@ crazy to treat it as waste and even more crazy to use clean water to get
 rid of it!
 
 It is importand to keep the shit dry. This will make good compost as
-well as stop it stinking and spreading bacteria. This can be done with a
-system allowing air to flow under the shit. If you use toilet paper,
+well as stop it stinking and spreading bacteria. Use sawdust from untreated wood if possible as it will compost.  Some designs of toilet have a system allowing air to flow under the shit, keeping it dry. If you use toilet paper,
 depending on what you will do with the compost you might want to put
-toilet paper in a separate bucket and burn it.
+toilet paper in a separate bucket and burn it.  Keep the composting shit in an uncovered heap and add dry plant material. 
 
-Although it is more work initially, going up stairs to shit is
+It can be used on fruit trees after about a year, for vegetables i would wait two years.
+
+Although it is more work initially, going up stairs to shit can be 
 preferable than shitting in a bucket and having to empty it elsewhere.
 
-See: Joseph C. Jenkins-The Humanure Handbook_ A Guide to Composting Human Manure, Third Edition-Joseph Jenkins, Inc. (2005)
+See: Joseph C. Jenkins-The Humanure Handbook, A Guide to Composting Human Manure, Third Edition-Joseph Jenkins, Inc. (2005)
