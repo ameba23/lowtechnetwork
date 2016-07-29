@@ -327,8 +327,6 @@ place. This 'bridge' can be made in various different ways:
 -   FMA200 tunable 5/8 wavelength antenna. Is quite a good commercially
     available antenna for FM.
 
-<!-- -->
-
 -   [freie-radios.net](http://freie-radios.net) - audio portal of
     community radios. Over 25,000 recordings
 -   [radio4all.net](http://radio4all.net) - An archive of radio
@@ -361,34 +359,19 @@ radio scene.
 -   [piraten.wdb](http://www.schoechi.de/pwdb-ema.html) - another list
     of stations
 
-### darknets
+### Alternative internet projects 
 
-networks which exist 'outside' the internet are gaining popularity. Many
-of them are comprised partly or entirely by internet 'tunnels' meaning
-they are not independent of interenet, but aim to create free and secure
-alternatives within it.
 
--   [GNUnet](https://gnunet.org/) GNUnet is a framework for secure
-    peer-to-peer networking that does not use any centralised or
-    otherwise trusted services. [GNUnet
-    wikipedia](http://en.wikipedia.org/wiki/GNUnet)
+* [ipfs](http://ipfs.io) - the interplanetary filesystem.  A promising decentralised, p2p protocol, designed to be an alternative to HTTP.  It is a content addressable filesystem, meaning files are referred to by their content (using a hash) rather than their location.  The nearest available copy of the file is retrieved, increasing speed and efficiency and removing the power dynamic of a centralised server-client relationship.  ipfs is working right now, a permanant filesystem, completely controlled by its users and resiliant to censorship. it is gaining popularity quickly, and has the potential to completely upturn the topology of the web.  
+* [zeronet](http://zeronet.io)
+-   [GNUnet](https://gnunet.org/) GNUnet is a framework for secure peer-to-peer networking that does not use any centralised or otherwise trusted services. [GNUnet wikipedia](http://en.wikipedia.org/wiki/GNUnet)
 
-<!-- -->
 
--   [i2p](http://www.i2p2.de) [I2P
-    wikipedia](http://en.wikipedia.org/wiki/I2P)
--   [freenet](https://freenetproject.org) [Freenet
-    wikipedia](http://en.wikipedia.org/wiki/Freenet)
+-   [i2p](http://www.i2p2.de) [I2P wikipedia](http://en.wikipedia.org/wiki/I2P) alternative network project similar to TOR.
+-   [freenet](https://freenetproject.org) [Freenet wikipedia](http://en.wikipedia.org/wiki/Freenet)
 
-<!-- -->
-
--   [Tor](https://www.torproject.org/) free software for
-    online anonymity. There are certain services and websites configured
-    to be only accessible to Tor users, which comprises a kind of
-    darknet, including email, [the hidden
-    wiki](http://en.wikipedia.org/wiki/The_Hidden_Wiki), [The silk
-    road](http://en.wikipedia.org/wiki/Silk_Road_%28marketplace%29)
-    marketplace (now allegedly shut down).
+-   [Tor](https://www.torproject.org/) free software for online anonymity. There are certain services and websites configured to be only accessible to Tor users, which comprises a kind of darknet, including email, [the hidden wiki](http://en.wikipedia.org/wiki/The_Hidden_Wiki), [The silk road](http://en.wikipedia.org/wiki/Silk_Road_%28marketplace%29) marketplace (now allegedly shut down).
+* [maidsafe](http://maidsafe.net) SAFE network - another alternative newtwork
 
 ### wifi mesh or point to point
 
@@ -417,6 +400,7 @@ begining to use the 5Ghz and 10Ghz bands as well.
     software and hardware to achieve the goal of a censorship-free
     Internet" This wiki is a guide to setting up a meshnet node,
     using CJDNS.
+* [althea mesh](http://altheamesh.com/) project where you pay peers to share connection
 
 :\* [Darknetplan subreddit](http://www.reddit.com/r/darknetplan) "A
 place to organize efforts to create a hardware/software stack for a

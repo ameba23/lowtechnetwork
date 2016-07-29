@@ -81,7 +81,7 @@ track their position.
 
 ### Regulators 
 
-Maximum power point tracking (mppt) regulators are the more efficient
+Maximum power point tracking (mppt) regulators are more efficient
 but expensive. Cheaper 'PWM' regulators will allow the battery state to
 determine voltage which may not be the most efficient for the panel.
 MPPT regulators use a control circuit to 'search' for the voltage
@@ -97,13 +97,13 @@ Of course when using solar panels it is better to use electrical
 appliances during the day when more power is available. The cheaper
 regulators will even cut out and stop charging the battery when the
 voltage goes too high (when its very sunny), so its good to have
-something connected if this is the case.
+something connected to use the extra power if this is the case.
 
 ### Inverters
 
-If using inverters, it is usually better to connect them to the 'battery' terminals of the regulator (or to the battery itself) rather than the 'load' ouput terminals.  This is because regulators will usually have their own system of switching off in the case of voltage becoming too low, and they are designed to be switch at such high currents.  Allowing the regulator itself to switch such a high load could damage it, especially if it is a cheap regulator.
+If using inverters, it is usually better to connect them to directly to the battery rather than to the 'load' ouput terminals of the solar controller.  This is because inverters will usually have their own system of switching off in the case of voltage becoming too low, and they are designed to be switch at such high currents.  Allowing the controllor itself to switch such a high load could damage it, especially if it is a cheap one.
 
-When buying an inverter, it is worth looking for a 'pure sine wave' one, but it is hard to know if it is really pure sine wave without testing it with an oscilloscope.  Many cheaper inverters will work fine running lights and power tools, but will not work well with electronics, charging laptops etc.  It can be better to simply use 12v (car) adaptor for laptops, phones etc.
+When buying an inverter, it is worth looking for a 'pure sine wave' one, but it is hard to know if it is really pure sine wave without testing it with an oscilloscope.  Many cheaper inverters will work fine running lights and power tools, but will not work well with electronics, charging laptops etc.  It can be better to simply use 12v DC (car) adaptor for laptops, phones etc.
 
 -   [building solar panels from cells from damaged solar panels](http://www.mdpub.com/SolarPanel/index.html) many people do
     this, the cells can be bought from solar panel manufacturers
@@ -133,14 +133,14 @@ batteries can be used if they are the only thing available and it is the
 battery itself which will be damaged by discharging it, not the
 appliances you attach.
 
-Often batteries can be improved simply by adding distilled water.
+Often batteries can be improved simply by adding distilled water.  Open the caps and if you are able to see the tops of the lead plates, you need to add water.  Clean rain water can be used if you dont want to buy distilled water. 
 Batteries which appear sealed can often be opened by forcing open a
 plastic panel to reveal little lids to the individual cells.
 
 Old lead-acid batteries which will no longer hold a charge can be often
 rejuvinated by pulse charging them to de-sulphate the cells, provided
 they have not shorted out as a result of a buildup of lead deposits in
-the bottom of the battery.
+the bottom of the battery.  There are many designs for pulse chargers available.  A simpler method is to connect the battery directly to a solar panel to give it a burst of power to desulphate the cells.  This should be done with much caution, in best case outdoors, because of the flammable gas which the battery gives off, and of course do not leave the panel connected after dark! 
 
 As a last resort, it is possible to use old car batteries which no
 longer will charge to 12v (which you often find discarded) as 9v
@@ -223,8 +223,7 @@ Thermoelectrical generators
 ---------------------------
 
 Small heat powered electrical generators that can be attached for
-example to a wood burner. They dont produce a lot of power but could be
-useful for powering electronics stuff.
+example to a wood burner. They need to be in a position where one side is hot and the other cold.  They dont produce a lot of power but could be useful for powering electronics stuff.
 
 -   [thermoelectrical generator wikipedia article](http://en.wikipedia.org/wiki/Thermoelectric_generator)
 -   [thermalforce.de](http://thermalforce.de) site selling them

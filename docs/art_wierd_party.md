@@ -58,4 +58,10 @@
 
 [oskur](http://www.myspace.com/oskur%7Cvj)
 
+## books 
+
+* we 
+* Barbara Kingsolver - the Poisonwood Bible
+* Margaret Atwood - Oryx and Crake
+
 ![hertz](hertz.jpeg "hertz")

@@ -45,7 +45,7 @@ listed are fast and light on system resources but can take time to learn how to 
    * [zsh-lovers man page](http://grml.org/zsh/zsh-lovers.html)
    * [prezto](https://github.com/sorin-ionescu/prezto) a configuration framework for zsh, that is a set of settings that you probably want to use.  otherwise you can get a bit lost in setting up zsh. 
    * [zmv](http://zshwiki.org/home/builtin/functions/zmv) 'zsh move' - powerfull file rename tool.  perfect for bulk renaming files. has a 'dry run' mode too. 
-* FASD - This makes finding files and directories with the command line so much easier!
+* FASD - This makes finding files and directories with the command line so much easier!  You need this!
  It comes with some aliases, for example, instead of `cd` you can use `z` followed part of the name of the path
 you want to move to. FASD will guess what you want, using 'frecency' (combined recency and frequency).  So whereever you are `z D` will take you to the most commonly/recently used directory with `D`, which might be `~/Downloads`.
 `v xxx` will open vim with frequently/recently used file containing xxx.
@@ -69,13 +69,20 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 
 ## web
 
-* [vimb] lightweight webkit based browser
+* [vimb](http://fanglingsu.github.io/vimb/) lightweight webkit based browser, inspired by vimprobable, and in my opinion an improvement.
 * [vimprobable](http://sourceforge.net/p/vimprobable) another lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
 * [vimperator](http://www.vimperator.org) vi style control of
     firefox/iceweasel web browser. So you can control the web browser
     without using the mouse.
 * [Surfraw](http://surfraw.alioth.debian.org/) 'Shell Users' Revolutionary Front Rage Against the Web' - open websites from the commandline.  a very handy program.  You can `alias sr="surfraw"` and do `sr wikipedia chard` from the command line to jump to wikipedia article about chard. See the [list of elvi](http://surfraw.alioth.debian.org/#elvilist) (website search scripts for surfraw).
 
+:wq
+:
+:q
+
+
+
+exit
 * [GNUzilla and IceCat](https://www.gnu.org/software/gnuzilla/) firefox/iceweasel alternative 100% free software, no proprietory plugins recommmended
 
 ## tools, toys, reference
@@ -204,14 +211,9 @@ Feh command line switches:
     z - randomise file list
     A - customisable action   eg: feh -A "cp %n ~/pics", then press 0 to do the action.  very useful!
 
-* [imagemagick](http://www.imagemagick.org/) powerfull command line tools for
-    converting, editing and composing images. Good for batch
-    image processing.  very useful for web development.  use 'convert' for a many image processing tasks, including resizing and changing format. `mogrify` is the same as convert but modifies the input file directly, rather than producing a new output file.  very useful, but use with caution.  
-* [graphicsmagick](http://www.graphicsmagick.org) a fork of
-    imagemagick - apparently more efficient.
-* [G'MIC](http://gmic.eu/) GREYC's Magic for Image Computing - an
-    image processing framework. Commandline tools, Gimp plugin and
-    C++ library.
+* [imagemagick](http://www.imagemagick.org/) powerfull command line tools for converting, editing and composing images. Good for batch image processing.  very useful for web development.  use 'convert' for a many image processing tasks, including resizing and changing format. `mogrify` is the same as convert but modifies the input file directly, rather than producing a new output file.  very useful, but use with caution.  
+* [graphicsmagick](http://www.graphicsmagick.org) a fork of imagemagick - apparently more efficient.
+* [G'MIC](http://gmic.eu/) GREYC's Magic for Image Computing - an image processing framework. Commandline tools, Gimp plugin and C++ library.
 
 ## document and book viewers
 
@@ -220,8 +222,7 @@ Feh command line switches:
     W, H - zoom page to exactly fit width or height of window
     <, > - skip back or forwards 10 pages
 
-* [apvlv](http://naihe2010.github.io/apvlv/) - another pdf viewer,
-    vi style.
+* [apvlv](http://naihe2010.github.io/apvlv/) - another pdf viewer, vi style.
 * [calibre](http://calibre-ebook.com/) - ebook library manager
 * [FBReader](http://fbreader.org/) reader for epub etc
 
@@ -243,13 +244,11 @@ Feh command line switches:
 * [magsDB](http://magsdb.org) magazines database (russian site)
 * [resrc.io](http://resrc.io/) list of free programming language
     resources
-* [DIY Book Scanning](http://www.diybookscanner.org/) a community
-    devoted to DIY/low cost book scanning hardware and software
-* [Book scanning wikipedia
-    article](http://en.wikipedia.org/wiki/Book_scanning)
+* [DIY Book Scanning](http://www.diybookscanner.org/) a community devoted to DIY/low cost book scanning hardware and software
+* [Book scanning wikipedia article](http://en.wikipedia.org/wiki/Book_scanning)
 * [openlibrary.org](https://openlibrary.org/) ebooks
 
-## backup/archiving
+## backup/archiving/filesharing
 
 * [rsync](http://rsync.samba.org/) - a powerful backup/file
     copying tool. rsync only copies differences in the files, to
@@ -265,8 +264,8 @@ Feh command line switches:
   * `-u`  update - skip files that are newer on the reciever.  This can be run in both directions to syncronise
 * [Grsync](http://www.opbyte.it/grsync/) - rsync graphical frontend for Linux
 * [unison](http://www.cis.upenn.edu/~bcpierce/unison/) file syncroniser. Unlike rsync, unison ensures both filesystems have the newest version of a file. [tutorial on setting up unison](http://www.howtoforge.com/setting-up-unison-file-synchronization-between-two-servers-on-debian-squeeze)
-
- * `diff -qr source destination` show the differences between directories.  Options are brief and recursive.
+* [syncthing](https://syncthing.net/) open source 'cloud storage' software.  Similar to the commercial software Resilio Sync.
+ * `diff -qr source destination` show the differences between directories.  Arguments '-qr' means brief and recursive.
  * `comm -3 <(ls ~/dir-new/) <(ls ~/dir)` compare two directories
 
 Find duplicate files:
@@ -324,9 +323,9 @@ This prompts for a password and gives file.gpg.  To decypt:
     imap mailboxes. It is useful for unreliable or slow internet
     connections or when you want to read email offline.
 * [hitchwiki.org](http://hitchwiki.org) the excellent hitchhiking website can also be downloaded to view
-    offline [hitchwiki while offline](http://hitchwiki.org/en/Hitchwiki:While_offline). The
-    database is downloaded in XML format which can be viewed with
-    various kinds of dictionary viewing software.
+offline [hitchwiki while offline](http://hitchwiki.org/en/Hitchwiki:While_offline). The
+database is downloaded in XML format which can be viewed with
+various kinds of dictionary viewing software.
 
 ### offline dictionary for linux
 * [dict](http://sourceforge.net/projects/dict/) great dictionary software with many dictionaries available.
@@ -335,15 +334,9 @@ This prompts for a password and gives file.gpg.  To decypt:
 
 ## filesharing
 
-* [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
-* [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
+* [torrentfreak.com](http://www.torrentfreak.com) filesharing and VPN related blog
 * [zeropaid](http://www.zeropaid.com) filesharing news and forum
-* [myananamouse.net](https://www.myanonamouse.net) torrent site
-    specialising in english ebooks and audiobooks. it is a private site
-    with a complicated regestration process and many rules, but there is
-    a lot of books on there.
-* [tracker2.postman.i2p](http://tracker2.postman.i2p) i2p torrent
-    tracker (you must be running i2p to access)
+
 * [imule](http://www.imule.i2p) p2p sharing software for i2p (also an
     i2p eepsite)
 * [eiskaltdc++](https://code.google.com/p/eiskaltdc/) and
@@ -353,6 +346,18 @@ This prompts for a password and gives file.gpg.  To decypt:
 * [soulseek qt](http://soulseekqt.net) music sharing network
     client software. [nicotine](http://nicotine-plus.sourceforge.net/)
     is a soulseek client written in python
+* rtorrent - NCurses BitTorrent client based on libtorrent
+
+### torrent tracker sites
+* [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
+* [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
+* [myananamouse.net](https://www.myanonamouse.net) torrent site
+    specialising in english ebooks and audiobooks. it is a private site
+    with a complicated regestration process and many rules, but there is
+    a lot of books on there.
+* [tracker2.postman.i2p](http://tracker2.postman.i2p) i2p torrent
+    tracker (you must be running i2p to access)
+* [rarbg.to](http://rarbg.to)
 
 ## audio software
 
