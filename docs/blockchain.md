@@ -2,13 +2,13 @@
 
 # the blockchain
 
-Our submission to more automation and control, or the path to a more free and decentralised world?
+## Our submission to more automation and control, or the path to a more free and decentralised world?
 
 Authentication by computers has traditionally required a centralised, one-to-many topology.  A bank, for example, might hold a database of its account holders' personal details and use it to verify their identities.  Passwords cannot be checked by just anybody because storing them in multiple locations would make it possible for a single user to have several different passwords.  Decentralised, peer-to-peer interactions on computer networks are possible, but have typically been limited to things where trust is not important.  
 
 This is now changing.  Banks, as we know them, could become obsolete.  But will it empower us?
 
-![whos in charge](images/whosincharge.jpg)
+![whos in charge](img/whosincharge.jpg)
 
 ## what is the blockchain?  
 
@@ -30,7 +30,7 @@ of writing the bitcoin blockchain is the most widely used by far, although other
 
 As interest in blockchain-based systems grows, many companies are rushing to become involved in it.  Rather than seeing it as a threat they want have control it.  Because of this we have to be cautious.  There are many technologies which have the potential to be liberating and useful but in practice become part of a system which is competitive, individualist and environmentally destructive.  
 
-![disruptive](images/swan_disrupt.png)
+![disruptive](img/swan_disrupt.png)
 
 Melanie Swan thinks the Blockchain will be the game-changing technology of the decade.  
 
@@ -94,7 +94,7 @@ extra levels of security are required to, for example,
 verify the identity of a doctor.  
 
 Another example is the idea of a 'smart' car which is bought on credit which will not start if repayments are not kept up.  We can imagine other oppressive mechanisms being put in place as more control of different aspects of our lives are computerised. 
-![robocop](images/robocop.png)
+![robocop](img/robocop.png)
 
 Ethereum would also have applications for machine-to-machine interactions, often called the 'Internet of Things'.  For example, one driverless car could compensate another for allowing it to overtake or take a less direct route.
 
@@ -105,7 +105,7 @@ direction of a more free and autonomous society.
 
 ### OpenBazaar
 
-![openbazaar](images/openbazaar.png)
+![openbazaar](img/openbazaar.png)
 
 The OpenBazaar project aims to create an online market (like ebay) which has no centralised server, it consists only of a network of individuals running the OpenBazaar software to buy and sell items from each other.  The rules and regulation of how it works are determined only by the software itself, which is of course open source, making it considerably more democratic than systems like ebay.  Although slightly more tricky to use than ebay, as the software must first be installed, the obvious immediate advantage over ebay is that there are no fees.  This makes it possible that it will gain popularity very quickly, and its decentralised nature makes it very difficult to regulate in any way.  
 
@@ -141,7 +141,7 @@ represent a loss of trust, a loss of community, that we would only let a strange
 the computer tells us to?  Or is it an effective way to share costs and potentially create a
 decentralised public transport system?
 
-![hitchhiking](images/hitchhiking.jpg)
+![hitchhiking](img/hitchhiking.jpg)
 
 We could extent the liftshare idea to an 'almost punk-post' system.  Punk post is a genuinely
 anarchic postal system where you give someone a letter or package who is travelling in the direction of the
@@ -169,13 +169,13 @@ Although it is genuinely decentralised, this seems slowly less anarchic than our
 
 Ethereum has a blockchain-based distributed storage platform called Swarm, where users can host content in a decentralised way, making it resilient to censorship, commercialisation or other kind control by a centralised organisation.  This appears similar to other decentralised content hosting projects such as 'ipfs', 'maidsafe' and 'storj'.  
 
-![ipfs](images/ipfs.png)
+![ipfs](img/ipfs.png)
 
 Ipfs (Interplanetary Filesystem), although criticised for being inherently unreliable, seems to have some very promising properties as a universal decentralised filesystem, and potentially a replacement for the web.  Information is retrieved by a content addressing system, meaning popular files are faster to find, network traffic is reduced, and censorship or anyother kind of centralised control is impossible.  It also has a Git-style revision control system, meaning older versions are not lost.  
 
 ### Distributed crowdfunding 
 
-![dco](images/dist_sm.jpg)
+![dco](img/dist_sm.jpg)
 
 Also using the name 'Swarm' is a crowdfunding platform which uses blockchain technology to sell equity to individuals wanting to help a project.  Co-founder and CEO Joel Dietz speaks in an interview about wanting to disrupt the financial system and to empower people.  He has also appeared on an anarchist webcast program 'anarchast' and said that his influences come from studying early chinese philosophy.  The crowdfunding model differs from other projects like kickstarter in that investors have a financial incentive, more like shareholders.  Selling these equity 'tokens' seems to be a legal grey area.  Swarm promotes an alternative model for business which it calls 'Distributed Collaborative Organisations' (DCOs).  Among the projects using the model is an e-health platform, 'Pointnurse' where patients can pay to contact a nurse over the internet.  
 
@@ -192,14 +192,14 @@ work.
 
 ## trustless interactions
 
-![trust](images/dontknow.jpg)
+![trust](img/dontknow.jpg)
 
 Do such 'trustless' systems represent a loss of genuine trust between humans which was once the very basis of our communities?  Trust is usually built on social activity, spending time together, communicating, building emotional attachments that mean we care about each other. 
 
 Is it the case that we need this because our 'communities' have got way too big for trust or 'community spirit' to be possible?  Is there a critical mass by which a society become to big for trust to come naturally?  
 
 Is there not something beautiful about genuinely trusting random people?
-![trust the computer](images/trust_2.jpg)
+![trust the computer](img/trust_2.jpg)
 
 Compared to a moneyless utopia built on genuine community,
 the blockchain does not seem so great, and maybe if you have
