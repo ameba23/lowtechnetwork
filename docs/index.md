@@ -11,21 +11,27 @@
 
 
 ## ideas-art-information on free networks of all kinds...
-This site is for spreading/sharing/creating a low tech network.  Decentralised, community run alternatives to commercially 'provided' communications and energy.  Linking existing projects, trying out new ideas, and questioning what we really need. 
 
-Before trying to re-create what is currently available commercially, a critical approach is taken.  Identifying problems, such as that computer use pacifies us physically; and centralised communication networks encourage interactions which are abstracted from our physical surroundings.
+This site is for spreading/sharing/creating a low tech network.  Community run alternatives to commercially 'provided' communications and energy.  Encouraging a total shift in topology, decentralised and self-organised.   Linking existing projects, trying out new ideas, and questioning what we really need. 
 
-Communications are essential to our social organisation.  The ideas presented here focus on becoming more autonomous, to enable us to move from the cities to more rural or isolated areas, gaining access to land to grow food and medicinal plants and having time and space and a medium to develop our ideas.
+Before trying to re-create what is currently available commercially, a critical approach is taken.  Identifying problems, such as that computer use pacifies us physically; and that centralised, long-distance communication networks encourage interactions which abstract us from our physical surroundings.
+
+Communications are an inherent part of our social organisation.  The ideas presented here focus on becoming more autonomous, to enable us to move from cities to more rural or sparesly inhabited areas, gaining access to land to grow food and medicinal plants and having time, space and a medium to develop our ideas.
 
 And whatever else you/me/we find interesting.  Little attempt is made to separate practical information from  art/ideas/dreams, which to some may seem disorganised...   
 
-An idea is to use modified radio equipment to link different kinds of existing networks and adapt to the chaotic situations we live in.  Existing projects seem to be shifting towards using higher an higher frequencies as the bands become become more crowded and people want more bandwidth (5GHz etc).  Another approach could be to use lower frequencies and lower bandwidth, for a more robust communication solution for rural areas and less directional, allowing more ad-hoc 'random' connectivity (rather than point-to-point links).    
+### low frequency - low bandwith - longer range 
 
-The physical and geographical limitations of using decentralised radio networks could actually be an advantage, encouraging us to interact locally, with a network topology which reflects our capability to interect physically.  There is still the possiblity of long distance communication, but the nature of the topology means you are more likely to find things which are geographically nearby.  
+An idea is to use modified radio equipment to link different kinds of existing networks and adapt to the chaotic situations we live in.  Existing projects seem to be shifting towards using higher and higher frequencies as the bands become become more crowded and people want more bandwidth (5GHz etc).  Another approach could be to use lower frequencies and lower bandwidth, for a more robust communication solution for rural areas and less directional, allowing more ad-hoc 'random' connectivity (rather than point-to-point links) and a more inclusive network.    
 
-For some years, this site was a wiki.  It is currently a static site, but will become again a wiki soon!  It was stagnating, not getting updated, mainly because mediawiki sites are tricky to edit offline and i seem to spend a lot of time offline or with a bad internet connection.  I will change to a wiki software with flat files.  Or use an open git repository for content. But for now this site remains static. 
+### embrace the limitations
 
-Paper versions of parts of this site are also in distribution.
+The physical and geographical limitations of using decentralised radio networks could actually be an advantage, encouraging us to interact locally, with a network topology which reflects directly our capability to interect physically.  There is still the possiblity of long distance communication, but the nature of the topology means you are more likely to find things which are geographically nearby.  Ask the person standing next to you before asking someone on the other side of the world, discover the places around you, re-establishing community with neighbours and physically touching each other.  Sometimes the thing you are searching for is right in front of your face.
+
+### unplug ourselves
+
+Energy and communication networks are inherently linked.  Decentralised communication will require decentralised power.  The network must be able to operate with minimal maintainance or reliance on conventional industry.  Mainstream battery technology is favouring increasing power density regardless of battery lifetime (a small battery is able to give much power, but you can throw it away after a few years).  Whats needed is a technological shift in the opposite direction.  Bigger batteries, giving low power for a long time, which almost never need replacing.  This could be possible using salts such as Alum.  
+
 
 ## sections of this site
 * [community run communication](community_run_communication.md) main article including sections on [community run communication#amateur radio|amateur radio], [pirate radio broadcast](community run communication.md#pirate radio broadcast), [community run communication#wifi mesh or point to point|wifi networks] and [community run communication#software defined radio|software defined radio]
@@ -45,12 +51,14 @@ Paper versions of parts of this site are also in distribution.
 * [other stuff](other_stuff.md) and [unsorted links](links.md) 
 
 
+
+For some years, this site was a wiki.  It is currently a static site, built from markdown in a git repository.  It was stagnating, not getting updated, mainly because mediawiki sites are tricky to edit offline and i seem to spend a lot of time offline or with a bad internet connection.
+
+Paper versions of parts of this site are also in distribution.
+
 <!--[File:dannicard_sm.jpg|center]-->
-<!-- 
- 
-  {{#ev:youtube|LlgNfQv74_g}}
-{{ youtube>large:LlgNfQv74_g }}[http://www.myspace.com/oskur|vj oskur]
--->
+
+<!-- {{#ev:youtube|LlgNfQv74_g}} {{ youtube>large:LlgNfQv74_g }}[http://www.myspace.com/oskur|vj oskur] -->
 
 <!-- [File:hertz.jpeg|100px|center|hertz] -->
 ![chaosmouse](img/100px-Chaosmouse.png)

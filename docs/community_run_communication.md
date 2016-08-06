@@ -63,7 +63,7 @@ article [Internet Freedom Fighters Build a Shadow Web](http://www.indymedia.ie/a
 -   [federation FDN](http://www.ffdn.org) Fedaration of associative
     internet service providers in france
 
-![run for the phone](img/run_for_the_phone.jpg "run_for_the_phone.jpg")
+![run for the phone](img/Run_for_the_phone.jpg "Run_for_the_phone.jpg")
 
 ideas for community run communication, new and old
 ==================================================
@@ -126,6 +126,8 @@ and between generations.
 Post
 ----
 
+Write a letter, and give it to someone who is travelling the direction you want it to go.  Like all communication systems, the provision of a postal service has often been a way to exert control. 
+
 Community notice boards
 -----------------------
 
@@ -150,9 +152,9 @@ radio
 -----
 
 The radio spectrum, like other kinds of space, has been divided into
-discrete parts of which the majority is resverved for companies who will
-sell it back to us to use. to use it in a genuinely decentralised way we
-might need to disrespect the rules of bandwidth ownership.
+discrete parts of which the majority is resverved for authorities, military, or companies who will
+sell it back to us to use.  To use it in a genuinely decentralised way we
+might need to disrespect the idea of bandwidth ownership.
 
 ### amateur radio
 
@@ -362,7 +364,7 @@ radio scene.
 ### Alternative internet projects 
 
 
-* [ipfs](http://ipfs.io) - the interplanetary filesystem.  A promising decentralised, p2p protocol, designed to be an alternative to HTTP.  It is a content addressable filesystem, meaning files are referred to by their content (using a hash) rather than their location.  The nearest available copy of the file is retrieved, increasing speed and efficiency and removing the power dynamic of a centralised server-client relationship.  ipfs is working right now, a permanant filesystem, completely controlled by its users and resiliant to censorship. it is gaining popularity quickly, and has the potential to completely upturn the topology of the web.  
+* [ipfs](http://ipfs.io) - the interplanetary filesystem.  A promising, decentralised, p2p protocol, designed to be an alternative to HTTP (and potetially many other internet protocols).  It is a content addressable filesystem, meaning files are referred to by their content (using a hash) rather than their location.  The nearest available copy of the file is retrieved, increasing speed and efficiency and removing the power dynamic of a centralised server-client relationship.  ipfs is working right now, a permanant filesystem, completely controlled by its users and resiliant to censorship. it is gaining popularity quickly, and has the potential to completely upturn the topology of the web.  
 * [zeronet](http://zeronet.io)
 -   [GNUnet](https://gnunet.org/) GNUnet is a framework for secure peer-to-peer networking that does not use any centralised or otherwise trusted services. [GNUnet wikipedia](http://en.wikipedia.org/wiki/GNUnet)
 
@@ -402,17 +404,17 @@ begining to use the 5Ghz and 10Ghz bands as well.
     using CJDNS.
 * [althea mesh](http://altheamesh.com/) project where you pay peers to share connection
 
-:\* [Darknetplan subreddit](http://www.reddit.com/r/darknetplan) "A
+* [Darknetplan subreddit](http://www.reddit.com/r/darknetplan) "A
 place to organize efforts to create a hardware/software stack for a
 globally scalable system of interconnected local meshnets. We realize
 that the inclusion of "darknet" in this name does not properly describe
 our current objectives, but the meshnet is a necessary foundation for
 the final goal of a truly resilient darknet."
 
-:\* [cjdns](http://cjdns.info/) software [cjdns
+* [cjdns](http://cjdns.info/) software [cjdns
 wikipedia](http://en.wikipedia.org/wiki/Cjdns)
 
-:\* [hyperboria](http://hyperboria.net/) decentralised network powered
+* [hyperboria](http://hyperboria.net/) decentralised network powered
 by CJDNS
 
 -   [maidsafe](https://www.maidsafe.org/) 'platform for decentralised
@@ -591,34 +593,27 @@ defined, making it more adaptable for eventually being re-used by us.
 
 ### software defined radio
 
-Software Defined Radio devices, such as the Universal Software Radio
-Peripheral (USRP), produced in the US by « Ettus research », could be
-very useful in establishing a community run network. They are computer
+Software Defined Radio devices could be very useful in establishing a community run network. They are computer
 controlled radios, where various aspects of the radio's operation which
 traditionally were done by analogue hardware devices, in paticular the
 modulation and demodulation of the RF signal, are done digitally by
 software. This has only recently become posibile because with radio
 frequency high sampling rates are required and computers need to run
-fast enough to demodulate them. The advantage is that software defined
-radio devices are flexible, adaptable and easy to modify. For example by
-changing the software that the USRP is running, it could act as a FM
-transmitter, GPS reciever, digital TV decoder, VHF tranciever,
-whatever... Of course some hardware changes (such as antennas and the
-USRPs 'daughter board' circuits) are required, but essentially it is
-software which defines the USRPs operation. There are many commerically
-available software defined radio devices, but the USRPs is particularly
-interesting because its circuit design is published openly and the
-software it runs, GNUradio, is open source.
+fast enough to demodulate them in real time. The advantage is that software defined
+radio devices are flexible, adaptable and easy to modify. By changing the software, a single device could act as an FM transmitter, GPS reciever, digital TV decoder, VHF tranciever,
+whatever... Of course some hardware changes (such as amplifiers or antennas) are required, but essentially it is
+software which defines the behaviour as a radio device.  
+
+This means that new radio protocols could be established without the need for new hardware.  But that is only the beginning.  It allows more dynamic, more flexible use of the radio spectrum.  When there is little radio traffic (in unpopular places or at unpopular times) we can use more bandwith, reacting dynamically to interference.  When connectivity is good we can increase frequency and decrease power consumption.  When powered by solar or wind, we can dynamically adjust frequency or RF power depending on the power available.  
 
 ![usrp](img/Usrp_box.jpg "usrp")
 
--   [wikipedia article on software-defined
-    radio](http://en.wikipedia.org/wiki/Software-defined_radio)
+* [wikipedia article on software-defined radio](http://en.wikipedia.org/wiki/Software-defined_radio)
+* [GNUradio](http://gnuradio.org/trac) open source SDR software 
 -   [OpenHPSDR.org](http://openhpsdr.org) High performance SDR, a
     completly open source modular design, for the lower-frequency
     projects (will recieve 0-65Mhz).
--   [USRP](http://www.ettus.com/products) - universal serial radio
-    peripheral for use with [GNUradio](http://gnuradio.org/trac)
+-   [USRP](http://www.ettus.com/products) - Universal Serial Radio Peripheral, one of the first SDR devices to become available to the consumer, developed in the US by Ettus research.  The circuit design, at least of the original model, is published on the site.  
 -   [wired.com article on the
     USRP](http://www.wired.com/science/discoveries/news/2006/06/70933)
 -   [SDR\#](http://sdrsharp.com) SDR software written in C\#
@@ -627,18 +622,11 @@ software it runs, GNUradio, is open source.
     military/commercial applications)
 -   [tools4sdr.com](http://www.tools4sdr.com) wiki about software
     defined radio. has stuff about USRP and WRAN standard.
--   The Scientist and Engineer’s Guide to Digital Signal Processing by
-    Steven W. Smith. [available online](http://www.DSPGuide.com) is a
-    useful book for SDR.
+* The Scientist and Engineer’s Guide to Digital Signal Processing by Steven W. Smith. [available online](http://www.DSPGuide.com) is a useful book for SDR.
 -   [hackrf](http://greatscottgadgets.com/hackrf/) a SDR hardware
     project in development
 -   [Using GNUradio to transmit data using
-    ultrasound](http://www.anfractuosity.com/projects/ultrasound-via-a-laptop/)
-    This project simply uses the internal soundcards on two laptops to
-    transmit data from one to the other on a 23kHz audio carrier. The
-    flexibility of software defined radio means parameters can be
-    changed very quickly to get the optimum transmission for a
-    particular situation.
+    ultrasound](http://www.anfractuosity.com/projects/ultrasound-via-a-laptop/) This project simply uses the internal soundcards on two laptops to transmit data from one to the other on a 23kHz audio carrier. The flexibility of software defined radio means parameters can be changed very quickly to get the optimum transmission for a particular situation.
 
 #### Reducing resources and waste by less hardware redundancy
 
