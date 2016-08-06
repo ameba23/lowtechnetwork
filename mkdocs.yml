@@ -20,4 +20,5 @@ pages:
 - other stuff: other_stuff.md
 - unsorted links: links.md
 #theme: bootstrap
-theme_dir: simple_theme
+#theme_dir: simple_theme
+theme_dir: bootstrap_theme

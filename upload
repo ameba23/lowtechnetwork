@@ -1,2 +1,3 @@
 #!/bin/bash
+mkdocs build
 rsync -av site/ ameba@ehion.com:public_html/site
