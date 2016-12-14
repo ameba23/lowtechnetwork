@@ -7,13 +7,14 @@ listed are fast and light on system resources but can take time to learn how to 
 
 ## GNU/linux
 
-* [Arch Linux](https://www.archlinux.org/) rolling release, meaning the lastest packages are always available. supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find usefull whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
+* [Arch Linux](https://www.archlinux.org/) rolling release, meaning the lastest packages are always available (at the cost of less stability). supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find usefull whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
 * [Debian](https://www.debian.org/index.en.html) 'the universal operating system'. Many different computer architechtures are supported, a big, supportive user community, a huge pre-compiled software repository, and different builds for stable, unstable and testing.  Debian is purist about free software.  Only completely non-proprietory packages are included in the official repository.  Of course it is very easy to also install non-free packages, and a bundle of non-free extras (such as codecs for mp3, etc) can be downloaded.  Many of the very popular linux distributions (eg. Ubuntu) are based on debian.  The default desktop environment, currently gnome3, is in my opinion annoying, but it is easy to change it. 
 * [DistroWatch.com](http://distrowatch.com/) website with a lot of information about the
     different linux distributions.
 * [UNetbootin](http://unetbootin.sourceforge.net/) Software to create
     bootable usb linux system (useful for installing linux). Runs also on windows and mac. 
 * [The Linux Documentation Project](http://www.tldp.org/)
+
 
 ## window managers
 
@@ -31,7 +32,7 @@ listed are fast and light on system resources but can take time to learn how to 
     of display space.
 * [Comparison of Tiling Window Managers - ArchWiki](https://wiki.archlinux.org/index.php/Comparison_of_Tiling_Window_Managers)
 
-## shell
+## shell tools
 
 ### zsh
 
@@ -45,21 +46,28 @@ listed are fast and light on system resources but can take time to learn how to 
    * [zsh-lovers man page](http://grml.org/zsh/zsh-lovers.html)
    * [prezto](https://github.com/sorin-ionescu/prezto) a configuration framework for zsh, that is a set of settings that you probably want to use.  otherwise you can get a bit lost in setting up zsh. 
    * [zmv](http://zshwiki.org/home/builtin/functions/zmv) 'zsh move' - powerfull file rename tool.  perfect for bulk renaming files. has a 'dry run' mode too. 
-* FASD - This makes finding files and directories with the command line so much easier!  You need this!
+      `zmv '*' 'bla$f'`  # prefix filenames with bla
+
+### FASD 
+FASD makes finding files and directories with the command line so much easier!  You need this!
  It comes with some aliases, for example, instead of `cd` you can use `z` followed part of the name of the path
 you want to move to. FASD will guess what you want, using 'frecency' (combined recency and frequency).  So whereever you are `z D` will take you to the most commonly/recently used directory with `D`, which might be `~/Downloads`.
-`v xxx` will open vim with frequently/recently used file containing xxx.
-`o xxx` will open the default application for the file. 
+* `v xxx` will open vim with frequently/recently used file containing xxx.
+* `o xxx` will open the default application for the file. 
+* `cp \`f xxx\` /tmp` will copy file containing xxx to /tmp
+* The best thing about it is you can also use it with tab completion.  Try just typing `z <tab>` in your terminal, you see a list of places you've frecently been. 
+
+### More shell tools
+
+* [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another great tool for mouse free control of terminal windows and much more.  Very configurable.  Many people love it.  Personally I prefer to organise terminal windows with my window manager. 
 * URxvt - unicode terminal emulator.  Highly configurable, well maintained and supported.  
-* [terminator](http://gnometerminator.blogspot.co.uk/) terminal emulator with many features, including tabs and split windows.  Some useful keys in terminator:
+* [terminator](http://gnometerminator.blogspot.co.uk/) terminal emulator with many features, including tabs and split windows.  I used this until I switched to a tiling window manager.  Some useful keys in terminator:
     * `Ctrl + Shift + O` Splits terminal hOrizontally.
     * `Ctrl + Shift + E` Splits terminal vErtically.
     * `Ctrl + Shift + Arrows` Move parent dragbar
     * `Alt + Arrows` Move to different terminals.
 
-* GNU Screen - a great program which can be used for window splitting etc. over ssh.  You can also use it to start a process over ssh and then leave it running even after you disconnect from ssh.
-* [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another great tool for
-    mouse free control of terminal windows and much more.
+* GNU Screen - a great program which can be used for window splitting etc. The nice thing about it is that it will run over ssh.  You can also use it to start a process over ssh and then leave it running even after you disconnect from ssh.  (very useful)
 * [commandlinefu.com](http://www.commandlinefu.com) a website where people post useful (or simply nerdy) command line tricks.
 * explain.sh - script to explain a command you dont know what it does (pulls stuff from man pages) eg: 'explain 'ls -l''
 * [30 handy bash aliases](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
@@ -69,20 +77,17 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 
 ## web
 
-* [vimb](http://fanglingsu.github.io/vimb/) lightweight webkit based browser, inspired by vimprobable, and in my opinion an improvement.
+
+* [vimb](http://fanglingsu.github.io/vimb/) lightweight webkit based browser (of which there are many to choose from, inspired by vimprobable, and in my opinion an improvement.
+
 * [vimprobable](http://sourceforge.net/p/vimprobable) another lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
+* qutebrowser - still relatively lightweight and with vi style bindings, but a bit more feature-rich than vimb. 
+* [VimFx Add-on for Firefox](https://addons.mozilla.org/en-US/firefox/addon/vimfx/?src=search)
 * [vimperator](http://www.vimperator.org) vi style control of
     firefox/iceweasel web browser. So you can control the web browser
     without using the mouse.
 * [Surfraw](http://surfraw.alioth.debian.org/) 'Shell Users' Revolutionary Front Rage Against the Web' - open websites from the commandline.  a very handy program.  You can `alias sr="surfraw"` and do `sr wikipedia chard` from the command line to jump to wikipedia article about chard. See the [list of elvi](http://surfraw.alioth.debian.org/#elvilist) (website search scripts for surfraw).
 
-:wq
-:
-:q
-
-
-
-exit
 * [GNUzilla and IceCat](https://www.gnu.org/software/gnuzilla/) firefox/iceweasel alternative 100% free software, no proprietory plugins recommmended
 
 ## tools, toys, reference
@@ -93,34 +98,30 @@ exit
     that rather than spending a lot of time configuring software, a
     collabourative effort is made to bring together sane configurations
     and plugins etc.
-* yaourt - wrapper for arch linux's pacman - install packages from arch user repository easily 
-* [aap](http://www.a-a-p.org/) makes it easy to download, build and
-    install software
-* [calmar.ws](http://www.calmar.ws/) tips and info on linux,vim,
-    vimperator, awesome, other stuff
+* yaourt - wrapper for arch linux's pacman - install packages from arch user repository (AUR) easily.  AUR 'helpers' like yaourt have been criticised for encouraging users to install packages without properly checking pkgbuilds, which raises security issues (maliscious software could be unintentionally installed).  However some people think that the convenience of using the helpers outweighs the security risks.  You can make up your own mind. 
+* [aap](http://www.a-a-p.org/) makes it easy to download, build and install software
+* [calmar.ws](http://www.calmar.ws/) tips and info on linux,vim, vimperator, awesome, other stuff
 * [refcards.com](http://www.refcards.com/) free quick reference cards
-* [fcron.free.fr](http://fcron.free.fr) apparently good for running
-    cron jobs on a system which is not always switched on.
-* [OpenVZ](http://openvz.org/Main_Page) container based vitualisation
-    for linux.
+* [fcron.free.fr](http://fcron.free.fr) apparently good for running cron jobs on a system which is not always switched on. (eg.laptop)
+* [OpenVZ](http://openvz.org/Main_Page) container based vitualisation for linux.
 
 ## vim text editor
 
-Learning vi or vim takes a while. But if you edit a lot of text files it
-is worth learning. The keybindings in vim are used in a lot of other
-programs, and vim is installed on a lot of different systems which makes
-it a very useful thing to know, even if you just know the very basics.  It has really a lot of features and plugins available.
+Vim has a steep learning curve. But if you edit a lot of text files it
+is definately worth learning. The keybindings in vim are used in a lot of other nerdy programs, and vim is installed on a lot of different systems which makes it a very useful thing to know, even if you just know the very basics.  It has really a lot of features and plugins available.
 
 * Vundle - plugin manager for vim - find and install plugins from within vim
 * NERDTree - plugin for file browsing 
-* CtrlP - fuzzy file finder plugin - start typing some part of the path/filename and Ctrlp finds it. 
-* fugitive - git wrapper plugin - use git without leaving vim
+* CtrlP or Command-T - fuzzy file finder plugin - start typing some part of the path/filename and plugin finds it. CtrlP is written in pure vimscript whereas Command-T has more features. 
+* fugitive - git wrapper plugin from tim pope - use git without leaving vim
+* Vimcasts.org by Drew Niel - well-produced screencasts
+* [Greg Hurrell on YouTube](https://www.utube.com/channel/UCXPHFM88IlFn68OmLwtPmZ$A) many screencasts on vim [wincent (Greg Hurrell) GitHub](https://github.com/wincent
+* [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
 * [vi cheat sheet](http://www.lagmonster.org/docs/vi.html)
 * [vim tips](http://zzapper.co.uk/vimtips.html)
 * [vim mediawiki editing](http://blog.bigsmoke.us/2009/07/10/vim-mediawiki-editing)
 * [vim tricks](https://github.com/rzetterberg/case_studies/blob/master/notes/2_vim_tricks.md)
-
-
+* [steve losh - learn vimscript the hard way](http://learnvimscriptthehardway.stevelosh.com)
 ## file management
 
 * ![ranger screenshot](img/Ranger.png "fig:Ranger.png")[ranger](http://ranger.nongnu.org/)
@@ -130,11 +131,9 @@ it a very useful thing to know, even if you just know the very basics.  It has r
     vifm, but uses 'miller columns' showing the directory hierarchy
     (similar to mac os 'finder'). The centre column is active, the left
     column the higher level directory, and the right column shows either
-    a deeper directory or file information or preview.
-* [mc](https://www.midnight-commander.org/) Midnight Commander - 2
-    pane terminal based file manager (norton commander style)
-* [vifm](http://vifm.info/) vi file manager. Two pane and with vi
-    style keybindings
+    a deeper directory or file information or preview.  Can preview pdf with pdftotext.  Can preview images with ascii, or if your terminal emulation permits it by displaying the image.
+* [mc](https://www.midnight-commander.org/) Midnight Commander - old school 2 pane terminal based file manager (norton commander style)
+* [vifm](http://vifm.info/) vi file manager. Two pane and with vi style keybindings
 * [xfe](http://roland65.free.fr/xfe/) X File Explorer - light file
     manager for x-windows. Can have 2 pane and directory tree. Some
     norton commmander style keybindings.

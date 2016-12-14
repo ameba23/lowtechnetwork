@@ -52,7 +52,7 @@ Energy and communication networks are inherently linked.  Decentralised communic
 
 
 
-For some years, this site was a wiki.  It is currently a static site, built from markdown in a git repository.  It was stagnating, not getting updated, mainly because mediawiki sites are tricky to edit offline and i seem to spend a lot of time offline or with a bad internet connection.
+For some years, this site was a wiki.  It is currently a static site, built from markdown in a git repository at [github.com/ameba23/lowtechnetwork](https://github.com/ameba23/lowtechnetwork) if you want to add or change something, do so by branching the git repository and issuing a pull request. 
 
 Paper versions of parts of this site are also in distribution.
 

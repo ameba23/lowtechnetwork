@@ -27,12 +27,11 @@
 -   [headfuk.net](http://www.headfuk.net/) most of the site no longer
     maintained (but still there) lots of technical info, good breakcore
     mp3s, party info
--   [Hekate](http://www.hekate.co.uk/index.html) london based
-    soundsystem
--   [squatjuice](http://www.squatjuice.com) idiots talking, UK
 -   [partyvibe](http://www.partyvibe.com)
 -   [spacepatrol.cz](http://www.spacepatrol.cz) cz based party info and
     music download
+-   [squatjuice](http://www.squatjuice.com) idiots talking, UK - grew out of dirtycircus.com which was much better and where you could actually find out about parties.  Nowadays party talk has been replaced by computer games, sport and 'vaping'.  
+-   [Hekate](http://www.hekate.co.uk/index.html) london based soundsystem - no longer maintained
 
 ### drugs
 
