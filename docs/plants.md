@@ -114,6 +114,7 @@ or on junctions of paths where people naturally meet and make a pause.
 -   [foodsoft](https://github.com/foodcoops/foodsoft) software for
     managing a food cooperative, which can be hosted on
     [foodcoops.net](http://www.foodcoops.net/)
+* [foodsharing.de](https://foodsharing.de) german network for re-distributing food
 
 ## spironlina
 
@@ -212,7 +213,7 @@ alcohol drinking is not healthy. but if you do drink, it can be a good
 idea to make it yourself. it saves money, does not support the
 supermarkets, and you can be more in control of how much you drink.
 However, do not be tempted to drink it before its ready. If this is a
-problem remember to make more so you have a constant supply.
+problem remember to make enough that you have a constant supply.
 
 Making wine is easy, but making good wine that does not give you a
 hangover is not so easy. Keep everything clean with hot water (or
@@ -228,9 +229,9 @@ the internet if there is no brewing shop nearby. It is also useful to
 add lemon juice, a source of tannin (some black tea, for example), and
 if making a wine from flowers or leaves, rather than fruit, the yeast
 will like something to live on, crushed or minced raisens/saltanas are
-often used. and sugar.
+often used. and sugar is its food.
 
-The first stage of fermentation can be done in an open topped container,
+The first stage of fermentation can be done in an open-topped container,
 like a pot or bucket, with some textile over the top to stop insects
 going in, kept warm and stirred as often as possible with something
 clean.
@@ -239,7 +240,7 @@ After five days, or one week, the wine is filtered through cotton or
 muslin into another container. Traditionally a glass demijohn with an
 air-lock which can let air leave but not enter. I have had success using
 25l plastic water containers, with a condom or balloon instead of an
-air-lock. but plastic containers are more difficult to clean. In winter,
+air-lock. but plastic containers are much more difficult to clean. In winter,
 make sure the wine does not freeze.
 
 -   1 gallon = 3.785 litres
@@ -262,16 +263,13 @@ Links:
 # health
 
 -   [primitive toothcare](http://zinelibrary.info/files/Primitive%20Toothcare%20PRINT.pdf) PDF zine
--   [where there is no
-    dentist](http://modernsurvivalonline.com/Files/medical/wtndentist_2010_Web_Full_Book.pdf)
-    pdf book
--   [where there is no doctor](http://www.arvindguptatoys.com/arvindgupta/hesperian-no-doctor.pdf)
-    pdf book
+-   [where there is no dentist](http://modernsurvivalonline.com/Files/medical/wtndentist_2010_Web_Full_Book.pdf) pdf book
+-   [where there is no doctor](http://www.arvindguptatoys.com/arvindgupta/hesperian-no-doctor.pdf) pdf book
 
 # compost toilets
 
 Shit is a very useful asset, and really the only thing we produce. It is
-crazy to treat it as waste and even more crazy to use clean water to get
+crazy to treat it as waste and even more crazy to use drinking water to get
 rid of it!
 
 It is importand to keep the shit dry. This will make good compost as
@@ -281,7 +279,6 @@ toilet paper in a separate bucket and burn it.  Keep the composting shit in an u
 
 It can be used on fruit trees after about a year, for vegetables i would wait two years.
 
-Although it is more work initially, going up stairs to shit can be 
-preferable than shitting in a bucket and having to empty it elsewhere.
+Although it is more work initially, going up some stairs to shit on top of a heap can be preferable than shitting in a bucket and having to empty it elsewhere.
 
 See: Joseph C. Jenkins-The Humanure Handbook, A Guide to Composting Human Manure, Third Edition-Joseph Jenkins, Inc. (2005)

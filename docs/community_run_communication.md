@@ -608,14 +608,15 @@ This means that new radio protocols could be established without the need for ne
 
 ![usrp](img/Usrp_box.jpg "usrp")
 
+* [XTRX – A Fairwaves tiny SDR – High performance Software Defined Radio in a tiny miniPCIe format.](https://xtrx.io/)
+* [nuand bladeRF usb3 sdr](http://www.nuand.com/)
+* [hackrf](http://greatscottgadgets.com/hackrf/) an open-source SDR hardware project, as well as some other interesting devices.
 * [wikipedia article on software-defined radio](http://en.wikipedia.org/wiki/Software-defined_radio)
 * [GNUradio](http://gnuradio.org/trac) open source SDR software 
--   [OpenHPSDR.org](http://openhpsdr.org) High performance SDR, a
-    completly open source modular design, for the lower-frequency
+* [OpenHPSDR.org](http://openhpsdr.org) High performance SDR, a completly open source modular design, for the lower-frequency
     projects (will recieve 0-65Mhz).
 -   [USRP](http://www.ettus.com/products) - Universal Serial Radio Peripheral, one of the first SDR devices to become available to the consumer, developed in the US by Ettus research.  The circuit design, at least of the original model, is published on the site.  
--   [wired.com article on the
-    USRP](http://www.wired.com/science/discoveries/news/2006/06/70933)
+-   [wired.com article on the USRP](http://www.wired.com/science/discoveries/news/2006/06/70933)
 -   [SDR\#](http://sdrsharp.com) SDR software written in C\#
 -   [wirelessinnovation.org](http://www.wirelessinnovation.org) has
     stuff about software defined radios (but seems positive about
@@ -623,8 +624,6 @@ This means that new radio protocols could be established without the need for ne
 -   [tools4sdr.com](http://www.tools4sdr.com) wiki about software
     defined radio. has stuff about USRP and WRAN standard.
 * The Scientist and Engineer’s Guide to Digital Signal Processing by Steven W. Smith. [available online](http://www.DSPGuide.com) is a useful book for SDR.
--   [hackrf](http://greatscottgadgets.com/hackrf/) a SDR hardware
-    project in development
 -   [Using GNUradio to transmit data using
     ultrasound](http://www.anfractuosity.com/projects/ultrasound-via-a-laptop/) This project simply uses the internal soundcards on two laptops to transmit data from one to the other on a 23kHz audio carrier. The flexibility of software defined radio means parameters can be changed very quickly to get the optimum transmission for a particular situation.
 
