@@ -1,11 +1,10 @@
-# tech
 
 Most of this page is about open source software. A lot commercial software is easy to use and works straight out of the box.  However you are less in control, there may be unwanted hidden features, and you are constantly required to buy new hardware.  Many of the packages
 listed are fast and light on system resources but can take time to learn how to use.
 
 * [LibrePlanet](https://libreplanet.org/) wiki about free software community and campaigns
 
-## GNU/linux
+# GNU/linux
 
 * [Arch Linux](https://www.archlinux.org/) rolling release, meaning the lastest packages are always available (at the cost of less stability). supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find usefull whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
 * [Debian](https://www.debian.org/index.en.html) 'the universal operating system'. Many different computer architechtures are supported, a big, supportive user community, a huge pre-compiled software repository, and different builds for stable, unstable and testing.  Debian is purist about free software.  Only completely non-proprietory packages are included in the official repository.  Of course it is very easy to also install non-free packages, and a bundle of non-free extras (such as codecs for mp3, etc) can be downloaded.  Many of the very popular linux distributions (eg. Ubuntu) are based on debian.  The default desktop environment, currently gnome3, is in my opinion annoying, but it is easy to change it. 
@@ -37,7 +36,7 @@ listed are fast and light on system resources but can take time to learn how to 
 ### zsh
 
 * ![zsh wizard](img/Wizard.gif "fig:Wizard.gif")[zsh](http://zsh.sourceforge.net/) the zsh shell. an alternative to bash with a lot of features.  I've been using it for a while and just keep discovering good stuff.  You can get lost in configuring it yourself, so I would recommend using it with a configuration framework such as Prezto (see below).  
-   * In zsh, type ls \*\*/\*.txt to find all txt files deeper in the directory structure.
+   * In zsh, type `ls **/*.txt` to find all txt files deeper in the directory structure.
    * [strcat.de/zsh](http://strcat.de/zsh/) many good zsh examples
    * [zsh.sourceforge.net/Guide/zshguide.html](http://zsh.sourceforge.net/Guide/zshguide.html) A Users guide to the Z Shell - Peter Stephenson
 
@@ -49,13 +48,15 @@ listed are fast and light on system resources but can take time to learn how to 
       `zmv '*' 'bla$f'`  # prefix filenames with bla
 
 ### FASD 
+
 FASD makes finding files and directories with the command line so much easier!  You need this!
  It comes with some aliases, for example, instead of `cd` you can use `z` followed part of the name of the path
 you want to move to. FASD will guess what you want, using 'frecency' (combined recency and frequency).  So whereever you are `z D` will take you to the most commonly/recently used directory with `D`, which might be `~/Downloads`.
-* `v xxx` will open vim with frequently/recently used file containing xxx.
-* `o xxx` will open the default application for the file. 
-* `cp \`f xxx\` /tmp` will copy file containing xxx to /tmp
-* The best thing about it is you can also use it with tab completion.  Try just typing `z <tab>` in your terminal, you see a list of places you've frecently been. 
+
+ * `v xxx` will open vim with frequently/recently used file containing xxx.
+ * `o xxx` will open the default application for the file. 
+ * `cp \`f xxx\` /tmp` will copy file containing xxx to /tmp
+ * The best thing about it is you can also use it with tab completion.  Try just typing `z <tab>` in your terminal, you see a list of places you've frecently been. 
 
 ### More shell tools
 
@@ -122,6 +123,7 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
 * [vim mediawiki editing](http://blog.bigsmoke.us/2009/07/10/vim-mediawiki-editing)
 * [vim tricks](https://github.com/rzetterberg/case_studies/blob/master/notes/2_vim_tricks.md)
 * [steve losh - learn vimscript the hard way](http://learnvimscriptthehardway.stevelosh.com)
+
 ## file management
 
 * ![ranger screenshot](img/Ranger.png "fig:Ranger.png")[ranger](http://ranger.nongnu.org/)
@@ -153,11 +155,7 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
 
 ## email
 
-* [mutt](http://www.mutt.org/) - email program. Its not for everyone,
-    it takes a lot of configuring but once you have got it right it can
-    work well and save time.
-* [Steve losh's mutt guide](http://stevelosh.com/blog/2012/10/the-homely-mutt)
-* [mu](http://www.djcbsoftware.nl/code/mu/) (maildir-utils) program
+ * [mu](http://www.djcbsoftware.nl/code/mu/) (maildir-utils) program
     for searching email stored in maildir format. To index your emails, `mu index --maildir=mymail` You can do this for
 several mail directories, and you may want to set it up as a cron job to
 periodically index your new emails. `mu find cabbage` will show emails
@@ -170,16 +168,22 @@ first macro does the search according to user query, second macro jumps to resul
      macro index <F8> "<shell-escape>rm -rf ~/.mu/results; mu-find -o l -l ~/.mu/results " "mu-find"
      macro index <F9> "<change-folder-readonly>~/.mu/results\n" "display mu-find results"
 
-* [notmuch](http://notmuchmail.org) another great program for searching email
-* [mutt sidebar](http://www.lunar-linux.org/mutt-sidebar/) patch for
-    mutt with folders listed in a sidebar - you will need to set up keybindings to go with it
-* [getting up and running with a sane mutt setup](http://blog.developwithpassion.com/2013/05/02/getting-up-and-running-with-a-sane-mutt-setup/)
-* [realprogrammers.com mutt guide](http://realprogrammers.com/jump_start/mutt/)
-* [How I tamed my mutt – cmdln.org (a sysadmin blog)](http://www.cmdln.org/2008/11/07/how-i-tamed-my-mutt/)
-* [fefe.da Mutt FAQ](http://www.fefe.de/muttfaq/faq.html)
-* [Mailman](http://www.gnu.org/software/mailman/index.html) GNU
+ * [Mailman](http://www.gnu.org/software/mailman/index.html) GNU
     Mailing list manager
-* Neomutt
+ * [notmuch](http://notmuchmail.org) another great program for searching email
+
+###[mutt](http://www.mutt.org/) email client
+
+Its not for everyone, it takes a lot of configuring but once you have got it right it can work well and save time.
+
+ * [Steve losh's mutt guide](http://stevelosh.com/blog/2012/10/the-homely-mutt)
+ * [mutt sidebar](http://www.lunar-linux.org/mutt-sidebar/) patch for
+    mutt with folders listed in a sidebar - you will need to set up keybindings to go with it
+ * [getting up and running with a sane mutt setup](http://blog.developwithpassion.com/2013/05/02/getting-up-and-running-with-a-sane-mutt-setup/)
+ * [realprogrammers.com mutt guide](http://realprogrammers.com/jump_start/mutt/)
+ * [How I tamed my mutt – cmdln.org (a sysadmin blog)](http://www.cmdln.org/2008/11/07/how-i-tamed-my-mutt/)
+ * [fefe.da Mutt FAQ](http://www.fefe.de/muttfaq/faq.html)
+ * Neomutt
 
 ### non-commercial email providers
 
@@ -254,18 +258,20 @@ Feh command line switches:
     minimise the amount of data being transfered. This means it responds
     well to transfers which are interupted and restarted. Commonly used
     options:
-  * `rsync dir1/ dir2`   -note the slash, to put the contents of dir1 into dir2 (often this is what you want)
-  * `-a` =archive mode - recursive, preserve times, permissions etc (often what you want)
-  * `-v` verbose
-  * `--progress` show progress
-  * `-n` dry run - dont actually do it, just show what would happen.  this is very useful for experimenting with features before running a big backup or potentially doing something very stupid
-  * `--delete` delete files in the destination directory that were not in the source directory.
-  * `-u`  update - skip files that are newer on the reciever.  This can be run in both directions to syncronise
+  `rsync dir1/ dir2`   
+  Note the slash, to put the contents of dir1 into dir2 (often this is what you want)
+
+    * **-a** Archive mode - recursive, preserve times, permissions etc (often what you want)
+    * **-v** Verbose
+    * **--progress** display progress
+    * **-n** Dry run - dont actually do it, just show what would happen.  this is very useful for experimenting with features before running a big backup or potentially doing something very stupid
+    * **--delete** Delete files in the destination directory that were not in the source directory.
+    * **-u**  Update - skip files that are newer on the reciever.  This can be run in both directions to syncronise
 * [Grsync](http://www.opbyte.it/grsync/) - rsync graphical frontend for Linux
 * [unison](http://www.cis.upenn.edu/~bcpierce/unison/) file syncroniser. Unlike rsync, unison ensures both filesystems have the newest version of a file. [tutorial on setting up unison](http://www.howtoforge.com/setting-up-unison-file-synchronization-between-two-servers-on-debian-squeeze)
 * [syncthing](https://syncthing.net/) open source 'cloud storage' software.  Similar to the commercial software Resilio Sync.
- * `diff -qr source destination` show the differences between directories.  Arguments '-qr' means brief and recursive.
- * `comm -3 <(ls ~/dir-new/) <(ls ~/dir)` compare two directories
+ * **diff -qr source destination** show the differences between directories.  Arguments '-qr' means brief and recursive.
+ * **comm -3 <(ls ~/dir-new/) <(ls ~/dir)** compare two directories
 
 Find duplicate files:
 
@@ -290,7 +296,7 @@ If you dont have a duplex printer probably you want to print the even pages, put
    lpr -P myprinter -o page-set=even -#1 infile.pdf    # print the even pages  
    lpr -P myprinter -o page-set=odd -#1 infile.pdf     # print the odd pages
 
-## encryption
+# encryption
 * [cryptoparty handbook](https://www.cryptoparty.in/documentation/handbook) plenty of information
 * [gpg](http://www.gnupg.org/) Gnu Privacy Guard.  Tool for encrypting files and email. Most simple usage - gpg encryption of a single file:
     gpg -c file
@@ -300,7 +306,7 @@ This prompts for a password and gives file.gpg.  To decypt:
 * [Disk encryption article on ArchWiki](https://wiki.archlinux.org/index.php/Disk_Encryption) a good explanation of disk encryption and a comparison of the methods.
 * truecrypt
 
-## tools for those who have little or no connection to internet
+# tools for those who have little or no connection to internet
 
 * evopedia - offline wikipedia reader.  
 * [kiwix](http://www.kiwix.org) wikipedia offline reader - read
@@ -331,7 +337,7 @@ various kinds of dictionary viewing software.
 * [goldendict](http://goldendict.org/) uses freedict dictionaries.
 * [Ding](https://www-user.tu-chemnitz.de/~fri/ding/) A very good German-English dictionary lookup program
 
-## filesharing
+# filesharing
 
 * [torrentfreak.com](http://www.torrentfreak.com) filesharing and VPN related blog
 * [zeropaid](http://www.zeropaid.com) filesharing news and forum
@@ -347,7 +353,7 @@ various kinds of dictionary viewing software.
     is a soulseek client written in python
 * rtorrent - NCurses BitTorrent client based on libtorrent
 
-### torrent tracker sites
+## torrent tracker sites
 * [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
 * [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
 * [myananamouse.net](https://www.myanonamouse.net) torrent site
@@ -358,7 +364,7 @@ various kinds of dictionary viewing software.
     tracker (you must be running i2p to access)
 * [rarbg.to](http://rarbg.to)
 
-## audio software
+# audio software
 
 * [hydrogen audio](http://www.hydrogenaudio.org) forums about audio
     software etc
@@ -366,7 +372,7 @@ various kinds of dictionary viewing software.
     players, eg. ipod. Very useful if the original firmware wont play
     certain formats, or has restrictions on copying music off
     the player. Can run on Sansa clip (a highly recommended mp3 player).
-* ![mpd logo](img/mpd.png "fig:mpd.png")[mpd](http://www.musicpd.org/) music
+* ![mpd logo](img/Mpd.png "mpd")[mpd](http://www.musicpd.org/) music
     player daemon. music playing software designed to be run over
     a network.  But it is also very good when client and daemon are running on the same computer.  If there is a network attached computer connected to an amplifier and running mpd, other computers on the network can
     control the player by using mpd client software (of which there are
@@ -413,7 +419,7 @@ randomly choose some of my music to put onto my mp3 player):
 
 `find -name "*.mp3" | sort --random-sort | head -n 30 | xargs -n 1 -i^Cd '\n' cp {} /media/mp3player/randomtunes`
 
-## audio hardware
+# audio hardware
 
 * [diyaudio.com](http://www.diyaudio.com) forums about diy audio
     hardware projects
@@ -428,7 +434,7 @@ randomly choose some of my music to put onto my mp3 player):
 * horn response - speaker enclosure design software. can use with
     abaca? audio abacus
 
-## usenet
+# usenet
 
 * [tin](http://www.tin.org/) text-based usenet newsreader software
 * [eternal september](http://www.eternal-september.org) Free text only
@@ -436,7 +442,7 @@ randomly choose some of my music to put onto my mp3 player):
 * [aioe](http://www.aioe.org) free text only usenet provider (no
     registration required)
 
-## other / uncategorised
+# other / uncategorised
 
 Many of these links need to be (or already have been) put elsewhere on
 the wiki

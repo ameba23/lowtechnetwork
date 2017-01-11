@@ -11,7 +11,7 @@ function with the 2.4GHz channel system. There is an amateur band just
 above 400Mhz - the International Telecommunications Union allocates
 430-440MHz for amateurs, and in some countries its wider. However the
 use of highbandwith data transmission on this band remains a legal grey
-area. ![](Dl435.jpg "fig:Dl435.jpg") Singapore based Doodle labs produce
+area. ![DL425](img/Dl435.jpg "fig:Dl435.jpg") Singapore based Doodle labs produce
 the [DL435-30 transceiver
 board](http://doodlelabs.com/products/sub-ghz-range/420-450-mhz-band-dl435.html)
 and Canadian XAGYL Communications produce the
@@ -51,16 +51,16 @@ get the routerstation working with the DL435-30 with a 5MHz channel
 width, after flashing the firmware from
 [<http://downloads.openwrt.org/snapshots/trunk/ar71xx/>](http://downloads.openwrt.org/snapshots/trunk/ar71xx/)
 
-`opkg update`\
-``\
-` # install the right wireless driver`\
-` opkg install kmod-ath5k`\
-``\
-` # re-run wifi device detection`\
-` wifi detect > /etc/config/wireless`\
-``\
-` # edit /etc/config/wireless, enable wifi, set`\
-` # 'option chanbw 5'`
+    opkg update
+    
+    # install the right wireless driver
+    opkg install kmod-ath5k
+   
+    # re-run wifi device detection
+    wifi detect > /etc/config/wireless
+    
+    # edit /etc/config/wireless, enable wifi, set
+    # 'option chanbw 5'
 
 It is also useful to install the [LuCI](http://luci.subsignal.org) web
 user interface.

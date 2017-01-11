@@ -33,7 +33,7 @@ article [Internet Freedom Fighters Build a Shadow Web](http://www.indymedia.ie/a
 -   [telecomix](http://telecomix.org/)
 -   [telecomix wikipedia article](http://en.wikipedia.org/wiki/Telecomix)
 
-![](img/quadrature.png "quadrature.png")
+![quadrature du net](img/Quadrature.png "Quadrature.png")
 
 -   [La Quadrature du net](http://www.laquadrature.net) association to defend rights and freedom of internet users. Includes much information about [net neutrality](http://www.laquadrature.net/en/Net_neutrality) also see [net neutrality wikipedia article](http://en.wikipedia.org/wiki/Net_neutrality)
 -   [accessnow.org](https://www.accessnow.org) campaigns around 'digital
@@ -300,7 +300,7 @@ place. This 'bridge' can be made in various different ways:
     [Radionecks](http://www.radionecks.com))
 -   use a **PMR** (walkie talkie) link. Probably would be bad audio
     quality because of low bandwidth but maybe one could find a way to
-    have a high bandwidth bridge on PMR frequencies. (maybe some
+    have a high bandwidth bridge on PMR frequencies using multiple channels. (maybe some
     wireless microphones do this?)
 -   use **CB**, apparrently this has worked well for some projects.
     Again of course the bandwidth means a loss in quality but the

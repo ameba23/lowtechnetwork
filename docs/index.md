@@ -34,7 +34,7 @@ Energy and communication networks are inherently linked.  Decentralised communic
 
 
 ## sections of this site
-* [community run communication](community_run_communication.md) main article including sections on [community run communication#amateur radio|amateur radio], [pirate radio broadcast](community_run_communication.md#pirate radio broadcast), [community run communication#wifi mesh or point to point|wifi networks] and [community run communication#software defined radio|software defined radio]
+* [community run communication](community_run_communication.md) main article including sections on [amateur radio](community_run_communication.md#amateur-radio), [pirate radio broadcast](community_run_communication.md#pirate-radio-broadcast), [wifi networks](community_run_communication.md#wifi-mesh-or-point-to-point) and [software defined radio](community_run_communication.md#software-defined-radio)
 
 * [free networks](free_networks.md) short zine introduction to idea of free networks (french/enghlish) Note that this consists of images and may take time to load. 
 * [430mhz data transfer](430mhz_data_transfer.md) a project being tested - like normal 2.4GHz wifi, but lower frequency to not need a line-of-sight link

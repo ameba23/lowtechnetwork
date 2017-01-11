@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--
+      The page_title contains the title for a page as shown in the navigation.
+      Site name contains the name as defined in the mkdocs.yml
+    -->
+    <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
+    
+
+    <!-- <link href="{{ base_url }}css/entireframework.min.css" rel="stylesheet" type="text/css"> -->
+
+    {% block extrahead %}
+    {% endblock %}
+
+		<style>
+			.hero {
+				background: #eee;
+				padding: 20px;
+				border-radius: 10px;
+				margin-top: 1em;
+			}
+
+			.hero h1 {
+				margin-top: 0;
+				margin-bottom: 0.3em;
+			}
+
+			.c4 {
+				padding: 10px;
+				box-sizing: border-box;
+			}
+
+			.c4 h3 {
+				margin-top: 0;
+			}
+
+			.c4 a {
+				margin-top: 10px;
+				display: inline-block;
+			}
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+		</style>
+  </head>
+
+  <body>
+		<nav class="nav" tabindex="-1" onclick="this.focus()">
+			<div class="container">
+				<a class="pagename current" href="#">Your Site Name</a>
+				<a href="#">One</a>
+				<a href="#">Two</a> 
+				<a href="#">Three</a>
+			</div>
+		</nav>
+		<button class="btn-close btn btn-sm">×</button>
+		<div class="container">
+			<div class="hero">
+				<h1>Example</h1>
+				<p>You can view the source of this page and copy it to get a quick start on a project with Min!</p>
+				<p>You can view the source of this page and copy it to get a quick start on a project with Min!</p>
+				<a class="btn btn-b" href="http://owenversteeg.com">Go places!</a>
+			</div>
+
+    
+    <img style="float:left;" src="{{ base_url }}/img/ameba_sm.png" alt="ameba23" /> 
+  <h5>
+  {% if next_page or previous_page %}
+      {% if previous_page %}
+      <a href="{{ previous_page.url }}" title="{{ previous_page.title }}">&#8592;</a>
+      {% else %}
+        &#8592; 
+      {% endif %}
+  {% endif %}
+   {% for nav_item in nav %}
+    {% include "nav.html" %}
+  {% endfor %}
+
+  {% if next_page or previous_page %}
+      {% if next_page %}
+      <a href="{{ next_page.url }}" title="{{ next_page.title }}"/>&#8594;</a>
+      {% else %}
+        &#8594;
+      {% endif %}
+  {% endif %}
+  </h5>
+       <h1>ameba.ehion.com - low tech network</h1>
+       {% if page_title %}<h2>{{ page_title }}</h2> {% endif %} 
+  <h5>
+  page contents:
+  {% for toc_item in toc %}
+    {% if toc_item.children %}  
+
+        <a href="{{ toc_item.url }}">{{ toc_item.title }}</a> [ 
+      {% for toc_item in toc_item.children %}
+           <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>  
+      {% endfor %}
+      ] <br>
+        
+    {% else %}  
+      
+      <a href="{{ toc_item.url }}">{{ toc_item.title }}</a> 
+    {% endif %}
+  {% endfor %}
+  </h5> 
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+  </div>      
+  <hr/>
+  
+
+
+  <h5>Built with <a href="http://www.mkdocs.org">MkDocs</a> on {{ build_date_utc }}i</h5>
+  <!--
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  -->
+</body>
+</html>
