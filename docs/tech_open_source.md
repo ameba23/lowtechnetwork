@@ -251,7 +251,7 @@ Feh command line switches:
 * [Book scanning wikipedia article](http://en.wikipedia.org/wiki/Book_scanning)
 * [openlibrary.org](https://openlibrary.org/) ebooks
 
-## backup/archiving/filesharing
+## backup/archiving
 
 * [rsync](http://rsync.samba.org/) - a powerful backup/file
     copying tool. rsync only copies differences in the files, to
@@ -305,6 +305,20 @@ This prompts for a password and gives file.gpg.  To decypt:
 
 * [Disk encryption article on ArchWiki](https://wiki.archlinux.org/index.php/Disk_Encryption) a good explanation of disk encryption and a comparison of the methods.
 * truecrypt
+
+## filesharing 
+
+* soulseek, nicotine, museek
+  Soulseek has been going for a long time, a peer-to-peer filesharing network with a focus on music. 
+* direct connect.  dc++ eiskalt
+
+## bitcoin/blockchain related
+
+* [CoinDesk](http://www.coindesk.com/) - Cryptocurrency news
+* [Cointelegraph](https://cointelegraph.com/) - Cryptocurrency news
+* [LocalBitcoins](https://localbitcoins.com/) - Bitcoin marketplace and escrow service
+* [Backfeed - Spreading Consensus](http://backfeed.cc/) - 'social operation system' - universal reputation system.  See also backfeed magazine
+* [Bitcoin Beginners FAQ- blockchain.info](https://blockchain.info/wallet/bitcoin-faq) -and blockchain search service and bitcoin wallet service
 
 # tools for those who have little or no connection to internet
 
