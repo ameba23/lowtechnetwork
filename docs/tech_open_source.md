@@ -13,7 +13,7 @@ listed are fast and light on system resources but can take time to learn how to 
 * [UNetbootin](http://unetbootin.sourceforge.net/) Software to create
     bootable usb linux system (useful for installing linux). Runs also on windows and mac. 
 * [The Linux Documentation Project](http://www.tldp.org/)
-
+* [tldr (too long, didnt read)](https://github.com/tldr-pages/tldr) A collection of simplified and community-driven man pages
 
 ## window managers
 
@@ -60,15 +60,16 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 
 ### More shell tools
 
+* fzf - there are many different fuzzy filter programs, fzf is a good example.  Very flexible tool, not only for finding files.
 * [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another great tool for mouse free control of terminal windows and much more.  Very configurable.  Many people love it.  Personally I prefer to organise terminal windows with my window manager. 
 * URxvt - unicode terminal emulator.  Highly configurable, well maintained and supported.  
-* [terminator](http://gnometerminator.blogspot.co.uk/) terminal emulator with many features, including tabs and split windows.  I used this until I switched to a tiling window manager.  Some useful keys in terminator:
+* [terminator](http://gnometerminator.blogspot.co.uk/) terminal emulator with many features, including tabs and split windows.  I used this before I switched to a tiling window manager.  Some useful keys in terminator:
     * `Ctrl + Shift + O` Splits terminal hOrizontally.
     * `Ctrl + Shift + E` Splits terminal vErtically.
     * `Ctrl + Shift + Arrows` Move parent dragbar
     * `Alt + Arrows` Move to different terminals.
 
-* GNU Screen - a great program which can be used for window splitting etc. The nice thing about it is that it will run over ssh.  You can also use it to start a process over ssh and then leave it running even after you disconnect from ssh.  (very useful)
+* GNU Screen - a great program which can be used for window splitting etc. The nice thing about it is that it will run over ssh.  You can also use it to start a process over ssh and then leave it running even after you disconnect from ssh.  (very useful.  You can also do this with tmux.)
 * [commandlinefu.com](http://www.commandlinefu.com) a website where people post useful (or simply nerdy) command line tricks.
 * explain.sh - script to explain a command you dont know what it does (pulls stuff from man pages) eg: 'explain 'ls -l''
 * [30 handy bash aliases](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
@@ -82,7 +83,7 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 * [vimb](http://fanglingsu.github.io/vimb/) lightweight webkit based browser (of which there are many to choose from, inspired by vimprobable, and in my opinion an improvement.
 
 * [vimprobable](http://sourceforge.net/p/vimprobable) another lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
-* qutebrowser - still relatively lightweight and with vi style bindings, but a bit more feature-rich than vimb. 
+* qutebrowser - still relatively lightweight, webkit based and with vi style bindings, but a bit bigger and more feature-rich than vimb. 
 * [VimFx Add-on for Firefox](https://addons.mozilla.org/en-US/firefox/addon/vimfx/?src=search)
 * [vimperator](http://www.vimperator.org) vi style control of
     firefox/iceweasel web browser. So you can control the web browser
@@ -306,11 +307,6 @@ This prompts for a password and gives file.gpg.  To decypt:
 * [Disk encryption article on ArchWiki](https://wiki.archlinux.org/index.php/Disk_Encryption) a good explanation of disk encryption and a comparison of the methods.
 * truecrypt
 
-## filesharing 
-
-* soulseek, nicotine, museek
-  Soulseek has been going for a long time, a peer-to-peer filesharing network with a focus on music. 
-* direct connect.  dc++ eiskalt
 
 ## bitcoin/blockchain related
 
@@ -361,11 +357,14 @@ various kinds of dictionary viewing software.
 * [eiskaltdc++](https://code.google.com/p/eiskaltdc/) and
     [linuxDC++](https://launchpad.net/linuxdcpp) are linux clients for
     the Direct Connect filesharing protocol.
-    [uhub](https://www.uhub.org/) is hub software (server).
-* [soulseek qt](http://soulseekqt.net) music sharing network
-    client software. [nicotine](http://nicotine-plus.sourceforge.net/)
-    is a soulseek client written in python
+    [uhub](https://www.uhub.org/) is hub software (for running a server).
+* [soulseek](http://soulseekqt.net) music sharing network
+    client software. 
+    [nicotine](http://nicotine-plus.sourceforge.net/) is a soulseek client written in python
+  Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client prject, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  Its is also possible to share other kinds of files.
+
 * rtorrent - NCurses BitTorrent client based on libtorrent
+* direct connect.  dc++ eiskalt
 
 ## torrent tracker sites
 * [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
