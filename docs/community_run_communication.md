@@ -52,16 +52,11 @@ article [Internet Freedom Fighters Build a Shadow Web](http://www.indymedia.ie/a
 
 <!-- -->
 
--   [p2p foundation](http://p2pfoundation.net) organisation promoting
-    peer to peer practises, 'towards an open and autonomous internet
-    and society'. The site also has an [open hardware
-    directory](http://p2pfoundation.net/Product_Hacking)
--   [redecentralize.org](http://redecentralize.org/) a series video
-    interviews about projects which contribute to the decentralisation
-    of communication. See also their [list of alternative internet
-    projects](https://github.com/redecentralize/alternative-internet)
--   [federation FDN](http://www.ffdn.org) Fedaration of associative
-    internet service providers in france
+* [p2p foundation](http://p2pfoundation.net) organisation promoting peer to peer practises, 'towards an open and autonomous internet and society'. The site also has an [open hardware directory](http://p2pfoundation.net/Product_Hacking)
+* [redecentralize.org](http://redecentralize.org/) a series video interviews about projects which contribute to the decentralisation of communication. See also their [list of alternative internet projects](https://github.com/redecentralize/alternative-internet)
+* [federation FDN](http://www.ffdn.org) Fedaration of associative internet service providers in france
+* [disroot.org](https://disroot.org/)
+* [Matrix.org](https://matrix.org/)
 
 ![run for the phone](img/Run_for_the_phone.jpg "Run_for_the_phone.jpg")
 

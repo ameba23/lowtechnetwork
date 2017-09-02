@@ -6,7 +6,7 @@ listed are fast and light on system resources but can take time to learn how to 
 
 # GNU/linux
 
-* [Arch Linux](https://www.archlinux.org/) rolling release, meaning the lastest packages are always available (at the cost of less stability). supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find usefull whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
+* [Arch Linux](https://www.archlinux.org/) rolling release, meaning the lastest packages are always available (at the cost of less stability). supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find useful whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
 * [Debian](https://www.debian.org/index.en.html) 'the universal operating system'. Many different computer architechtures are supported, a big, supportive user community, a huge pre-compiled software repository, and different builds for stable, unstable and testing.  Debian is purist about free software.  Only completely non-proprietory packages are included in the official repository.  Of course it is very easy to also install non-free packages, and a bundle of non-free extras (such as codecs for mp3, etc) can be downloaded.  Many of the very popular linux distributions (eg. Ubuntu) are based on debian.  The default desktop environment, currently gnome3, is in my opinion annoying, but it is easy to change it. 
 * [DistroWatch.com](http://distrowatch.com/) website with a lot of information about the
     different linux distributions.
@@ -16,9 +16,8 @@ listed are fast and light on system resources but can take time to learn how to 
 * [tldr (too long, didnt read)](https://github.com/tldr-pages/tldr) A collection of simplified and community-driven man pages
 
 ## window managers
-
 * [i3](http://i3wm.org/) - great tiling window manager.  tiling window managers allow more keyboard rather than mouse control.  If you find yourself rarly using the mouse and using keyboard shortcuts to switch windows (eg: Alt+Tab) its time to switch to a tiliing window manager.  once you get used to it is difficult to imagine ever going back to floating windows.  i3 has good support for multi-monitor systems. [Configuring i3](http://blog.tunnelshade.in/2014/05/making-i3-beautiful.html) [i3status: Generates status bar to use with i3bar, dzen2 or xmobar ](https://github.com/Gravemind/i3status) 
-* [dwm] another great tiling window manager.  very lightweight. 
+* [dwm] from suckless.org another great tiling window manager.  very lightweight. 
 * [Openbox](http://openbox.org/) a basic floating window manager - you can
     install additional features yourself, making it very customisable
     but not working well straight out of the box. You will probably need
@@ -30,7 +29,6 @@ listed are fast and light on system resources but can take time to learn how to 
     if you dont like to use the mouse and also good for making the most
     of display space.
 * [Comparison of Tiling Window Managers - ArchWiki](https://wiki.archlinux.org/index.php/Comparison_of_Tiling_Window_Managers)
-
 ## shell tools
 
 ### zsh
@@ -49,7 +47,7 @@ listed are fast and light on system resources but can take time to learn how to 
 
 ### FASD 
 
-FASD makes finding files and directories with the command line so much easier!  You need this!
+* [clvv/fasd: Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.](https://github.com/clvv/fasd) FASD makes finding files and directories with the command line so much easier!  You need this!
  It comes with some aliases, for example, instead of `cd` you can use `z` followed part of the name of the path
 you want to move to. FASD will guess what you want, using 'frecency' (combined recency and frequency).  So whereever you are `z D` will take you to the most commonly/recently used directory with `D`, which might be `~/Downloads`.
 
@@ -79,18 +77,20 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 
 ## web
 
-
+* [Uzbl - web interface tools which adhere to the unix philosophy.](https://www.uzbl.org/) [uzbl tutorial](http://www.panix.com/~wje/?uzbl) [uzbl on github](https://github.com/uzbl/uzbl) 
 * [vimb](http://fanglingsu.github.io/vimb/) lightweight webkit based browser (of which there are many to choose from, inspired by vimprobable, and in my opinion an improvement.
 
 * [vimprobable](http://sourceforge.net/p/vimprobable) another lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
 * qutebrowser - still relatively lightweight, webkit based and with vi style bindings, but a bit bigger and more feature-rich than vimb. 
+* [suckless.org surf](http://surf.suckless.org/) Bare bones browser.  No runtime configuration whatsoever.  [Adblocking using /etc/hosts](http://surf.suckless.org/files/adblock-hosts) 
 * [VimFx Add-on for Firefox](https://addons.mozilla.org/en-US/firefox/addon/vimfx/?src=search)
 * [vimperator](http://www.vimperator.org) vi style control of
     firefox/iceweasel web browser. So you can control the web browser
     without using the mouse.
 * [Surfraw](http://surfraw.alioth.debian.org/) 'Shell Users' Revolutionary Front Rage Against the Web' - open websites from the commandline.  a very handy program.  You can `alias sr="surfraw"` and do `sr wikipedia chard` from the command line to jump to wikipedia article about chard. See the [list of elvi](http://surfraw.alioth.debian.org/#elvilist) (website search scripts for surfraw).
 
-* [GNUzilla and IceCat](https://www.gnu.org/software/gnuzilla/) firefox/iceweasel alternative 100% free software, no proprietory plugins recommmended
+* [GNUzilla and IceCat](https://www.gnu.org/software/gnuzilla/) firefox/iceweasel alternative 100% free software, no proprietory plugins recommended
+* [Uzbl - web interface tools which adhere to the unixphilosophy.](https://www.uzbl.org/) [UZBL-Browser on ArchWiki](https://wiki.archlinux.org/index.php/UZBL-Browser) [uzbltutorial](http://www.panix.com/~wje/?uzbl) [uzbl github repo](https://github.com/uzbl/uzbl) 
 
 ## tools, toys, reference
 
@@ -98,9 +98,11 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 * [yadr](https://github.com/skwp/dotfiles) yet another dotfile repo. a
     bundle of configurations for vim, zsh, ruby and git. The idea is
     that rather than spending a lot of time configuring software, a
-    collabourative effort is made to bring together sane configurations
-    and plugins etc.
-* yaourt - wrapper for arch linux's pacman - install packages from arch user repository (AUR) easily.  AUR 'helpers' like yaourt have been criticised for encouraging users to install packages without properly checking pkgbuilds, which raises security issues (maliscious software could be unintentionally installed).  However some people think that the convenience of using the helpers outweighs the security risks.  You can make up your own mind. 
+    collabourative effort is made to bring together 'sane' (but opinionated) configurations and plugins etc.
+* yaourt - wrapper for arch linux's pacman - install packages from arch user repository (AUR) easily.  yaourt has been criticised for encouraging users to install packages without properly checking pkgbuilds, which raises security issues (maliscious software could be unintentionally installed).  However some people think that the convenience of using it outweighs the security risks.  You can make up your own mind.
+* [atool](http://www.nongnu.org/atool/) is an excellent tool for managing archives.  instead of remembering different commands for different formats, you can use `apack`, `aunpack`, `als` etc.
+* [prurigro/arch-wiki-markdown](https://github.com/prurigro/arch-wiki-markdown) program for reading the arch linux wiki offline on your terminal.  
+
 * [aap](http://www.a-a-p.org/) makes it easy to download, build and install software
 * [calmar.ws](http://www.calmar.ws/) tips and info on linux,vim, vimperator, awesome, other stuff
 * [refcards.com](http://www.refcards.com/) free quick reference cards
@@ -112,18 +114,25 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 Vim has a steep learning curve. But if you edit a lot of text files it
 is definately worth learning. The keybindings in vim are used in a lot of other nerdy programs, and vim is installed on a lot of different systems which makes it a very useful thing to know, even if you just know the very basics.  It has really a lot of features and plugins available.
 
-* Vundle - plugin manager for vim - find and install plugins from within vim
-* NERDTree - plugin for file browsing 
-* CtrlP or Command-T - fuzzy file finder plugin - start typing some part of the path/filename and plugin finds it. CtrlP is written in pure vimscript whereas Command-T has more features. 
-* fugitive - git wrapper plugin from tim pope - use git without leaving vim
-* Vimcasts.org by Drew Niel - well-produced screencasts
+* Vundle - plugin manager for vim, of which there are many to choose from - find and install plugins from within vim
+* Vimcasts.org by Drew Niel - clear and well-produced screencasts
 * [Greg Hurrell on YouTube](https://www.utube.com/channel/UCXPHFM88IlFn68OmLwtPmZ$A) many screencasts on vim [wincent (Greg Hurrell) GitHub](https://github.com/wincent
-* [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
+* [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) a great resource
 * [vi cheat sheet](http://www.lagmonster.org/docs/vi.html)
 * [vim tips](http://zzapper.co.uk/vimtips.html)
 * [vim mediawiki editing](http://blog.bigsmoke.us/2009/07/10/vim-mediawiki-editing)
 * [vim tricks](https://github.com/rzetterberg/case_studies/blob/master/notes/2_vim_tricks.md)
 * [steve losh - learn vimscript the hard way](http://learnvimscriptthehardway.stevelosh.com)
+
+### Plugins for vim
+
+* NERDTree - plugin for file browsing 
+* CtrlP or Command-T - fuzzy file finder plugin - start typing some part of the path/filename and plugin finds it. CtrlP is written in pure vimscript whereas Command-T has more features. 
+* fugitive - git wrapper plugin from tim pope - use git without leaving vim
+* [plasticboy/vim-markdown: Markdown Vim Mode](https://github.com/plasticboy/vim-markdown)
+* [tomtom/tcomment_vim: An extensible & universal comment vim-plugin that also handles embedded filetypes](https://github.com/tomtom/tcomment_vim) [vimsomnia: The tcomment vimplugin](http://vimsomnia.blogspot.de/2010/11/tcomment-vim-plugin.html)
+* tpope 
+* [VimAwesome](http://vimawesome.com/) - index of vim plugins
 
 ## file management
 
@@ -134,7 +143,9 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
     vifm, but uses 'miller columns' showing the directory hierarchy
     (similar to mac os 'finder'). The centre column is active, the left
     column the higher level directory, and the right column shows either
-    a deeper directory or file information or preview.  Can preview pdf with pdftotext.  Can preview images with ascii, or if your terminal emulation permits it by displaying the image.
+    a deeper directory or file information or preview.  Can preview pdf with pdftotext.  Can preview images with ascii, or if your terminal emulation permits it by displaying the image.  Ranger is written in python and is highly configurable, hackable and extendible. 
+
+* [ranger on ArchWiki](https://wiki.archlinux.org/index.php/Ranger) [ranger plugins](https://raw.githubusercontent.com/ranger/ranger/master/examples/) [github.com/ranger/ranger](https://github.com/ranger/ranger) 
 * [mc](https://www.midnight-commander.org/) Midnight Commander - old school 2 pane terminal based file manager (norton commander style)
 * [vifm](http://vifm.info/) vi file manager. Two pane and with vi style keybindings
 * [xfe](http://roland65.free.fr/xfe/) X File Explorer - light file
@@ -147,8 +158,7 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
 * [SpaceFM](http://ignorantguru.github.io/spacefm/) multi-panel tabbed
     file and desktop manager
 * ![baobab screenshot](img/Baobab.jpg "fig:Baobab.jpg")[Baobab](https://wiki.gnome.org/Apps/Baobab)
-    gnome disk usage analyser - graphical representation of disk usage -
-    great for when you are trying to free up space
+    gnome disk usage analyser - graphical representation of disk usage - great for when you are trying to free up space
 * [ncdu](http://dev.yorhel.nl/ncdu) - NCurses Disk Usage, a simple,
     fast program for analysing disk usage.
 * [sshfs](http://fuse.sourceforge.net/sshfs.html) mount a remote
@@ -156,6 +166,7 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
 
 ## email
 
+ * [notmuch](http://notmuchmail.org) a great program for searching email
  * [mu](http://www.djcbsoftware.nl/code/mu/) (maildir-utils) program
     for searching email stored in maildir format. To index your emails, `mu index --maildir=mymail` You can do this for
 several mail directories, and you may want to set it up as a cron job to
@@ -169,9 +180,7 @@ first macro does the search according to user query, second macro jumps to resul
      macro index <F8> "<shell-escape>rm -rf ~/.mu/results; mu-find -o l -l ~/.mu/results " "mu-find"
      macro index <F9> "<change-folder-readonly>~/.mu/results\n" "display mu-find results"
 
- * [Mailman](http://www.gnu.org/software/mailman/index.html) GNU
-    Mailing list manager
- * [notmuch](http://notmuchmail.org) another great program for searching email
+ * [Mailman](http://www.gnu.org/software/mailman/index.html) GNU Mailing list manager
 
 ###[mutt](http://www.mutt.org/) email client
 
@@ -188,8 +197,7 @@ Its not for everyone, it takes a lot of configuring but once you have got it rig
 
 ### non-commercial email providers
 
-These email providers are non-commercial groups which take security and
-privacy seriously. Please add more
+These email providers are non-commercial groups which take security and privacy seriously. Please add more
 
 * [aktivix](https://aktivix.org/) (uk)
 * [immerda](http://www.immerda.ch) (ch)
@@ -233,8 +241,7 @@ Feh command line switches:
 ### electronic books
 
 * [gen.lib.rus.ec](http://gen.lib.rus.ec) library genesis. Huge
-    book collection. Particularly a lot of science type stuff. Based in
-    russia, with many mirror sites, it is also possible to set up your
+    book collection. Particularly a lot of science type stuff. Based in russia, with many mirror sites, it is also possible to set up your
     own mirror or offline repository, the SQL database dump can
     be downloaded. Some ISPs are beginning to block library genesis,
     which means you need to find a mirror which is not blocked, or
@@ -318,12 +325,12 @@ This prompts for a password and gives file.gpg.  To decypt:
 
 # tools for those who have little or no connection to internet
 
-* evopedia - offline wikipedia reader.  
 * [kiwix](http://www.kiwix.org) wikipedia offline reader - read
-    wikipedia when not connected to internet. The english wikipedia
+    wikipedia and other sites when not connected to internet. It uses a special compression format called zim.  The english wikipedia
     (text only, no images, user pages or discussion pages) compresses to
-    about 8gb! You will need to download this data in 'zim' format,
-    available as a torrent. [list of wikipedias](http://www.kiwix.org/wiki/Wikipedia_in_all_languages).  Currently not supported on debian.
+    about 8gb (or it did when this was first written, for sure its bigger now). You will need to download relevant zim file, which are
+    available as torrents. [list of wikipedias](http://www.kiwix.org/wiki/Wikipedia_in_all_languages).  Stack exchange is also available as a zim file. 
+* evopedia - another offline wikipedia reader.  not  sure if its still being actively developed.
 * [openstreetmap](http://www.openstreetmap.org) collaborative
     mapping project. it is also possible to download openstreetmap (even
     the whole planet) for offline viewing using a software called
@@ -336,7 +343,7 @@ This prompts for a password and gives file.gpg.  To decypt:
     quickly accessible offline maps.
 * [OfflineIMAP](http://offlineimap.org) software for syncronising
     imap mailboxes. It is useful for unreliable or slow internet
-    connections or when you want to read email offline.
+    connections or when you want to read email offline.  Also makes it easy to backup your email as you have a local copy. 
 * [hitchwiki.org](http://hitchwiki.org) the excellent hitchhiking website can also be downloaded to view
 offline [hitchwiki while offline](http://hitchwiki.org/en/Hitchwiki:While_offline). The
 database is downloaded in XML format which can be viewed with
@@ -350,32 +357,43 @@ various kinds of dictionary viewing software.
 # filesharing
 
 * [torrentfreak.com](http://www.torrentfreak.com) filesharing and VPN related blog
-* [zeropaid](http://www.zeropaid.com) filesharing news and forum
+* [zeropaid](http://www.zeropaid.com) filesharing news and forum (which used to be interesting years ago, and it seems isnt really any more)
+* subliminal - good software for downloading film subtitles
 
-* [imule](http://www.imule.i2p) p2p sharing software for i2p (also an
-    i2p eepsite)
+## bittorrent
+
+* [magnetico - labs.boramalper.org](http://labs.boramalper.org/magnetico/)  DHT torrent search software which does not rely on a centralised tracker.  This could revolutionise files-sharing.  But does not seem to give such good results *yet*.
+* rtorrent - NCurses BitTorrent client based on libtorrent
+* [newTrackon: Tracking the trackers](https://newtrackon.com/)
+
+### bittorrent trackers
+* [Zooqle: Verified torrents](https://zooqle.com/)
+* [TorrentProject.se](http://torrentproject.se/) 
+* [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
+* [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
+* [tracker2.postman.i2p](http://tracker2.postman.i2p) i2p torrent
+    tracker (you must be running i2p to access)
+* [rarbg.to](http://rarbg.to)
+
+## soulseek
+  Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client project, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  While the focus is on music, its is also possible to share other kinds of files, increasingly books are available.  Even though it lacks to distributed nature of torrent downloading, for older or unusual music, its often quicker to find and download from soulseek than with bittorrent.  I would rather use the open source client, nicotine, but i find that for some features the official qt client works better.  
+
+* [soulseek](http://soulseekqt.net) music sharing network
+    client software. 
+* [nicotine](http://nicotine-plus.sourceforge.net/) open source soulseek client written in python
+* museek+
+
+## directconnect
+Im not sure how popular directconnect is these days.  I've always been a bit critical of it for favouring users with large collections, making a hierarchy.
 * [eiskaltdc++](https://code.google.com/p/eiskaltdc/) and
     [linuxDC++](https://launchpad.net/linuxdcpp) are linux clients for
     the Direct Connect filesharing protocol.
     [uhub](https://www.uhub.org/) is hub software (for running a server).
-* [soulseek](http://soulseekqt.net) music sharing network
-    client software. 
-    [nicotine](http://nicotine-plus.sourceforge.net/) is a soulseek client written in python
-  Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client prject, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  Its is also possible to share other kinds of files.
 
-* rtorrent - NCurses BitTorrent client based on libtorrent
-* direct connect.  dc++ eiskalt
+## edonkey
 
-## torrent tracker sites
-* [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
-* [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
-* [myananamouse.net](https://www.myanonamouse.net) torrent site
-    specialising in english ebooks and audiobooks. it is a private site
-    with a complicated regestration process and many rules, but there is
-    a lot of books on there.
-* [tracker2.postman.i2p](http://tracker2.postman.i2p) i2p torrent
-    tracker (you must be running i2p to access)
-* [rarbg.to](http://rarbg.to)
+* [imule](http://www.imule.i2p) p2p sharing software for i2p (also an
+    i2p eepsite)
 
 # audio software
 
@@ -392,6 +410,7 @@ various kinds of dictionary viewing software.
     many to choose from, i use [ncmpcpp](http://ncmpcpp.rybczak.net)).
     Can run on raspberry pi.  The database is very fast to update
     and search.  I previously always avoided database driven players because of speed, bloated software, and inability to access my catagoried directory structure where I know where to find things.  Most mpd clients allow browsing by directory structure as well as database, and its playlist management system is good.  The really great thing is, you can decide to change client software without setting up the database again.  Also easy to set up status viewing in a system monitor or keybindings in your window manager, so you can control the player whilst using other software.  A must for big music collections.  
+* [mpdcron](https://alip.github.io/mpdcron/) run scripts on mpd events eg: track change
 * [cmus](http://cmus.sourceforge.net) curses based music player
     software (linux, console based). with playlists, play queue,
     filtering, vi style search and command mode, dynamic keybindings.
@@ -506,6 +525,7 @@ the wiki
 
 Unsorted links:
 
+* rmlint - good software for removing unwanted files
 * [Open source software and nice hardware box.matto.nl ](https://box.matto.nl/index.html) Tags: software linux
 * [The Best MOTD - How to Customize Your MOTD - Linux ](http://www.mewbies.com/how_to_customize_your_console_login_message_tutorial.htm) Tags: motd
 * [Pandoc - About pandoc ](http://pandoc.org/) Tags: pandoc markdown converter software
