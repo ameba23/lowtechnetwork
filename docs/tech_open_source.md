@@ -48,7 +48,7 @@ listed are fast and light on system resources but can take time to learn how to 
 ### FASD 
 
 * [clvv/fasd: Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.](https://github.com/clvv/fasd) FASD makes finding files and directories with the command line so much easier!  You need this!
- It comes with some aliases, for example, instead of `cd` you can use `z` followed part of the name of the path
+It comes with some aliases, for example, instead of `cd` you can use `z` followed part of the name of the path
 you want to move to. FASD will guess what you want, using 'frecency' (combined recency and frequency).  So whereever you are `z D` will take you to the most commonly/recently used directory with `D`, which might be `~/Downloads`.
 
  * `v xxx` will open vim with frequently/recently used file containing xxx.
@@ -62,11 +62,6 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 * [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another great tool for mouse free control of terminal windows and much more.  Very configurable.  Many people love it.  Personally I prefer to organise terminal windows with my window manager. 
 * URxvt - unicode terminal emulator.  Highly configurable, well maintained and supported.  
 * [terminator](http://gnometerminator.blogspot.co.uk/) terminal emulator with many features, including tabs and split windows.  I used this before I switched to a tiling window manager.  Some useful keys in terminator:
-    * `Ctrl + Shift + O` Splits terminal hOrizontally.
-    * `Ctrl + Shift + E` Splits terminal vErtically.
-    * `Ctrl + Shift + Arrows` Move parent dragbar
-    * `Alt + Arrows` Move to different terminals.
-
 * GNU Screen - a great program which can be used for window splitting etc. The nice thing about it is that it will run over ssh.  You can also use it to start a process over ssh and then leave it running even after you disconnect from ssh.  (very useful.  You can also do this with tmux.)
 * [commandlinefu.com](http://www.commandlinefu.com) a website where people post useful (or simply nerdy) command line tricks.
 * explain.sh - script to explain a command you dont know what it does (pulls stuff from man pages) eg: 'explain 'ls -l''
