@@ -10,7 +10,7 @@
       The page_title contains the title for a page as shown in the navigation.
       Site name contains the name as defined in the mkdocs.yml
     -->
-    <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     
     <link href="{{ base_url }}/minimal.css" rel="stylesheet">
 
@@ -70,9 +70,9 @@
   <!-- ******************************** navigation *** -->
   <!-- todo: change this to an inline list -->
     <div class="mynav">
-  {% if next_page or previous_page %}
-      {% if previous_page %}
-      <a href="{{ previous_page.url }}" title="{{ previous_page.title }}">&#8592;</a>
+  {% if page.next_page or page.previous_page %}
+      {% if page.previous_page %}
+      <a href="{{ page.previous_page.url }}" title="{{ page.previous_page.title }}">&#8592;</a>
       {% else %}
         &#8592; 
       {% endif %}
@@ -80,9 +80,9 @@
    {% for nav_item in nav %}
     {% include "nav.html" %}
   {% endfor %}
-  {% if next_page or previous_page %}
-      {% if next_page %}
-      <a href="{{ next_page.url }}" title="{{ next_page.title }}"/>&#8594;</a>
+  {% if page.next_page or page.previous_page %}
+      {% if page.next_page %}
+      <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}"/>&#8594;</a>
       {% else %}
         &#8594;
       {% endif %}
@@ -102,16 +102,16 @@
 
   <!-- ******************************** page title *** -->
       <div class="text-center">
-        <h1>   {% if page_title %} {{ page_title }} {% endif %} </h1>
+        <h1>   {% if page.title %} {{ page.title }} {% endif %} </h1>
       </div>
   <!-- ********************************** page contents box ***  -->
   <!-- todo: make this a grid element -->
 
-  {% if page_title %}   
+  {% if page.title %}   
    <div class="contents">
      <!--  <h5>page contents:</h5> -->
   <ul>    
-  {% for toc_item in toc %}
+  {% for toc_item in page.toc %}
     {% if toc_item.children %}  
 
     <li> <a href="{{ toc_item.url }}">{{ toc_item.title }}</a> </li> 
@@ -131,7 +131,7 @@
   {% endif %}
   <!-- ******************************** content *** -->
     {% block content %}
-    {{ content }}
+    {{ page.content }}
   {% endblock %}
 
   </div>    
