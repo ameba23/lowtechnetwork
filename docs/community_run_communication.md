@@ -358,8 +358,8 @@ radio scene.
 
 ### Alternative internet projects 
 
-
 * [ipfs](http://ipfs.io) - the interplanetary filesystem.  A promising, decentralised, p2p protocol, designed to be an alternative to HTTP (and potetially many other internet protocols).  It is a content addressable filesystem, meaning files are referred to by their content (using a hash) rather than their location.  The nearest available copy of the file is retrieved, increasing speed and efficiency and removing the power dynamic of a centralised server-client relationship.  ipfs is working right now, a permanant filesystem, completely controlled by its users and resiliant to censorship. it is gaining popularity quickly, and has the potential to completely upturn the topology of the web.  
+* [dat](https://datproject.org) A great decentralised storage tool.
 * [zeronet](http://zeronet.io)
 -   [GNUnet](https://gnunet.org/) GNUnet is a framework for secure peer-to-peer networking that does not use any centralised or otherwise trusted services. [GNUnet wikipedia](http://en.wikipedia.org/wiki/GNUnet)
 

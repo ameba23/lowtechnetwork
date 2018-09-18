@@ -1,2 +1,3 @@
 #!/bin/bash
-mkdocs build && chmod -R a+r ~/Documents/static/site/ && rsync -avz -e ssh ~/Documents/static/site/ ameba@ehion.com:public_html/site
+#mkdocs build && chmod -R a+r ~/Documents/static/site/ && rsync -avz -e ssh ~/Documents/static/site/ ameba@ehion.com:public_html/site
+mkdocs build && chmod -R a+r site/ && rsync -avz -e ssh site/ ameba@ehion.com:public_html/site

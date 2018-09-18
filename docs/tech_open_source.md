@@ -221,6 +221,7 @@ Feh command line switches:
 * [imagemagick](http://www.imagemagick.org/) powerfull command line tools for converting, editing and composing images. Good for batch image processing.  very useful for web development.  use 'convert' for a many image processing tasks, including resizing and changing format. `mogrify` is the same as convert but modifies the input file directly, rather than producing a new output file.  very useful, but use with caution.  
 * [graphicsmagick](http://www.graphicsmagick.org) a fork of imagemagick - apparently more efficient.
 * [G'MIC](http://gmic.eu/) GREYC's Magic for Image Computing - an image processing framework. Commandline tools, Gimp plugin and C++ library.
+* [GrafX2](http://pulkomandy.tk/projects/GrafX2) - pixel editor inspired by deluxe paint.
 
 ## document and book viewers
 
@@ -230,7 +231,7 @@ Feh command line switches:
     <, > - skip back or forwards 10 pages
 
 * [apvlv](http://naihe2010.github.io/apvlv/) - another pdf viewer, vi style.
-* [calibre](http://calibre-ebook.com/) - ebook library manager
+* [calibre](http://calibre-ebook.com/) - open source ebook library manager.  Its indexing system can be quite intrusive, modifying your directory structure in an opinionated way.  But its worth having just for the excellent ebook converter and reader, both of which can be used indepedently. 
 * [FBReader](http://fbreader.org/) reader for epub etc
 
 ### electronic books
@@ -261,7 +262,7 @@ Feh command line switches:
     minimise the amount of data being transfered. This means it responds
     well to transfers which are interupted and restarted. Commonly used
     options:
-  `rsync dir1/ dir2`   
+  `rsync dir1/ dir2`
   Note the slash, to put the contents of dir1 into dir2 (often this is what you want)
 
     * **-a** Archive mode - recursive, preserve times, permissions etc (often what you want)
@@ -301,21 +302,21 @@ If you dont have a duplex printer probably you want to print the even pages, put
 
 # encryption
 * [cryptoparty handbook](https://www.cryptoparty.in/documentation/handbook) plenty of information
-* [gpg](http://www.gnupg.org/) Gnu Privacy Guard.  Tool for encrypting files and email. Most simple usage - gpg encryption of a single file:
+* [gpg](http://www.gnupg.org/) Gnu Privacy Guard.  Tool for encrypting files and email. Most simple usage - symmetric encryption of a single file:
     gpg -c file
 This prompts for a password and gives file.gpg.  To decypt: 
     gpg -d file.gpg >` file`
 
 * [Disk encryption article on ArchWiki](https://wiki.archlinux.org/index.php/Disk_Encryption) a good explanation of disk encryption and a comparison of the methods.
-* [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb)
+* [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) amazingly good file encryption software. 
 
 
 ## bitcoin/blockchain related
-
-* [CoinDesk](http://www.coindesk.com/) - Cryptocurrency news
-* [Cointelegraph](https://cointelegraph.com/) - Cryptocurrency news
+* [Bitcoin tech talk](https://bitcointechtalk.com/) - newsletter by Jimmy Song
+* [Jameson Lopp's Bitcoin resources](https://lopp.net/bitcoin.html) - excellent collection of resources and guides.
+* [CoinDesk](http://www.coindesk.com/) and [Cointelegraph](https://cointelegraph.com/) - Commercial cryptocurrency news sites
 * [LocalBitcoins](https://localbitcoins.com/) - Bitcoin marketplace and escrow service
-* [Backfeed - Spreading Consensus](http://backfeed.cc/) - 'social operation system' - universal reputation system.  See also backfeed magazine
+* [Backfeed - Spreading Consensus](http://backfeed.cc/) - 'social operation system' - universal reputation system.  
 * [Bitcoin Beginners FAQ- blockchain.info](https://blockchain.info/wallet/bitcoin-faq) -and blockchain search service and bitcoin wallet service
 
 # tools for those who have little or no connection to internet
@@ -357,11 +358,23 @@ various kinds of dictionary viewing software.
 
 ## bittorrent
 
-* [magnetico - labs.boramalper.org](http://labs.boramalper.org/magnetico/)  DHT torrent search software which does not rely on a centralised tracker.  This could revolutionise files-sharing.  But does not seem to give such good results *yet*.
+* [magnetico - labs.boramalper.org](http://labs.boramalper.org/magnetico/)  [github repo](https://github.com/boramalper/magnetico) describes itself as an 'autonomous (self-hosted) BitTorrent DHT search engine suite'.
+
+The Bittorrent mainline DHT, is, a least according to [this paper published in 2013,](http://cs.helsinki.fi/u/lxwang/publications/P2P2013_13.pdf) by far the biggest p2p network in the world both in terms of users and volume of traffic. 
+
+But the methods of finding torrents have traditionally involved using centralised torrent hosting sites and trackers.  This has changed somewhat since the distributed hash table was introduces with [BEP 5](http://bittorrent.org/beps/bep_0005.html), meaning only a magnet link containing a hash of the torrents content was needed, and peers could be found without the need for a centralised tracker.  But the magnet links themselves still needed to be hosted somewhere.
+
+A project called [tribler](https://www.tribler.org/) solved this problem to some extent, providing a peer-to-peer search mechanism, but it only works between tribler's user community, which is tiny in comparison to all users on the bittorrent network.
+
+Magnetico is a program which scrapes torrent data off the DHT to build your own torrent database and could just be the final piece in the puzzle.  
+
 * rtorrent - NCurses BitTorrent client based on libtorrent
+* [Tribler](https://www.tribler.org/) - Torrent client with some great features such as peer-to-peer based searching and enhanced anonymity.
+* [Theory.org Bittorrent Wiki](https://wiki.theory.org/index.php/Main_Page) - A lot of detailed info on this site including a detailed unofficial bittorrent specification.
+* [StegTorrent](http://stegtorrent.sourceforge.net/) - hide torrent files inside images or audio using steganography.  It is windows software but the concept is great. 
 * [newTrackon: Tracking the trackers](https://newtrackon.com/)
 
-### bittorrent trackers
+### bittorrent trackers (possibly outdated...)
 * [Zooqle: Verified torrents](https://zooqle.com/)
 * [TorrentProject.se](http://torrentproject.se/) 
 * [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
@@ -371,12 +384,11 @@ various kinds of dictionary viewing software.
 * [rarbg.to](http://rarbg.to)
 
 ## soulseek
-  Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client project, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  While the focus is on music, its is also possible to share other kinds of files, increasingly books are available.  Even though it lacks to distributed nature of torrent downloading, for older or unusual music, its often quicker to find and download from soulseek than with bittorrent.  I would rather use the open source client, nicotine, but i find that for some features the official qt client works better.  
+  Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, it relies on a centralised server for search indexing and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client project, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  While the focus is on music, its is also possible to share other kinds of files, increasingly books are available.  Even though it lacks the distributed nature of torrent downloading, for older or unusual music, its often quicker to find and download from soulseek than with bittorrent.  I would rather use the open source client, nicotine, but i find that for some features the official qt client works better.
 
-* [soulseek](http://soulseekqt.net) music sharing network
-    client software. 
+* [soulseek](http://soulseekqt.net) music sharing network and client software. 
 * [nicotine](http://nicotine-plus.sourceforge.net/) open source soulseek client written in python
-* museek+
+* museek+ - not sure if this is still being developed, but it is a client-daemon suite meaning you can connect to a remote soulseek instance.
 
 ## directconnect
 Im not sure how popular directconnect is these days.  I've always been a bit critical of it for favouring users with large collections, making a hierarchy.
@@ -520,6 +532,9 @@ the wiki
 
 Unsorted links:
 
+
+* [MTR](https://www.bitwizard.nl/mtr/) - mtr combines the functionality of the 'traceroute' and 'ping' programs in a single network diagnostic tool.
+* [ngrok - secure introspectable tunnels to localhost](https://ngrok.com/)
 * rmlint - good software for removing unwanted files
 * [Open source software and nice hardware box.matto.nl ](https://box.matto.nl/index.html) Tags: software linux
 * [The Best MOTD - How to Customize Your MOTD - Linux ](http://www.mewbies.com/how_to_customize_your_console_login_message_tutorial.htm) Tags: motd
