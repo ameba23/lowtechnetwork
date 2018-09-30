@@ -10,7 +10,7 @@
       The page_title contains the title for a page as shown in the navigation.
       Site name contains the name as defined in the mkdocs.yml
     -->
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <title>{% if not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     
     <link href="{{ base_url }}/minimal.css" rel="stylesheet">
 
@@ -102,7 +102,7 @@
 
   <!-- ******************************** page title *** -->
       <div class="text-center">
-        <h1>   {% if page.title %} {{ page.title }} {% endif %} </h1>
+        <h1>   {% if not page.is_homepage %} {{ page.title }} {% endif %} </h1>
       </div>
   <!-- ********************************** page contents box ***  -->
   <!-- todo: make this a grid element -->
