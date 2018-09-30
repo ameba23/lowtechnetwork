@@ -300,7 +300,7 @@ If you dont have a duplex printer probably you want to print the even pages, put
    lpr -P myprinter -o page-set=even -#1 infile.pdf    # print the even pages  
    lpr -P myprinter -o page-set=odd -#1 infile.pdf     # print the odd pages
 
-# encryption
+## encryption
 * [cryptoparty handbook](https://www.cryptoparty.in/documentation/handbook) plenty of information
 * [gpg](http://www.gnupg.org/) Gnu Privacy Guard.  Tool for encrypting files and email. Most simple usage - symmetric encryption of a single file:
     gpg -c file
@@ -358,7 +358,9 @@ various kinds of dictionary viewing software.
 
 ## bittorrent
 
-* [magnetico - labs.boramalper.org](http://labs.boramalper.org/magnetico/)  [github repo](https://github.com/boramalper/magnetico) describes itself as an 'autonomous (self-hosted) BitTorrent DHT search engine suite'.
+### Magnetico
+
+[magnetico - labs.boramalper.org](http://labs.boramalper.org/magnetico/)  [github repo](https://github.com/boramalper/magnetico) describes itself as an 'autonomous (self-hosted) BitTorrent DHT search engine suite'.
 
 The Bittorrent mainline DHT, is, a least according to [this paper published in 2013,](http://cs.helsinki.fi/u/lxwang/publications/P2P2013_13.pdf) by far the biggest p2p network in the world both in terms of users and volume of traffic. 
 
@@ -368,6 +370,7 @@ A project called [tribler](https://www.tribler.org/) solved this problem to some
 
 Magnetico is a program which scrapes torrent data off the DHT to build your own torrent database and could just be the final piece in the puzzle.  
 
+### Other bittorrent projects
 * rtorrent - NCurses BitTorrent client based on libtorrent
 * [Tribler](https://www.tribler.org/) - Torrent client with some great features such as peer-to-peer based searching and enhanced anonymity.
 * [Theory.org Bittorrent Wiki](https://wiki.theory.org/index.php/Main_Page) - A lot of detailed info on this site including a detailed unofficial bittorrent specification.
@@ -375,7 +378,7 @@ Magnetico is a program which scrapes torrent data off the DHT to build your own 
 * [newTrackon: Tracking the trackers](https://newtrackon.com/)
 * [GitTorrent: A Decentralized GitHub](https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/) [repo](https://github.com/cjb/GitTorrent) 
 
-### bittorrent trackers (possibly outdated...)
+### bittorrent trackers (probably outdated...)
 * [Zooqle: Verified torrents](https://zooqle.com/)
 * [TorrentProject.se](http://torrentproject.se/) 
 * [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
@@ -385,23 +388,23 @@ Magnetico is a program which scrapes torrent data off the DHT to build your own 
 * [rarbg.to](http://rarbg.to)
 
 ## soulseek
-  Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, it relies on a centralised server for search indexing and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client project, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  While the focus is on music, its is also possible to share other kinds of files, increasingly books are available.  Even though it lacks the distributed nature of torrent downloading, for older or unusual music, its often quicker to find and download from soulseek than with bittorrent.  I would rather use the open source client, nicotine, but i find that for some features the official qt client works better.
+
+Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, it relies on a centralised server for search indexing and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client project, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  While the focus is on music, its is also possible to share other kinds of files, increasingly books are available.  Even though it lacks the distributed nature of torrent downloading, for older or unusual music, its often quicker to find and download from soulseek than with bittorrent.  I would rather use the open source client, nicotine, but i find that for some features the official qt client works better.
 
 * [soulseek](http://soulseekqt.net) music sharing network and client software. 
 * [nicotine](http://nicotine-plus.sourceforge.net/) open source soulseek client written in python
 * museek+ - not sure if this is still being developed, but it is a client-daemon suite meaning you can connect to a remote soulseek instance.
 
 ## directconnect
+
 Im not sure how popular directconnect is these days.  I've always been a bit critical of it for favouring users with large collections, making a hierarchy.
-* [eiskaltdc++](https://code.google.com/p/eiskaltdc/) and
-    [linuxDC++](https://launchpad.net/linuxdcpp) are linux clients for
-    the Direct Connect filesharing protocol.
-    [uhub](https://www.uhub.org/) is hub software (for running a server).
+
+* [eiskaltdc++](https://code.google.com/p/eiskaltdc/) and [linuxDC++](https://launchpad.net/linuxdcpp) are linux clients for the Direct Connect filesharing protocol.
+* [uhub](https://www.uhub.org/) is hub software (for running a server).
 
 ## edonkey
 
-* [imule](http://www.imule.i2p) p2p sharing software for i2p (also an
-    i2p eepsite)
+* [imule](http://www.imule.i2p) p2p sharing software for i2p (also an i2p eepsite)
 
 # audio software
 
