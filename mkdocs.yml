@@ -1,5 +1,5 @@
 site_name: ameba
-pages:
+nav:
 - Home: index.md
 - community run communication: community_run_communication.md
 - free networks: free_networks.md
@@ -20,9 +20,11 @@ pages:
 - other stuff: other_stuff.md
 - unsorted links: links.md
 #theme: bootstrap
-theme: null
+#theme: null
 #theme_dir: simple_theme
 #theme_dir: bootstrap_theme
 #theme_dir: min_theme
 #theme_dir: bijou_theme
-theme_dir: minimal_theme
+theme:
+  name: null
+  custom_dir: minimal_theme
