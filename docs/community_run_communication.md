@@ -389,7 +389,7 @@ begining to use the 5Ghz and 10Ghz bands as well.
 -   [free antennas.com](http://www.freeantennas.com/)
 -   [Freedombox example
     projects](http://wiki.debian.org/FreedomBox/ExampleProjects)
--   [430mhz data transfer](430mhz_data_transfer "wikilink") on this wiki
+-   [430mhz data transfer](430mhz_data_transfer.md) on this wiki
 -   [Projectmeshnet.org](https://wiki.projectmeshnet.org) "Project
     Meshnet was created out of the /r/darknetplan community in order to
     fight back against Internet censorship by corporations and
@@ -420,7 +420,7 @@ by CJDNS
     recently being re-started.
 -   [FON](http://corp.fon.com) - commercially provided cooperative wifi
     sharing (but you need an internet connection to join)
--   [tlant2409b](tlant2409b "wikilink") photos of inside a commercial
+-   [tlant2409b](tlant.md) photos of inside a commercial
     2.4Ghz directional antenna (by TP-Link) to give ideas on DIY design.
 
 #### mesh routing protocols
@@ -735,4 +735,4 @@ But aren't you gonna spend forever setting all this stuff up while your
 plants need weeding and watering and you ignore the people around
 you..... ![dog and bone](img/Dog_and_bone.png "fig:dog_and_bone.png")
 
-continue to [430mhz data transfer](430mhz_data_transfer "wikilink")
+continue to [430mhz data transfer](430mhz_data_transfer.md)

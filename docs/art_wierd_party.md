@@ -1,8 +1,8 @@
 ### On this site
 
-- [biscuits](biscuits "wikilink") image board
-- [urban regeneration](urban_regeneration "wikilink") drawings
-- [bad songs](bad_songs "wikilink")
+- [biscuits](biscuits.md) image board
+- [urban regeneration](urban_regeneration.md) drawings
+- [bad songs](bad_songs.md)
 
 ### art/wierd
 

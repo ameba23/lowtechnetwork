@@ -9,4 +9,4 @@ whole zine pdf with images:
 ![free networks7](img/Free_networks7.jpg "fig:free networks7.jpg")
 ![free networks8](img/Free_networks8.jpg "fig:free networks8.jpg")
 
-continue to [community run communication](community_run_communication "wikilink")
+continue to [community run communication](community_run_communication.md)
