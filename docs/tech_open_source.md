@@ -67,7 +67,7 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 * explain.sh - script to explain a command you dont know what it does (pulls stuff from man pages) eg: 'explain 'ls -l''
 * [30 handy bash aliases](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
 
-* [dotfiles.github.io](dotfiles.github.io) good explanation of several dotfile repos and tools for managing dotfiles.
+* [dotfiles.github.io](http://dotfiles.github.io) good explanation of several dotfile repos and tools for managing dotfiles.
 * GNU Stow -  Manage installation of multiple softwares in the same directory tree - can be useful for automatically creating symlinks to dotfiles.
 
 ## web
@@ -123,7 +123,7 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
 
 * NERDTree - plugin for file browsing 
 * CtrlP or Command-T - fuzzy file finder plugin - start typing some part of the path/filename and plugin finds it. CtrlP is written in pure vimscript whereas Command-T has more features. 
-* fugitive - git wrapper plugin from tim pope - use git without leaving vim
+* [fugitive](https://github.com/tpope/vim-fugitive) - git wrapper plugin from tim pope - use git without leaving vim
 * [plasticboy/vim-markdown: Markdown Vim Mode](https://github.com/plasticboy/vim-markdown)
 * [tomtom/tcomment_vim: An extensible & universal comment vim-plugin that also handles embedded filetypes](https://github.com/tomtom/tcomment_vim) [vimsomnia: The tcomment vimplugin](http://vimsomnia.blogspot.de/2010/11/tcomment-vim-plugin.html)
 * tpope 
@@ -131,23 +131,20 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
 
 ## file management
 
-* ![ranger screenshot](img/Ranger.png "fig:Ranger.png")[ranger](http://ranger.nongnu.org/)
-    terminal based file manager with vi style keybindings and many
-    features including 'rifle' file opener, previewing, tabs,
-    bookmarks, tagging. ranger is not a two pane file manager like mc or
-    vifm, but uses 'miller columns' showing the directory hierarchy
-    (similar to mac os 'finder'). The centre column is active, the left
-    column the higher level directory, and the right column shows either
-    a deeper directory or file information or preview.  Can preview pdf with pdftotext.  Can preview images with ascii, or if your terminal emulation permits it by displaying the image.  Ranger is written in python and is highly configurable, hackable and extendible. 
+### ranger
+
+![ranger screenshot](img/Ranger.png "fig:Ranger.png")
+[ranger](http://ranger.nongnu.org/) is a terminal based file manager with vi style keybindings and many features including 'rifle' file opener, previewing, tabs, bookmarks, tagging. ranger is not a two pane file manager like mc or vifm, but uses 'miller columns' showing the directory hierarchy (similar to mac os 'finder'). The centre column is active, the left column the higher level directory, and the right column shows either a deeper directory or file information or preview.  Can preview pdf with pdftotext.  Can preview images with ascii, or if your terminal emulation permits it by displaying the image.  Ranger is written in python and is highly configurable, hackable and extendible. 
 
 * [ranger on ArchWiki](https://wiki.archlinux.org/index.php/Ranger) [ranger plugins](https://raw.githubusercontent.com/ranger/ranger/master/examples/) [github.com/ranger/ranger](https://github.com/ranger/ranger) 
+
+### other file managers / related
+
 * [mc](https://www.midnight-commander.org/) Midnight Commander - old school 2 pane terminal based file manager (norton commander style)
 * [vifm](http://vifm.info/) vi file manager. Two pane and with vi style keybindings
 * [xfe](http://roland65.free.fr/xfe/) X File Explorer - light file
     manager for x-windows. Can have 2 pane and directory tree. Some
     norton commmander style keybindings.
-* [gnome commander](https://gcmd.github.io/) File manager for gnome,
-    norton commander style.
 * [gentoo](http://www.obsession.se/gentoo/) Light, fast 2 pane file
     manager
 * [SpaceFM](http://ignorantguru.github.io/spacefm/) multi-panel tabbed

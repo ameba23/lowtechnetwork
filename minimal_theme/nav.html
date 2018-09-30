@@ -3,9 +3,9 @@
 -->
 {% if not nav_item.children %}
  {% if nav_item.active %}  
-   [ <a class= "active" href="{{ nav_item.url }}">{{ nav_item.title }}</a> ] -
+   [ <a class= "active" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a> ] -
  {% else %}
- <a href="{{ nav_item.url }}">{{ nav_item.title }}</a> -
+ <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a> -
  {% endif %}
  <!--<br>-->
 {% else %}
