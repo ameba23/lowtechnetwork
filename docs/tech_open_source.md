@@ -386,6 +386,8 @@ Magnetico is a program which scrapes torrent data off the DHT to build your own 
 
 ## soulseek
 
+![slsk bird](http://www.slsknet.org/news/sites/default/files/slsk_bird.jpg)
+
 Soulseek has been going since many years, a peer-to-peer filesharing network with a focus on specialist/underground music.  Technically it is nothing special, it relies on a centralised server for search indexing and the official client software is not open source, although there is an open source client available, nicotine+, as well as a daemon-client project, museek+ (still somewhat in development) making it possible to run control the client remotely (on a computer elsewhere, or NAS, or ARM computer).  Soulseek's focus on rare or specialist music has left in largely ignored by the authorities, unlike similar filesharing networks.  It remains a community of music enthusiats hosting a lot of music that simply cant be found anywhere else.  While the focus is on music, its is also possible to share other kinds of files, increasingly books are available.  Even though it lacks the distributed nature of torrent downloading, for older or unusual music, its often quicker to find and download from soulseek than with bittorrent.  I would rather use the open source client, nicotine, but i find that for some features the official qt client works better.
 
 * [soulseek](http://soulseekqt.net) music sharing network and client software. 
