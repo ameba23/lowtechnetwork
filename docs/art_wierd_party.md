@@ -45,7 +45,7 @@
 -   [mp3.sety.cz](http://mp3.sety.cz) many dj set mp3s
     (electronic music)
 
-![dannicard_sm.jpg](dannicard_sm.jpg)
+![dannicard_sm.jpg](img/Dannicard_sm.jpg)
 
 ### geeky
 
@@ -63,4 +63,4 @@
 * Barbara Kingsolver - the Poisonwood Bible
 * Margaret Atwood - Oryx and Crake
 
-![hertz](hertz.jpeg)
+![hertz](img/Hertz.jpeg)
