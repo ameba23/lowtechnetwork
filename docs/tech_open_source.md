@@ -373,6 +373,7 @@ Magnetico is a program which scrapes torrent data off the DHT to build your own 
 * [Theory.org Bittorrent Wiki](https://wiki.theory.org/index.php/Main_Page) - A lot of detailed info on this site including a detailed unofficial bittorrent specification.
 * [StegTorrent](http://stegtorrent.sourceforge.net/) - hide torrent files inside images or audio using steganography.  It is windows software but the concept is great. 
 * [newTrackon: Tracking the trackers](https://newtrackon.com/)
+* [GitTorrent: A Decentralized GitHub](https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/) [repo](https://github.com/cjb/GitTorrent) 
 
 ### bittorrent trackers (possibly outdated...)
 * [Zooqle: Verified torrents](https://zooqle.com/)
