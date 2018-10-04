@@ -197,6 +197,10 @@ These email providers are non-commercial groups which take security and privacy 
 * [riseup.net](http://mail.riseup.net) (us)
 * [mtmedia.org](http://mtmedia.org) (de)
 
+### Public inboxes for one-time use email addresses
+
+[mailinator.com](https://www.mailinator.com) offers 'public' (no password) email accounts which are very useful for if you need to register via email for a site that you do not trust or do not want to give your personal email address to.  They also offer SMS inboxes.
+
 ## graphics
 
 * [gimp](http://www.gimp.org/) -the GNU image manipulation program - a gui graphics editor (like adobe photoshop)
@@ -353,7 +357,7 @@ various kinds of dictionary viewing software.
 * [zeropaid](http://www.zeropaid.com) filesharing news and forum (which used to be interesting years ago, and it seems isnt really any more)
 * subliminal - good software for downloading film subtitles
 
-## bittorrent
+## Bittorrent
 
 ### Magnetico
 
@@ -370,14 +374,15 @@ Magnetico is a program which scrapes torrent data off the DHT to build your own 
 ### Other bittorrent projects
 * rtorrent - NCurses BitTorrent client based on libtorrent
 * [Tribler](https://www.tribler.org/) - Torrent client with some great features such as peer-to-peer based searching and enhanced anonymity.
-* [Theory.org Bittorrent Wiki](https://wiki.theory.org/index.php/Main_Page) - A lot of detailed info on this site including a detailed unofficial bittorrent specification.
+* [Theory.org Bittorrent Wiki](https://wiki.theory.org/index.php/Main_Page) - A lot of detailed info on this site including a detailed unofficial bittorrent specification. Very well written and perhaps easier to understand than the official protocol specification.
 * [StegTorrent](http://stegtorrent.sourceforge.net/) - hide torrent files inside images or audio using steganography.  It is windows software but the concept is great. 
 * [newTrackon: Tracking the trackers](https://newtrackon.com/)
-* [GitTorrent: A Decentralized GitHub](https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/) [repo](https://github.com/cjb/GitTorrent) 
+* [GitTorrent: A Decentralized GitHub](https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/) [repo](https://github.com/cjb/GitTorrent) - Git hosting powered by bittorrent 
 
 ### bittorrent trackers (probably outdated...)
 * [Zooqle: Verified torrents](https://zooqle.com/)
-* [TorrentProject.se](http://torrentproject.se/) 
+* [TorrentProject.se](http://torrentproject.se/)
+* [academictorrents.com](http://academictorrents.com/) - torrent hosting site for academic datasets, papers and course materials. 
 * [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
 * [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
 * [tracker2.postman.i2p](http://tracker2.postman.i2p) i2p torrent
