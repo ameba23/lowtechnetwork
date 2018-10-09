@@ -1,17 +1,17 @@
 
-Most of this page is about open source software. A lot commercial software is easy to use and works straight out of the box.  However you are less in control, there may be unwanted hidden features, and you are constantly required to buy new hardware.  Many of the packages
+Most of this page is about open source software. A lot commercial software is easy to use and works straight out of the box.  However you are less in control, there may be unwanted hidden features, and bloated design means you are constantly required to buy new hardware.  Many of the packages
 listed are fast and light on system resources but can take time to learn how to use.
 
 * [LibrePlanet](https://libreplanet.org/) wiki about free software community and campaigns
 
 # GNU/linux
 
-* [Arch Linux](https://www.archlinux.org/) rolling release, meaning the lastest packages are always available (at the cost of less stability). supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find useful whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
-* [Debian](https://www.debian.org/index.en.html) 'the universal operating system'. Many different computer architechtures are supported, a big, supportive user community, a huge pre-compiled software repository, and different builds for stable, unstable and testing.  Debian is purist about free software.  Only completely non-proprietory packages are included in the official repository.  Of course it is very easy to also install non-free packages, and a bundle of non-free extras (such as codecs for mp3, etc) can be downloaded.  Many of the very popular linux distributions (eg. Ubuntu) are based on debian.  The default desktop environment, currently gnome3, is in my opinion annoying, but it is easy to change it. 
+* [Arch Linux](https://www.archlinux.org/) rolling release, meaning the latest packages are always available (at the cost of less stability). supportive user community, and huge user software repository (AUR).  Very configurable on installation.  Great package documentation on the wiki which you will find useful whichever distribution you use.  The entire wiki can be downloaded for reading offline. 
+* [Debian](https://www.debian.org/index.en.html) 'the universal operating system'. Many different computer architectures are supported, a big, supportive user community, a huge pre-compiled software repository, and different builds for stable, unstable and testing.  Debian is purist about free software.  Only completely non-proprietory packages are included in the official repository.  Of course it is very easy to also install non-free packages, and a bundle of non-free extras (such as codecs for mp3, etc) can be downloaded.  Many of the very popular linux distributions (eg. Ubuntu) are based on debian.  The default desktop environment, currently gnome3, is in my opinion annoying, but it is easy to change it. 
+* [Devuan](https://devuan.org/) - A debian fork designed to give the user more control by allowing them to use a different init system than systemd, which Devuan developers believe has become too big a dependency. 
 * [DistroWatch.com](http://distrowatch.com/) website with a lot of information about the
     different linux distributions.
-* [UNetbootin](http://unetbootin.sourceforge.net/) Software to create
-    bootable usb linux system (useful for installing linux). Runs also on windows and mac. 
+* [UNetbootin](http://unetbootin.sourceforge.net/) Software to create a bootable usb linux system (useful for installing linux). Runs also on windows and mac. 
 * [The Linux Documentation Project](http://www.tldp.org/)
 * [tldr (too long, didnt read)](https://github.com/tldr-pages/tldr) A collection of simplified and community-driven man pages
 
@@ -29,6 +29,7 @@ listed are fast and light on system resources but can take time to learn how to 
     if you dont like to use the mouse and also good for making the most
     of display space.
 * [Comparison of Tiling Window Managers - ArchWiki](https://wiki.archlinux.org/index.php/Comparison_of_Tiling_Window_Managers)
+
 ## shell tools
 
 ### zsh
@@ -76,6 +77,7 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 * [vimb](http://fanglingsu.github.io/vimb/) lightweight webkit based browser (of which there are many to choose from, inspired by vimprobable, and in my opinion an improvement.
 
 * [vimprobable](http://sourceforge.net/p/vimprobable) another lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
+* [Luakit Web Browser](https://luakit.github.io/) - another customisable webkit based browser, extendable with the [lua scripting language](https://www.lua.org). Many additional modules exist, including ad-blocking.
 * qutebrowser - still relatively lightweight, webkit based and with vi style bindings, but a bit bigger and more feature-rich than vimb. 
 * [suckless.org surf](http://surf.suckless.org/) Bare bones browser.  No runtime configuration whatsoever.  [Adblocking using /etc/hosts](http://surf.suckless.org/files/adblock-hosts) 
 * [VimFx Add-on for Firefox](https://addons.mozilla.org/en-US/firefox/addon/vimfx/?src=search)
@@ -94,10 +96,9 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
     bundle of configurations for vim, zsh, ruby and git. The idea is
     that rather than spending a lot of time configuring software, a
     collabourative effort is made to bring together 'sane' (but opinionated) configurations and plugins etc.
-* yaourt - wrapper for arch linux's pacman - install packages from arch user repository (AUR) easily.  yaourt has been criticised for encouraging users to install packages without properly checking pkgbuilds, which raises security issues (maliscious software could be unintentionally installed).  However some people think that the convenience of using it outweighs the security risks.  You can make up your own mind.
-* [atool](http://www.nongnu.org/atool/) is an excellent tool for managing archives.  instead of remembering different commands for different formats, you can use `apack`, `aunpack`, `als` etc.
+* [yay](https://github.com/Jguer/yay) - install packages from the arch linux user repository (AUR) easily. AUR helpers have been criticised for encouraging users to install packages without properly checking pkgbuilds, which raises security issues (malicious software could be unintentionally installed).  However some people think that the convenience of using them outweighs the security risks.  You can make up your own mind.
+* [atool](http://www.nongnu.org/atool/) is an excellent tool for managing archives (eg: `.tar.gz`, `.zip`).  instead of remembering different commands for different formats, you can use `apack`, `aunpack`, `als` etc for any type of archive/compressed file.
 * [prurigro/arch-wiki-markdown](https://github.com/prurigro/arch-wiki-markdown) program for reading the arch linux wiki offline on your terminal.  
-
 * [aap](http://www.a-a-p.org/) makes it easy to download, build and install software
 * [calmar.ws](http://www.calmar.ws/) tips and info on linux,vim, vimperator, awesome, other stuff
 * [refcards.com](http://www.refcards.com/) free quick reference cards
@@ -305,14 +306,23 @@ If you dont have a duplex printer probably you want to print the even pages, put
 * [cryptoparty handbook](https://www.cryptoparty.in/documentation/handbook) plenty of information
 * [gpg](http://www.gnupg.org/) Gnu Privacy Guard.  Tool for encrypting files and email. Most simple usage - symmetric encryption of a single file:
     gpg -c file
-This prompts for a password and gives file.gpg.  To decypt: 
+This prompts for a password and gives file.gpg.  To decrypt: 
     gpg -d file.gpg >` file`
 
 * [Disk encryption article on ArchWiki](https://wiki.archlinux.org/index.php/Disk_Encryption) a good explanation of disk encryption and a comparison of the methods.
 * [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) amazingly good file encryption software. 
 
 
+## Virtual Private Networks
+
+* [Tinc VPN](https://tinc-vpn.org/)
+* [Creating a VPN with tinc article on Linux.com](https://www.linux.com/news/creating-vpn-tinc)
+* [How To Setup A Tinc VPN - https://smartystreets.com/blog](https://smartystreets.com/blog/2015/10/how-to-setup-a-tinc-vpn)
+* [VPNs With Port Forwarding - The Load Guru](http://theloadguru.com/vpns-with-port-forwarding/)
+* [badvpn](https://github.com/ambrop72/badvpn) NCD scripting language, tun2socks proxifier, P2P VPN
+
 ## bitcoin/blockchain related
+
 * [Bitcoin tech talk](https://bitcointechtalk.com/) - newsletter by Jimmy Song
 * [Jameson Lopp's Bitcoin resources](https://lopp.net/bitcoin.html) - excellent collection of resources and guides.
 * [CoinDesk](http://www.coindesk.com/) and [Cointelegraph](https://cointelegraph.com/) - Commercial cryptocurrency news sites
@@ -320,7 +330,7 @@ This prompts for a password and gives file.gpg.  To decypt:
 * [Backfeed - Spreading Consensus](http://backfeed.cc/) - 'social operation system' - universal reputation system.  
 * [Bitcoin Beginners FAQ- blockchain.info](https://blockchain.info/wallet/bitcoin-faq) -and blockchain search service and bitcoin wallet service
 
-# tools for those who have little or no connection to internet
+# Offline-first tools - for those who have little or no connection to internet
 
 * [kiwix](http://www.kiwix.org) wikipedia offline reader - read
     wikipedia and other sites when not connected to internet. It uses a special compression format called zim.  The english wikipedia
@@ -359,35 +369,7 @@ various kinds of dictionary viewing software.
 
 ## Bittorrent
 
-### Magnetico
-
-[magnetico - labs.boramalper.org](http://labs.boramalper.org/magnetico/)  [github repo](https://github.com/boramalper/magnetico) describes itself as an 'autonomous (self-hosted) BitTorrent DHT search engine suite'.
-
-The Bittorrent mainline DHT, is, a least according to [this paper published in 2013,](http://cs.helsinki.fi/u/lxwang/publications/P2P2013_13.pdf) by far the biggest p2p network in the world both in terms of users and volume of traffic. 
-
-But the methods of finding torrents have traditionally involved using centralised torrent hosting sites and trackers.  This has changed somewhat since the distributed hash table was introduces with [BEP 5](http://bittorrent.org/beps/bep_0005.html), meaning only a magnet link containing a hash of the torrents content was needed, and peers could be found without the need for a centralised tracker.  But the magnet links themselves still needed to be hosted somewhere.
-
-A project called [tribler](https://www.tribler.org/) solved this problem to some extent, providing a peer-to-peer search mechanism, but it only works between tribler's user community, which is tiny in comparison to all users on the bittorrent network.
-
-Magnetico is a program which scrapes torrent data off the DHT to build your own torrent database and could just be the final piece in the puzzle.  
-
-### Other bittorrent projects
-* rtorrent - NCurses BitTorrent client based on libtorrent
-* [Tribler](https://www.tribler.org/) - Torrent client with some great features such as peer-to-peer based searching and enhanced anonymity.
-* [Theory.org Bittorrent Wiki](https://wiki.theory.org/index.php/Main_Page) - A lot of detailed info on this site including a detailed unofficial bittorrent specification. Very well written and perhaps easier to understand than the official protocol specification.
-* [StegTorrent](http://stegtorrent.sourceforge.net/) - hide torrent files inside images or audio using steganography.  It is windows software but the concept is great. 
-* [newTrackon: Tracking the trackers](https://newtrackon.com/)
-* [GitTorrent: A Decentralized GitHub](https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/) [repo](https://github.com/cjb/GitTorrent) - Git hosting powered by bittorrent 
-
-### bittorrent trackers (probably outdated...)
-* [Zooqle: Verified torrents](https://zooqle.com/)
-* [TorrentProject.se](http://torrentproject.se/)
-* [academictorrents.com](http://academictorrents.com/) - torrent hosting site for academic datasets, papers and course materials. 
-* [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
-* [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
-* [tracker2.postman.i2p](http://tracker2.postman.i2p) i2p torrent
-    tracker (you must be running i2p to access)
-* [rarbg.to](http://rarbg.to)
+Bittorrent, as well as some other peer-to-peer systems which could be used for filesharing, are discussed on the [decentralised internet projects section](community_run_communication.md#bittorrent)
 
 ## soulseek
 
@@ -489,34 +471,26 @@ randomly choose some of my music to put onto my mp3 player):
 * [aioe](http://www.aioe.org) free text only usenet provider (no
     registration required)
 
+# podcasts
+
+* [Code podcast](https://codepodcast.com)
+
 # other / uncategorised
 
 Many of these links need to be (or already have been) put elsewhere on
 the wiki
 
-* [mighty ohm](http://mightyohm.com) some open source hardware designs
-    and a soldering guide in many languages
-* [Desoldering - wikipedia
-    article](http://en.wikipedia.org/wiki/Desoldering) for learning how
-    to recuperate electronic components.
-* [Desoldering
-    wikibook](http://en.wikibooks.org/wiki/Practical_Electronics/Desoldering)
+* [mighty ohm](http://mightyohm.com) some open source hardware designs and a soldering guide in many languages
+* [Desoldering - wikipedia article](http://en.wikipedia.org/wiki/Desoldering) for learning how to recuperate electronic components.
+* [Desoldering wikibook](http://en.wikibooks.org/wiki/Practical_Electronics/Desoldering)
 * [circuit circle](http://circuitcircle.de) / [SCHRÄGERUNDE](http://schraegerunde.blogspot.de/) DIY electronics and circuit bending -workshops, concerts, installations, performances
-* [Toner refill - wikipedia
-    article](http://en.wikipedia.org/wiki/Toner_refill) on refilling
-    photocopier laser printer toner
-
+* [Toner refill - wikipedia article](http://en.wikipedia.org/wiki/Toner_refill) on refilling photocopier or laser printer toner
 * [freemusicarchive.org](http://www.freemusicarchive.org)
-* [internet archive](https://archive.org/) archive of internet sites,
-    also many media files hosted here, you can put media files here too.
-* [Use google translate from the command
-    line](https://github.com/Anoncheg1/Command-line-translator) with
+* [internet archive](https://archive.org/) archive of internet sites, also many media files hosted here, you can put media files here too.
+* [Use google translate from the command line](https://github.com/Anoncheg1/Command-line-translator) with
     some extra features.
-* [Google translate awk
-    program](https://github.com/soimort/google-translate-cli) very
-    similar
-* [open frameworks](http://www.openframeworks.cc) c++ library for
-    creative projects
+* [Google translate awk program](https://github.com/soimort/google-translate-cli) very similar
+* [open frameworks](http://www.openframeworks.cc) c++ library for creative projects
 * [RONJA](http://ronja.twibright.com/) free technology project for
     optical point-to-point data links (using visible light). The design
     has a reported 1.4km range and 10Mbps full duplex data rate.

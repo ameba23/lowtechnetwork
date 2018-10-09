@@ -55,8 +55,6 @@ article [Internet Freedom Fighters Build a Shadow Web](http://www.indymedia.ie/a
 * [p2p foundation](http://p2pfoundation.net) organisation promoting peer to peer practises, 'towards an open and autonomous internet and society'. The site also has an [open hardware directory](http://p2pfoundation.net/Product_Hacking)
 * [redecentralize.org](http://redecentralize.org/) a series video interviews about projects which contribute to the decentralisation of communication. See also their [list of alternative internet projects](https://github.com/redecentralize/alternative-internet)
 * [federation FDN](http://www.ffdn.org) Fedaration of associative internet service providers in france
-* [disroot.org](https://disroot.org/)
-* [Matrix.org](https://matrix.org/)
 
 ![run for the phone](img/Run_for_the_phone.jpg "Run_for_the_phone.jpg")
 
@@ -356,41 +354,155 @@ radio scene.
 -   [piraten.wdb](http://www.schoechi.de/pwdb-ema.html) - another list
     of stations
 
-### Alternative internet projects 
+# Decentralised internet projects 
 
-* [ipfs](http://ipfs.io) - the interplanetary filesystem.  A promising, decentralised, p2p protocol, designed to be an alternative to HTTP (and potetially many other internet protocols).  It is a content addressable filesystem, meaning files are referred to by their content (using a hash) rather than their location.  The nearest available copy of the file is retrieved, increasing speed and efficiency and removing the power dynamic of a centralised server-client relationship.  ipfs is working right now, a permanant filesystem, completely controlled by its users and resiliant to censorship. it is gaining popularity quickly, and has the potential to completely upturn the topology of the web.  
-* [dat](https://datproject.org) A great decentralised storage tool.
+The projects in this section generally require already having some internet connectivity rather than building from scratch. But they aim to be more distributed and many work well together with community wireless networks described below.
+
+- [GNUnet](https://gnunet.org/) GNUnet is a framework for secure peer-to-peer networking that does not use any centralised or otherwise trusted services. [GNUnet wikipedia](http://en.wikipedia.org/wiki/GNUnet)
 * [zeronet](http://zeronet.io)
--   [GNUnet](https://gnunet.org/) GNUnet is a framework for secure peer-to-peer networking that does not use any centralised or otherwise trusted services. [GNUnet wikipedia](http://en.wikipedia.org/wiki/GNUnet)
+- [i2p](http://www.i2p2.de) [I2P wikipedia](http://en.wikipedia.org/wiki/I2P) alternative network project similar to TOR.
+- [freenet](https://freenetproject.org) [Freenet wikipedia](http://en.wikipedia.org/wiki/Freenet)
+- [Tor](https://www.torproject.org/) Online anonymity. There are certain services and websites configured to be only accessible to Tor users, which comprises a kind of darknet, including email, [the hidden wiki](http://en.wikipedia.org/wiki/The_Hidden_Wiki), [The silk road](http://en.wikipedia.org/wiki/Silk_Road_%28marketplace%29) marketplace (now allegedly shut down).
+-   [netsukuku](http://netsukuku.freaknet.org/) a very interesting project. Has not been maintained for a while but is recently being re-started. [Revived C-code repo](https://github.com/netsukuku/netsukuku)
+
+## [CJDNS](http://cjdns.info/) 
+
+- [cjdns wikipedia](http://en.wikipedia.org/wiki/Cjdns)
+- [hyperboria](http://hyperboria.net/) decentralised network powered by CJDNS
+
+## Bittorrent
+
+* [Theory.org Bittorrent Wiki](https://wiki.theory.org/index.php/Main_Page) - A lot of detailed info on this site including a detailed unofficial bittorrent specification. Very well written and perhaps easier to understand than the official protocol specification.
+
+### Magnetico
+
+[magnetico - labs.boramalper.org](http://labs.boramalper.org/magnetico/)  [github repo](https://github.com/boramalper/magnetico) describes itself as an 'autonomous (self-hosted) BitTorrent DHT search engine suite'.
+
+The Bittorrent mainline DHT, is, a least according to [this paper published in 2013,](http://cs.helsinki.fi/u/lxwang/publications/P2P2013_13.pdf) by far the biggest p2p network in the world both in terms of users and volume of traffic. 
+
+But the methods of finding torrents have traditionally involved using centralised torrent hosting sites and trackers.  This has changed somewhat since the distributed hash table was introduces with [BEP 5](http://bittorrent.org/beps/bep_0005.html), meaning only a magnet link containing a hash of the torrents content was needed, and peers could be found without the need for a centralised tracker.  But the magnet links themselves still needed to be hosted somewhere.
+
+A project called [tribler](https://www.tribler.org/) solved this problem to some extent, providing a peer-to-peer search mechanism, but it only works between tribler's user community, which is tiny in comparison to all users on the bittorrent network.
+
+Magnetico is a program which scrapes torrent data off the DHT to build your own torrent database and could just be the final piece in the puzzle.  
+
+### Other bittorrent projects
+* rtorrent - NCurses BitTorrent client based on libtorrent
+* [Tribler](https://www.tribler.org/) - Torrent client with some great features such as peer-to-peer based searching and enhanced anonymity.
+* [StegTorrent](http://stegtorrent.sourceforge.net/) - hide torrent files inside images or audio using steganography.  It is windows software but the concept is great. 
+* [newTrackon: Tracking the trackers](https://newtrackon.com/)
+* [GitTorrent: A Decentralized GitHub](https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/) [repo](https://github.com/cjb/GitTorrent) - Git hosting powered by bittorrent 
+
+### bittorrent trackers (probably outdated...)
+* [Zooqle: Verified torrents](https://zooqle.com/)
+* [TorrentProject.se](http://torrentproject.se/)
+* [academictorrents.com](http://academictorrents.com/) - torrent hosting site for academic datasets, papers and course materials. 
+* [t411](http://www.t411.in) good torrent tracker (french) requires registration and has advertising but some really good stuff on there. 'Telecharger'='Download'
+* [rutracker.org](http://www.rutracker.org) good torrent tracker (russian) also requires registration.
+* [tracker2.postman.i2p](http://tracker2.postman.i2p) i2p torrent
+    tracker (you must be running i2p to access)
+* [rarbg.to](http://rarbg.to)
+
+See also the [filesharing section](tech_open_source.md#filesharing)
+
+## [Dat](https://datproject.org) 
+
+Dat is a decentralised storage tool inspired by bittorrent, but with built in version control.  Dat has similarities with IPFS, however Dat archives are addressed by public key and can be updated whereas IPFS (at least in early implementations) addresses static content.
+
+- [The Dat project whitepaper](https://github.com/datprotocol/whitepaper/blob/master/dat-paper.pdf)
+- [Beaker Browser](https://beakerbrowser.com/) the Dat project's flagship app.  A web browser with build in support for sites served over dat.  It also has an interface to make it easy to publish your own. 
+- [hypercored](https://github.com/mafintosh/hypercored) a tool for serving multiple dat archives.  See [Dat on a server - official docs](https://docs.datproject.org/server)
+
+## [IPFS](http://ipfs.io) 
+
+The 'inter-planetary filesystem'.  A decentralised, peer-to-peer protocol, designed to be an alternative to HTTP (and potentially many other internet protocols).  It is a content addressable filesystem, meaning files are referred to by their content (using a hash) rather than their location.  The nearest available copy of the file is retrieved, increasing speed and efficiency and removing the power dynamic of a centralised server-client relationship.  IPFS seeks to be a more permanent data store than the web where old sites can get lost forever. 
+
+## [Secure Scuttlebutt](https://www.scuttlebutt.nz/) 
+
+![](img/hermes-watering.gif)
+Secure Scuttlebutt (SSB) is a peer to peer platform designed for social networks. 
+
+Noteworthy applications on SSB include: ([Complete list](https://www.scuttlebutt.nz/applications))
+
+- Patchwork, the most popular and stable client 
+- Patchbay, less polished and more hackable, with some interesting features
+- Patchfox, an ssb client as a firefox extension
+- Patchfoo, a minimal UI designed for low resource computers
+- Multiverse, a beta android ssb client
+- git-ssb, decentralized git repository hosting 
+- ssb-polls, a group decision making tool (like loomio)
+- Ticktack, a blogging platform
+- ssb gatherings, an events listing system 
+- scry, a calendar invites system (like doodle)
+- ssb-npm, a decentralized npm registry
+- [dark crystal](https://darkcrystal.pw) secure social backups for secrets and keys 
+- ssb-chess... 
 
 
--   [i2p](http://www.i2p2.de) [I2P wikipedia](http://en.wikipedia.org/wiki/I2P) alternative network project similar to TOR.
--   [freenet](https://freenetproject.org) [Freenet wikipedia](http://en.wikipedia.org/wiki/Freenet)
+SSB references and media articles:
+- [The Scuttlebutt Protocol guide](https://ssbc.github.io/scuttlebutt-protocol-guide/) a detailed description of the protocol
+- [Scalable Secure Scuttlebutt](https://github.com/dominictarr/scalable-secure-scuttlebutt/blob/master/paper.md) draft article on scaling SSB 
+- Andre Staltz's classic article ['An Off-grid Social Network'](https://staltz.com/an-off-grid-social-network.html)
+- 'The Atlantic' article ['Meet the nomad who's been exploding the internet into pieces'](https://www.theatlantic.com/technology/archive/2017/05/meet-the-counterantidisintermediationists/527553/)
 
--   [Tor](https://www.torproject.org/) free software for online anonymity. There are certain services and websites configured to be only accessible to Tor users, which comprises a kind of darknet, including email, [the hidden wiki](http://en.wikipedia.org/wiki/The_Hidden_Wiki), [The silk road](http://en.wikipedia.org/wiki/Silk_Road_%28marketplace%29) marketplace (now allegedly shut down).
-* [maidsafe](http://maidsafe.net) SAFE network - another alternative newtwork
+Some work-in-progress implementations of SSB in other languages:
 
-### wifi mesh or point to point
+- [Rust](https://github.com/AljoschaMeyer/secret-handshake-rs)
+- [Python](https://github.com/pferreir/pyssb)
+- [Go](https://github.com/andyleap/go-ssb)
+
+SSB's 'feeds' can be thought of as a diary for each peer.  The diary is an append-only log of hash-linked signed messages consisting of javascript objects.  Each peer stores and regularly synchronizes the diaries of other peers with which they have relationships, as well as of peers on the periphery of their social network, depending on the desired number of 'hops'. Depending on the application, messages of particular types or with particular properties are aggregated in different ways, typically using a custom-built database and query system, flume. 
+
+Due to the need to continually process multiple feeds, SSB applications tend to make heavy use of streams.  A custom system of pipeable streams has been developed which is particularly suited to processing SSB feeds.  
+
+- [pull-stream](https://pull-stream.github.io/) minimal pipable pull streams
+- [flumedb](https://github.com/flumedb/flumedb) a modular database 'for moving logs with streams' 
+- [ssb-query](https://github.com/dominictarr/ssb-query) an index for flume views specifically for scuttlebutt 
+- [ssb-backlinks](https://github.com/ssbc/ssb-backlinks) commonly used module for aggregating links to a common root message 
+
+Contrary to content-addressed systems like Bittorrent, IPFS or DAT, SSB is structured around propagating 'feeds', collections of messages from particular peers, based on the relationships between peers. As such, a particular piece of data is not either 'on SSB' or 'not on SSB', rather the data held by each peer depends on their relationships with other peers. The network topology is determined by social topology. 
+
+Many other peer to peer systems use a distributed hash table (DHT) to index and propagate data whereas SSB uses a gossip protocol. With a DHT, all users have, in principle, access to a ubiquitous data-set, and their connectivity with particular peers effects only how long it might take to find a particular piece of information (of course in practice some data often cannot be retrieved).  In that sense they essentially emulate the behavior of a centralized system, where all users access the same source of data.  By using a gossip protocol, the data-set itself is dependent on the relationships between peers.  In the case of SSB, the user explicitly chooses which peers they want to relate to, and by doing so retrieves messages from those users' 'feeds', regardless of their content, and stores them allowing them to propagate to other peers requesting messages from that particular user.  It has a relationship-centered topology. 
+
+![](img/follow_graph.png)
+
+There is much discussion about the optimal parameters for 'gossiping'. Notably, the 'number of hops', the extent to which a user holds data from indirectly related peers ('friends of friends', or 'friends of friends of friends'). This can be individually adjusted using client software and might vary depending on the use-case, the resources available and the attitude of the user.  
+
+Of course, SSB is not without its limitations. IP addresses are exposed by default. There are ways around this, but it is important to note that it is not anonymous out of the box.  That said, the handshake mechanism used has some promising security properties. It is impossible to connect to a peer without knowing their public key, and peers have control over who they allow connections with. Passive eavesdroppers exposed to the handshake are unable to determine the public key of either peer. 
+
+SSB is also not well suited to handling large files and data sets.  Messages in SSB feeds are limited to 8kb, and larger amounts of data such as images and other media are handled by a distinct sub-protocol called SSB-blobs.  However, SSB-blobs is also not designed for particularly large data sets (by default, 'blobs' are limited to 5MB).
+
+- Maymounkov and Mazieres (2002) "Kademlia, A peer to peer information system based on the XOR metric" (A good description of distributed hash tables) https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf
+
+## Other decentralised internet projects
+
+- [Yggdrasil](https://yggdrasil-network.github.io/) An encrypted ipv6 network, with similarities to CJDNS.
+- [Aether](https://www.getaether.net/)
+- [Matrix.org](https://matrix.org/) [disroot.org](https://disroot.org/)
+- [maidsafe](http://maidsafe.net) SAFE network - distributed storage platform
+- [Storj](http://storj.io/) software for distributed cloud storage.
+
+# Wifi - mesh or point to point
 
 Using wifi for outdoor links is gaining more and more popularity. As the
 2.4ghz band becomes crowded in densly populated area, more projects are
 begining to use the 5Ghz and 10Ghz bands as well.
 
--   [wireless networking for the developing world](http://wndw.net/)
+- [wireless networking for the developing world](http://wndw.net/)
     ebook
--   [freenetworks.org](http://freenetworks.org/) an association of
+- [freenetworks.org](http://freenetworks.org/) an association of
     community network groups around the world.
--   [Battlemesh](http://battlemesh.org/) an annual european event to
+- [Battlemesh](http://battlemesh.org/) an annual european event to
     compare different routing protocols for mesh networks
--   [OpenWrt](https://openwrt.org/) Open source firmware for routers and
+- [OpenWrt](https://openwrt.org/) Open source firmware for routers and
     other embedded devices
--   [WRTnode](http://wrtnode.com/) First & only open source hardware for
+- [WRTnode](http://wrtnode.com/) First & only open source hardware for
     OpenWrt, the world's smallest Linux+Wi-Fi development board.
--   [free antennas.com](http://www.freeantennas.com/)
--   [Freedombox example
+- [free antennas.com](http://www.freeantennas.com/)
+- [Freedombox example
     projects](http://wiki.debian.org/FreedomBox/ExampleProjects)
--   [430mhz data transfer](430mhz_data_transfer.md) on this wiki
--   [Projectmeshnet.org](https://wiki.projectmeshnet.org) "Project
+- [430mhz data transfer](430mhz_data_transfer.md) on this wiki
+- [Projectmeshnet.org](https://wiki.projectmeshnet.org) "Project
     Meshnet was created out of the /r/darknetplan community in order to
     fight back against Internet censorship by corporations and
     governments around the world. It aims to use a combination of
@@ -399,31 +511,13 @@ begining to use the 5Ghz and 10Ghz bands as well.
     using CJDNS.
 * [althea mesh](http://altheamesh.com/) project where you pay peers to share connection
 
-* [Darknetplan subreddit](http://www.reddit.com/r/darknetplan) "A
-place to organize efforts to create a hardware/software stack for a
-globally scalable system of interconnected local meshnets. We realize
-that the inclusion of "darknet" in this name does not properly describe
-our current objectives, but the meshnet is a necessary foundation for
-the final goal of a truly resilient darknet."
 
-* [cjdns](http://cjdns.info/) software [cjdns
-wikipedia](http://en.wikipedia.org/wiki/Cjdns)
-
-* [hyperboria](http://hyperboria.net/) decentralised network powered
-by CJDNS
-
--   [maidsafe](https://www.maidsafe.org/) 'platform for decentralised
-    internet' - distributed cloud storage.
--   [Storj](http://storj.io/) software for distributed cloud storage.
--   [netsukuku](http://netsukuku.freaknet.org/) a very
-    interesting project. Has not been maintained for a while but is
-    recently being re-started.
 -   [FON](http://corp.fon.com) - commercially provided cooperative wifi
     sharing (but you need an internet connection to join)
 -   [tlant2409b](tlant.md) photos of inside a commercial
     2.4Ghz directional antenna (by TP-Link) to give ideas on DIY design.
 
-#### mesh routing protocols
+## mesh routing protocols
 
 -   [olsr](http://www.olsr.org/) Optimised link state routing
 -   [B.A.T.M.A.N](http://www.open-mesh.org/) Better Approach to Mobile
@@ -432,9 +526,9 @@ by CJDNS
 -   [Babel](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/) a
     loop-avoiding distance-vector routing protocol
 
-#### guifi.net
+## guifi.net
 
-![](img/Guifi_net.png "fig:guifi_net.png") [guifi.net](http://guifi.net) is
+![guifi logo](img/Guifi_net.png) [guifi.net](http://guifi.net) is
 based mainly around catalunya/valencia, and with over 20,000 operational
 nodes, it claims to be the biggest wireless network community in the
 world.
@@ -468,7 +562,7 @@ off-internet services (ftp, etc) also exist and are quite popular.
 
 Many guifi.net groups use mikrotik routers, and some use ubiquity.
 
-#### freifunk
+## freifunk
 
 ![freifunk](img/Freifunk.jpeg "fig:freifunk.jpeg") Freifunk is an international
 Project for free wireless networks and frequencies (Open Spectrum).
@@ -489,14 +583,14 @@ it could be to begin to use off-intenet projects and services.
     english](http://wiki.freifunk.net/Kategorie:English)
 -   [OLSR](http://olsr.org/) an adhoc wireless mesh routing daemon
 
-#### funkfeuer
+## funkfeuer
 
 [funkfeuer.at](http://www.funkfeuer.at/) is a free mesh network project
 based in austria, using OLSR routing protocol. It is a radio network,
 also using internet VPN tunnels to link 'radio islands' (nodes not
 accessible by radio).
 
-#### tetaneutral
+## tetaneutral
 
 -   [tetaneutral.net](http://tetaneutral.net) Toulouse based wireless
     ISP, and member of [Federation French Data
@@ -505,7 +599,7 @@ accessible by radio).
     ubiquity routers to make point-to-point links in and
     around toulouse.
 
-#### more community wireless networks
+## more community wireless networks
 
 -   [wikipedia list of wireless community networks by
     region](http://en.wikipedia.org/wiki/List_of_wireless_community_networks_by_region)
@@ -521,7 +615,7 @@ accessible by radio).
 -   [consume.net](http://www.consume.net/) london based. Not as active
     as it once was.
 
-#### Wifi Hardware manufacturers
+## Wifi Hardware manufacturers
 
 Some commercial manufacturers of wifi equipment are
 
@@ -539,7 +633,7 @@ the home, such as [Linksys](http://www.linksys.com),
 [TP-Link](http://www.tp-link.com) and
 [Buffalo](http://www.buffalotech.com/).
 
-### light modulation
+## light modulation
 
 Optical links can give very high bandwidth but must be exactly pointed
 at each other.
@@ -554,7 +648,7 @@ at each other.
     1Gbps optial data link over up to 100m developed by wlan slovenija.
 -   [modulatedlight.org](http://www.modulatedlight.org/)
 
-### Whitespaces and Wireless Regional area networks
+## Whitespaces and Wireless Regional area networks
 
 A standard for WRAN (wireless regional area networks), IEEE 802.22 has
 recently been developed, which will use 'white spaces' in the VHF and
@@ -586,7 +680,7 @@ defined, making it more adaptable for eventually being re-used by us.
     rural
     connect](http://www.carlsonwireless.com/products/ruralconnect-ip.html)
 
-### software defined radio
+# software defined radio
 
 Software Defined Radio devices could be very useful in establishing a community run network. They are computer
 controlled radios, where various aspects of the radio's operation which
@@ -622,7 +716,7 @@ This means that new radio protocols could be established without the need for ne
 -   [Using GNUradio to transmit data using
     ultrasound](http://www.anfractuosity.com/projects/ultrasound-via-a-laptop/) This project simply uses the internal soundcards on two laptops to transmit data from one to the other on a 23kHz audio carrier. The flexibility of software defined radio means parameters can be changed very quickly to get the optimum transmission for a particular situation.
 
-#### Reducing resources and waste by less hardware redundancy
+## Reducing resources and waste by less hardware redundancy
 
 ![arduino](img/Arduino316.jpg "arduino")
 
@@ -638,7 +732,7 @@ for free, we could modify commercial devices to work with our own set of
 standards – and if we change those standards at some point we will not
 need to get new equipment.
 
-#### SDR use for mobile phone base stations
+## SDR use for mobile phone base stations
 
 The USRP has been used in projects to decode GSM mobile phone signals.
 It is also used in a project to create easy to build GSM base stations
@@ -669,7 +763,7 @@ festival](img/Burningman_sm.jpg "fig:framless|burning man festival")
 -   [freeswitch](http://www.freeswitch.org) software telephone platform
 -   airprobe (add link) SDR software for analysing GSM.
 
-#### RTL-SDR recievers
+## RTL-SDR recievers
 
 More recently, low cost SDR receivers have become popular, as it was
 realised that SDR digital TV recievers (such as the NooElec TV28T)can be
@@ -686,7 +780,7 @@ omnidirectional wideband applications making it good for SDR projects.
     rtlsdr](http://helix.air.net.au/index.php/d-i-y-discone-for-rtlsdr/)
     this site also has some stuff for 2.4 ghz wifi projects
 
-#### SDR for community run communication
+## SDR for community run communication
 
 There seems to be a number of reasons why Software defined radio could
 be useful for community run communication systems. It could allow us to
@@ -700,7 +794,7 @@ automatically. Software projects are also easier to work on
 collaboratively than hardware, meaning they will be constantly optimised
 and adapted.
 
-### Modulation modes for digital radio
+# Modulation modes for digital radio
 
 Orthogonal frequency-division multiplexing is the modulation system used
 by ADSL, Wifi, and DAB digital radio. Multiple carriers are used, and
@@ -718,8 +812,7 @@ for a better signal in less bandwith compared to standard AM modulation.
 -   [An Introduction to Multi-Frequency Shift
     Keying](http://www.qsl.net/zl1bpu/MFSK/) from qsl.net
 
-sounds like chaos
------------------
+# sounds like chaos
 
 Decentralised community run systems will, by their nature, encourage
 people locally to interact, as information spreads geographically. If
