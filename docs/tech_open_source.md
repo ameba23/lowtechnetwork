@@ -313,13 +313,6 @@ This prompts for a password and gives file.gpg.  To decrypt:
 * [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) amazingly good file encryption software. 
 
 
-## Virtual Private Networks
-
-* [Tinc VPN](https://tinc-vpn.org/)
-* [Creating a VPN with tinc article on Linux.com](https://www.linux.com/news/creating-vpn-tinc)
-* [How To Setup A Tinc VPN - https://smartystreets.com/blog](https://smartystreets.com/blog/2015/10/how-to-setup-a-tinc-vpn)
-* [VPNs With Port Forwarding - The Load Guru](http://theloadguru.com/vpns-with-port-forwarding/)
-* [badvpn](https://github.com/ambrop72/badvpn) NCD scripting language, tun2socks proxifier, P2P VPN
 
 ## bitcoin/blockchain related
 

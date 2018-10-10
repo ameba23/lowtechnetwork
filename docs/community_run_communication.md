@@ -14,7 +14,7 @@ authorities and businesses - much like our city centres.
 Centralisation of control, censorship, privacy
 ----------------------------------------------
 
-Two examples: In feburary 2012 the non-profit website 'scroogle' which
+Two examples: In February 2012 the non-profit website 'scroogle' which
 offered an alternative version of google (where searches were not
 recorded) was taken down after action against it taken by google. Then
 in march 2012 google put into practice their new privacy policy, making
@@ -137,9 +137,9 @@ ideas. There are no doubt problems brought about by any kind of
 mechanism which allows a minority to speak to the masses. But of course
 they can also be very important and empowering community tools.
 
--   [Toner refill - wikipedia article](http://en.wikipedia.org/wiki/Toner_refill) on refilling
+- [Toner refill - wikipedia article](http://en.wikipedia.org/wiki/Toner_refill) on refilling
     photocopier or laser printer toner
--   [Printer and Photocopier Troubleshooting and Repair Collection](http://repairfaq.ece.drexel.edu/samnew/printfaq.htm)
+- [Printer and Photocopier Troubleshooting and Repair Collection](http://repairfaq.ece.drexel.edu/samnew/printfaq.htm)
 
 radio
 -----
@@ -286,11 +286,11 @@ place. This 'bridge' can be made in various different ways:
     also be interesting to use for data...)
 -   Using a **"microwave audio bridge"** which you can buy, often they
     work on 2.4 GHz wifi.
--   use **wifi routers** and audio streaming software to make the bridge
+-   use **wifi routers** and audio streaming software such as [icecast](https://icecast.org/) to make the bridge
     (a diy version of the above).
 -   use an **internet link**. A computer (eg: raspberry pi) and internet
     dongle or whatever (instructions in forum on
-    [Radionecks](http://www.radionecks.com))
+    [Radionecks](http://www.radionecks.com)).  [Icecast](https://icecast.org/) could also be used to stream audio over internet.
 -   use a **PMR** (walkie talkie) link. Probably would be bad audio
     quality because of low bandwidth but maybe one could find a way to
     have a high bandwidth bridge on PMR frequencies using multiple channels. (maybe some
@@ -367,8 +367,11 @@ The projects in this section generally require already having some internet conn
 
 ## [CJDNS](http://cjdns.info/) 
 
-- [cjdns wikipedia](http://en.wikipedia.org/wiki/Cjdns)
+![hyperboria](img/hyperboria.png)
+
+- [cjdns whitepaper](https://docs.meshwith.me/Whitepaper.html), [cjdns wikipedia article](http://en.wikipedia.org/wiki/Cjdns)
 - [hyperboria](http://hyperboria.net/) decentralised network powered by CJDNS
+- [yrd](https://github.com/kpcyrd/yrd) command line 'cjdns swiss army knife'
 
 ## Bittorrent
 
@@ -474,6 +477,25 @@ SSB is also not well suited to handling large files and data sets.  Messages in 
 
 - Maymounkov and Mazieres (2002) "Kademlia, A peer to peer information system based on the XOR metric" (A good description of distributed hash tables) https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf
 
+
+## Virtual Private Networks
+
+VPNs consist of tunnels which aim to emulate being on a private local area network when in fact the connections span a wider network such as the internet.
+
+Many companies use VPNs to create a secure private network without needing to have their own cable or radio connections between buildings.  They are also commonly used to give privacy and anonymity online, and there are many providers offering internet access over VPN for this purpose.  VPN tunnels can also be used to create alternative networks or used together with some of the other platforms listed here. 
+
+- [How to use CJDNS as a VPN](https://docs.meshwith.me/config/tunnel.html)
+- [VPNs With Port Forwarding - The Load Guru](http://theloadguru.com/vpns-with-port-forwarding/)
+- [badvpn](https://github.com/ambrop72/badvpn) NCD scripting language, tun2socks proxifier, P2P VPN
+- Openswan/Libreswan
+
+### [Tinc](https://tinc-vpn.org/)
+
+Tinc is a protocol for virtual private networks without a server-client architecture, and some routing features that make it suitable for creating peer-to-peer networks.
+
+* [Creating a VPN with tinc article on Linux.com](https://www.linux.com/news/creating-vpn-tinc)
+* [How To Setup A Tinc VPN - https://smartystreets.com/blog](https://smartystreets.com/blog/2015/10/how-to-setup-a-tinc-vpn)
+
 ## Other decentralised internet projects
 
 - [Yggdrasil](https://yggdrasil-network.github.io/) An encrypted ipv6 network, with similarities to CJDNS.
@@ -528,7 +550,8 @@ begining to use the 5Ghz and 10Ghz bands as well.
 
 ## guifi.net
 
-![guifi logo](img/Guifi_net.png) [guifi.net](http://guifi.net) is
+![guifi logo](img/Guifi_net.png) 
+[guifi.net](http://guifi.net) is
 based mainly around catalunya/valencia, and with over 20,000 operational
 nodes, it claims to be the biggest wireless network community in the
 world.
@@ -555,6 +578,7 @@ permission from local governement.
 They also have a good advocat and rely on european law to settle
 disputes about the legality of the project.
 
+![guifi map](img/guifi-map.jpg) 
 They use a private address space 10.xxx, ips are allocated by their
 website. and there are dns servers to resolve these local ips. The
 network is primarily used for providing interenet access, but
