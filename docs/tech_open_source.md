@@ -244,6 +244,7 @@ Feh command line switches:
     be downloaded. Some ISPs are beginning to block library genesis,
     which means you need to find a mirror which is not blocked, or
     access it through TOR or a VPN.
+* [miners hut](https://forum.mhut.org/) library genesis forum - with lots of useful info. if it is down, see [this site](http://librusec.ucoz.de/forum/26) 
 * [Project Gutenberg](https://www.gutenberg.org/) One of the oldest
     free ebook collections on the net. 46,000 titles.
 * [internet archive](https://archive.org/) also hosts many books.
@@ -468,6 +469,15 @@ randomly choose some of my music to put onto my mp3 player):
 
 * [Code podcast](https://codepodcast.com)
 
+
+# network analysis
+
+- [slurm](http://www.github.com/mattthias/slurm/) terminal based network traffic ananlyser (like iftop or nethogs)
+- [mtr](https://github.com/traviscross/mtr) combines traceroute and ping
+- [nmap](https://nmap.org/) network scanner
+- [wireshark](https://www.wireshark.org/) packet sniffer
+
+
 # other / uncategorised
 
 Many of these links need to be (or already have been) put elsewhere on
@@ -502,7 +512,6 @@ the wiki
 * [skype like conferencing system](https://www.johncahill.net/wiki/index.php/Skype_like_conferencing_System) software project proposal. see also ZRTP and SRTP
 * [sdf.org](http://sdf.org) sdf public access unix system
 * [retroshare](http://retroshare.sourceforge.net/) secure, decentralised communication and filesharing platform
-* [nmap](http://nmap.org/) network ping scan tool
 * [wikidata](http://meta.wikimedia.org/wiki/Wikidata) - project to put wikipedia information into a semantic format, linking topics across languages and categories.
 
 Unsorted links:

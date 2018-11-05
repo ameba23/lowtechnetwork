@@ -390,6 +390,8 @@ A project called [tribler](https://www.tribler.org/) solved this problem to some
 Magnetico is a program which scrapes torrent data off the DHT to build your own torrent database and could just be the final piece in the puzzle.  
 
 ### Other bittorrent projects
+
+* [transmission](https://transmissionbt.com/) - full featured bittorrent client available as GTK, QT, CLI, and remote daemon.
 * rtorrent - NCurses BitTorrent client based on libtorrent
 * [Tribler](https://www.tribler.org/) - Torrent client with some great features such as peer-to-peer based searching and enhanced anonymity.
 * [StegTorrent](http://stegtorrent.sourceforge.net/) - hide torrent files inside images or audio using steganography.  It is windows software but the concept is great. 
@@ -397,6 +399,7 @@ Magnetico is a program which scrapes torrent data off the DHT to build your own 
 * [GitTorrent: A Decentralized GitHub](https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/) [repo](https://github.com/cjb/GitTorrent) - Git hosting powered by bittorrent 
 
 ### bittorrent trackers (probably outdated...)
+
 * [Zooqle: Verified torrents](https://zooqle.com/)
 * [TorrentProject.se](http://torrentproject.se/)
 * [academictorrents.com](http://academictorrents.com/) - torrent hosting site for academic datasets, papers and course materials. 
@@ -467,7 +470,7 @@ Contrary to content-addressed systems like Bittorrent, IPFS or DAT, SSB is struc
 
 Many other peer to peer systems use a distributed hash table (DHT) to index and propagate data whereas SSB uses a gossip protocol. With a DHT, all users have, in principle, access to a ubiquitous data-set, and their connectivity with particular peers effects only how long it might take to find a particular piece of information (of course in practice some data often cannot be retrieved).  In that sense they essentially emulate the behavior of a centralized system, where all users access the same source of data.  By using a gossip protocol, the data-set itself is dependent on the relationships between peers.  In the case of SSB, the user explicitly chooses which peers they want to relate to, and by doing so retrieves messages from those users' 'feeds', regardless of their content, and stores them allowing them to propagate to other peers requesting messages from that particular user.  It has a relationship-centered topology. 
 
-![](img/follow_graph.png)
+![follow_graph](img/follow_graph.png)
 
 There is much discussion about the optimal parameters for 'gossiping'. Notably, the 'number of hops', the extent to which a user holds data from indirectly related peers ('friends of friends', or 'friends of friends of friends'). This can be individually adjusted using client software and might vary depending on the use-case, the resources available and the attitude of the user.  
 

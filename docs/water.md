@@ -1,5 +1,8 @@
 ![rainwater](img/rainwater.jpg)
-a gravity powered running water system in london
+a gravity powered running rainwater system in london
+
+![rainwater washing machine](img/rainwater_washingmachine.jpg)
+rainwater washing machine
 
 water containers
 ----------------
@@ -119,3 +122,6 @@ grey water filtering
 -   reed beds and other plants
 -   Stones and sand for irrigation
 
+
+![rainwater](img/rainwater_system.jpg)
+another running rainwater system
