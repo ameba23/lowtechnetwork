@@ -331,7 +331,7 @@ This prompts for a password and gives file.gpg.  To decrypt:
     (text only, no images, user pages or discussion pages) compresses to
     about 8gb (or it did when this was first written, for sure its bigger now). You will need to download relevant zim file, which are
     available as torrents. [list of wikipedias](http://www.kiwix.org/wiki/Wikipedia_in_all_languages).  Stack exchange is also available as a zim file. 
-* evopedia - another offline wikipedia reader.  not  sure if its still being actively developed.
+* [evopedia](http://evopedia.info) - another offline wikipedia reader.
 * [openstreetmap](http://www.openstreetmap.org) collaborative
     mapping project. it is also possible to download openstreetmap (even
     the whole planet) for offline viewing using a software called
@@ -341,14 +341,17 @@ This prompts for a password and gives file.gpg.  To decrypt:
     takes a lot of computing and rendering software tends to be designed
     for servers. I have not found downloadable pre-rendered tiles for
     easy, fast offline viewing. Any ideas? It would be great to have
-    quickly accessible offline maps.
+    quickly accessible offline maps.  [Tools for reading openstreetmap offline](https://wiki.openstreetmap.org/wiki/Using_OpenStreetMap_offline)
 * [OfflineIMAP](http://offlineimap.org) software for syncronising
     imap mailboxes. It is useful for unreliable or slow internet
     connections or when you want to read email offline.  Also makes it easy to backup your email as you have a local copy. 
+- [dictd](https://sourceforge.net/projects/dict/) dictionary system
+- tools for reading documentation offline such as [Zeal](https://zealdocs.org/) and [arch-wiki-man](https://github.com/greg-js/arch-wiki-man) 
 * [hitchwiki.org](http://hitchwiki.org) the excellent hitchhiking website can also be downloaded to view
 offline [hitchwiki while offline](http://hitchwiki.org/en/Hitchwiki:While_offline). The
 database is downloaded in XML format which can be viewed with
 various kinds of dictionary viewing software.
+- [mosh](https://mosh.org/) is good for ssh on a bad connection
 
 ### offline dictionary for linux
 * [dict](http://sourceforge.net/projects/dict/) great dictionary software with many dictionaries available.
