@@ -54,36 +54,30 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
 
  * `v xxx` will open vim with frequently/recently used file containing xxx.
  * `o xxx` will open the default application for the file. 
- * `cp \`f xxx\` /tmp` will copy file containing xxx to /tmp
+ * `cp $(f xxx) /tmp` will copy file containing the string xxx to /tmp
  * The best thing about it is you can also use it with tab completion.  Try just typing `z <tab>` in your terminal, you see a list of places you've frecently been. 
 
 ### More shell tools
 
 * fzf - there are many different fuzzy filter programs, fzf is a good example.  Very flexible tool, not only for finding files.
-* [tmux](http://tmux.sourceforge.net/) terminal multiplexer - another great tool for mouse free control of terminal windows and much more.  Very configurable.  Many people love it.  Personally I prefer to organise terminal windows with my window manager. 
+* [tmux](http://tmux.sourceforge.net/) terminal multiplexer, similar to GNU Screen. A great tool for mouse free control of terminal windows and session management.  Very configurable. Tmux and Screen are both great for leaving programs running remotely and disconnecting from ssh, as well as for remote pair programming.
 * URxvt - unicode terminal emulator.  Highly configurable, well maintained and supported.  
-* [terminator](http://gnometerminator.blogspot.co.uk/) terminal emulator with many features, including tabs and split windows.  I used this before I switched to a tiling window manager.  Some useful keys in terminator:
-* GNU Screen - a great program which can be used for window splitting etc. The nice thing about it is that it will run over ssh.  You can also use it to start a process over ssh and then leave it running even after you disconnect from ssh.  (very useful.  You can also do this with tmux.)
 * [commandlinefu.com](http://www.commandlinefu.com) a website where people post useful (or simply nerdy) command line tricks.
 * explain.sh - script to explain a command you dont know what it does (pulls stuff from man pages) eg: 'explain 'ls -l''
 * [30 handy bash aliases](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
 
 * [dotfiles.github.io](http://dotfiles.github.io) good explanation of several dotfile repos and tools for managing dotfiles.
-* GNU Stow -  Manage installation of multiple softwares in the same directory tree - can be useful for automatically creating symlinks to dotfiles.
+* [GNU Stow](https://www.gnu.org/software/stow/) -  Manage installation of multiple softwares in the same directory tree - can be useful for automatically creating symlinks to dotfiles.
 
 ## web
 
 * [Uzbl - web interface tools which adhere to the unix philosophy.](https://www.uzbl.org/) [uzbl tutorial](http://www.panix.com/~wje/?uzbl) [uzbl on github](https://github.com/uzbl/uzbl) 
 * [vimb](http://fanglingsu.github.io/vimb/) lightweight webkit based browser (of which there are many to choose from, inspired by vimprobable, and in my opinion an improvement.
-
 * [vimprobable](http://sourceforge.net/p/vimprobable) another lightweight browser with vi style key bindings.  uses considerably less CPU than firefox/iceweasel.  Also allows tabs to be managed by your window manager. [Keybindings](https://sourceforge.net/p/vimprobable/wiki/Keybindings/) [Using Vimprobable - jasonwryan.com ](http://jasonwryan.com/blog/2011/06/26/using-vimprobable/) 
 * [Luakit Web Browser](https://luakit.github.io/) - another customisable webkit based browser, extendable with the [lua scripting language](https://www.lua.org). Many additional modules exist, including ad-blocking.
 * qutebrowser - still relatively lightweight, webkit based and with vi style bindings, but a bit bigger and more feature-rich than vimb. 
 * [suckless.org surf](http://surf.suckless.org/) Bare bones browser.  No runtime configuration whatsoever.  [Adblocking using /etc/hosts](http://surf.suckless.org/files/adblock-hosts) 
-* [VimFx Add-on for Firefox](https://addons.mozilla.org/en-US/firefox/addon/vimfx/?src=search)
-* [vimperator](http://www.vimperator.org) vi style control of
-    firefox/iceweasel web browser. So you can control the web browser
-    without using the mouse.
+* [VimFx Add-on for Firefox](https://addons.mozilla.org/en-US/firefox/addon/vimfx/?src=search) vim keybindings for firefox
 * [Surfraw](http://surfraw.alioth.debian.org/) 'Shell Users' Revolutionary Front Rage Against the Web' - open websites from the commandline.  a very handy program.  You can `alias sr="surfraw"` and do `sr wikipedia chard` from the command line to jump to wikipedia article about chard. See the [list of elvi](http://surfraw.alioth.debian.org/#elvilist) (website search scripts for surfraw).
 
 * [GNUzilla and IceCat](https://www.gnu.org/software/gnuzilla/) firefox/iceweasel alternative 100% free software, no proprietory plugins recommended
@@ -97,8 +91,8 @@ you want to move to. FASD will guess what you want, using 'frecency' (combined r
     that rather than spending a lot of time configuring software, a
     collabourative effort is made to bring together 'sane' (but opinionated) configurations and plugins etc.
 * [yay](https://github.com/Jguer/yay) - install packages from the arch linux user repository (AUR) easily. AUR helpers have been criticised for encouraging users to install packages without properly checking pkgbuilds, which raises security issues (malicious software could be unintentionally installed).  However some people think that the convenience of using them outweighs the security risks.  You can make up your own mind.
-* [atool](http://www.nongnu.org/atool/) is an excellent tool for managing archives (eg: `.tar.gz`, `.zip`).  instead of remembering different commands for different formats, you can use `apack`, `aunpack`, `als` etc for any type of archive/compressed file.
-* [prurigro/arch-wiki-markdown](https://github.com/prurigro/arch-wiki-markdown) program for reading the arch linux wiki offline on your terminal.  
+* [atool](http://www.nongnu.org/atool/) is an excellent tool for managing archives (eg: `.tar.gz`, `.zip`).  instead of remembering different commands for different compression formats, you can use `apack`, `aunpack`, `als` etc for any type of archive/compressed file.
+* [prurigro/arch-wiki-markdown](https://github.com/prurigro/arch-wiki-markdown) program for reading the arch linux wiki offline on your terminal.
 * [aap](http://www.a-a-p.org/) makes it easy to download, build and install software
 * [calmar.ws](http://www.calmar.ws/) tips and info on linux,vim, vimperator, awesome, other stuff
 * [refcards.com](http://www.refcards.com/) free quick reference cards
@@ -119,6 +113,7 @@ is definately worth learning. The keybindings in vim are used in a lot of other 
 * [vim mediawiki editing](http://blog.bigsmoke.us/2009/07/10/vim-mediawiki-editing)
 * [vim tricks](https://github.com/rzetterberg/case_studies/blob/master/notes/2_vim_tricks.md)
 * [steve losh - learn vimscript the hard way](http://learnvimscriptthehardway.stevelosh.com)
+* [ALE](https://github.com/w0rp/ale) asynchronous linting engine - fix problems as they appear
 
 ### Plugins for vim
 
@@ -378,12 +373,17 @@ Soulseek has been going since many years, a peer-to-peer filesharing network wit
 * [nicotine](http://nicotine-plus.sourceforge.net/) open source soulseek client written in python
 * museek+ - not sure if this is still being developed, but it is a client-daemon suite meaning you can connect to a remote soulseek instance.
 
-## directconnect
+## DirectConnect (NMDC) and Advanced DirectConnect (ADC)
 
-Im not sure how popular directconnect is these days.  I've always been a bit critical of it for favouring users with large collections, making a hierarchy.
+Directconnect is a peer-to-peer filesharing protocol where searches and peer discovery happens on centralised 'hubs'. 
 
-* [eiskaltdc++](https://code.google.com/p/eiskaltdc/) and [linuxDC++](https://launchpad.net/linuxdcpp) are linux clients for the Direct Connect filesharing protocol.
-* [uhub](https://www.uhub.org/) is hub software (for running a server).
+* [Eiskaltdc++](https://github.com/eiskaltdcpp/eiskaltdcpp) is the most actively developed linux client i know of.
+* [the adc project](https://adc.sourceforge.io/) - with news and full protocol specification
+* [direct connect network foundation](https://www.dcbase.org/) - with forums, mostly centered around development.
+* [Direct Connect: Just these guys, ya know?](https://dcpp.wordpress.com) blog with news relating to the protocols.
+* [dchublist.org - Direct Connect Hublist](https://dchublist.org/) - will give you an idea of the current volume of users. NMDC is still a much more popular protocol. 
+* [uhub](https://www.uhub.org/) and [Luadch](http://luadch.github.io/) ADC hub software (for running a server)
+- * [verlihub](https://github.com/verlihub) NMDC hub software (for running a server)
 
 ## edonkey
 
