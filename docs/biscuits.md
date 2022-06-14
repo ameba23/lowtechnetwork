@@ -16,7 +16,6 @@
 ![pirate](img/Pirate1.jpg "fig:pirate1.jpg")
 ![rossport](img/Rossport.jpg "fig:rossport.jpg")
 ![seahorse](img/Seahorse2.jpg "fig:seahorse2.jpg")
-![teens](img/Teenswearthecross.jpg "fig:teenswearthecross.jpg")
 ![toys](img/Toys2.jpg "fig:toys2.jpg")
 ![nike](img/Unknown02_nike.jpg "fig:unknown02_nike.jpg")
 ![rats6](img/Rats6.jpg "fig:rats6.jpg")

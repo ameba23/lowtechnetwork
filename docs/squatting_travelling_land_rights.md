@@ -12,6 +12,7 @@ travel
 -   [hitchwiki.org](http://www.hitchwiki.org) hitchhiking guide in
     many languages. You can add info how to hitchhike in/out of
     your town. Offline version available for download.
+-   [hitchhiking tips from outsidehow.com](https://outsidehow.com/hitchhiking-tips.html)
 -   [tube facts](http://www.geofftech.co.uk/tube/facts.html) includes a
     list of london underground stations with no ticket barriers. No idea
     when this was last updated.
